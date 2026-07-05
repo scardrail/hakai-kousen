@@ -1,0 +1,78 @@
+{
+  "id": "hakai-kousen",
+  "title": "Hakaï Kōsen",
+  "description": "Système de jeu de rôle Hakaï Kōsen (Pokémon réaliste) pour Foundry VTT : dresseurs, Pokémon, combats via la Table Unique, écoles de dressage.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "authors": [
+    {
+      "name": "Communauté Hakaï Kōsen"
+    }
+  ],
+  "esmodules": [
+    "module/hakai-kousen.mjs"
+  ],
+  "styles": [
+    "css/hakai-kousen.css"
+  ],
+  "languages": [
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "dresseur": {},
+      "pokemon": {}
+    },
+    "Item": {
+      "attaque": {},
+      "talent": {},
+      "competence": {},
+      "connaissance": {},
+      "specialisation": {},
+      "objet": {},
+      "ct": {},
+      "arme": {}
+    }
+  },
+  "packs": [
+    {
+      "name": "pokedex",
+      "label": "Pokédex (échantillon)",
+      "system": "hakai-kousen",
+      "path": "packs/pokedex",
+      "type": "Actor",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "attaques",
+      "label": "Attaques",
+      "system": "hakai-kousen",
+      "path": "packs/attaques",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "talents",
+      "label": "Talents",
+      "system": "hakai-kousen",
+      "path": "packs/talents",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    }
+  ],
+  "grid": {
+    "distance": 1,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "vita",
+  "secondaryTokenAttribute": "energie",
+  "url": "https://hakaikousen.fr"
+}
