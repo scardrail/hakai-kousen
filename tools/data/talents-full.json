@@ -1,0 +1,2151 @@
+[
+  {
+    "name": "Absorb Volt",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les attaques de type Électrik reçues par le Pokémon régénèrent 1/4 de sa Vitalité max</p>"
+    }
+  },
+  {
+    "name": "Absentéisme",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon n'attaque qu'un tour sur deux.</p>"
+    }
+  },
+  {
+    "name": "Absorb Eau",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les attaques de type Eau reçues par le Pokémon régénèrent 1/4 de sa Vitalité max</p>"
+    }
+  },
+  {
+    "name": "Acharné",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Monte la Force du Pokémon de 2 si l'une de ses statistiques est baissée par l'adversaire.</p>"
+    }
+  },
+  {
+    "name": "Adaptabilité",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>STAB : Si ce Pokémon utilise une attaque de son type, la puissance de l'attaque est multipliée par 2 au lieu de 1.5.</p>"
+    }
+  },
+  {
+    "name": "Agitation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Force de 50% mais baisse la précision de 20%.</p>"
+    }
+  },
+  {
+    "name": "Ailes Bourrasque",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Ajoute +10 à l'initiative des capacités de type Vol.  Ne s'active que si le lanceur a sa Vitalité à 100%</p>"
+    }
+  },
+  {
+    "name": "Air Lock",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Annule les effets du climat.</p>"
+    }
+  },
+  {
+    "name": "Alerte Neige",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon déclenche la grêle pendant 5 tours (8 avec Lumargile) lorsqu'il est envoyé au combat.</p>"
+    }
+  },
+  {
+    "name": "Âme Vagabonde",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le Pokémon est touché par une attaque de contact, il échange son talent avec celui de l'assaillant.</p>"
+    }
+  },
+  {
+    "name": "Amour Filial",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet au lanceur de porter deux coups par tour au lieu d'un, le deuxième coup fera deux fois moins de dégâts que le premier.</p>"
+    }
+  },
+  {
+    "name": "Analyste",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon frappe en dernier durant le tour, la puissance de son attaque est augmentée de 30%.</p>"
+    }
+  },
+  {
+    "name": "Animacœur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la Concentration de 1 lorsqu'un Pokémon est mis hors combat.</p>"
+    }
+  },
+  {
+    "name": "Annule Garde",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Toutes les attaques du Pokémon et de son adversaire ont une précision de 100%.</p>"
+    }
+  },
+  {
+    "name": "Anti-Bruit",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon n'est pas sensible aux attaques sonores</p>"
+    }
+  },
+  {
+    "name": "Anticipation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Alerte lorsque le Pokémon adverse possède des attaques super efficaces, OHKO ou d'autodestruction.</p>"
+    }
+  },
+  {
+    "name": "Aquabulle",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Réduit de 50% la puissance des capacités Feu subies, immunise contre les brûlures et double la puissance des capacités Eau</p>"
+    }
+  },
+  {
+    "name": "Armumagma",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre le gel.</p>"
+    }
+  },
+  {
+    "name": "Armurbaston",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Annule les chances de coups critiques du Pokémon ennemi.</p>"
+    }
+  },
+  {
+    "name": "Armure Miroir",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Renvoie tous les effets réducteurs de statistiques.</p>"
+    }
+  },
+  {
+    "name": "Armurouillée",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Le Pokémon touché par une attaque physique voit son Endurance diminuée de 1 et sa Dextérité augmenté de 1.</p>"
+    }
+  },
+  {
+    "name": "Aroma-Voile",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Un Pokémon doté de ce talent est protégé, et protège ses alliés, des capacités Provoc, Tourmente, Encore, Entrave, Anti-Soin, Attraction et Lien du Destin, ainsi que du talent Joli Sourire.</p>"
+    }
+  },
+  {
+    "name": "Attention",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre la peur.</p>"
+    }
+  },
+  {
+    "name": "Aura Féérique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance de 33% des attaques de type Fée des Pokémon présents sur le terrain.</p>"
+    }
+  },
+  {
+    "name": "Aura Inversée",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Inverse les effets des talents Aura.</p>"
+    }
+  },
+  {
+    "name": "Aura Ténébreuse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance de 33% des attaques de type Ténèbres des Pokémon présents sur le terrain.</p>"
+    }
+  },
+  {
+    "name": "Baigne Sable",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la Dextérité du Pokémon lors d'une tempête de sable.  Immunise contre les dégâts de la tempête.</p>"
+    }
+  },
+  {
+    "name": "Bajoues",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le Pokémon mange une Baie, il obtient ses effets et regagne 1/3 de sa Vitalité max en plus.</p>"
+    }
+  },
+  {
+    "name": "Banc",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet de changer de forme -&gt; au-dessus du niveau 20 et avec plus de 25% de sa Vitalité max au début du combat, si à la fin du tour le Pokémon à moins de 25% de sa Vitalité max, il revient à sa forme d'origine.</p>"
+    }
+  },
+  {
+    "name": "Battant",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la Concentration de 2 lorsque n'importe quelle stat est baissée par un Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Batterie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance de 30%des capacités spéciales des alliés.</p>"
+    }
+  },
+  {
+    "name": "Benêt",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre le charme et la provocation.</p>"
+    }
+  },
+  {
+    "name": "Blanche Ruade",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand le Pokémon met un ennemi K.O., sa Force augmente de 1.</p>"
+    }
+  },
+  {
+    "name": "Boom Final",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Enlève 1/4 de la Vitalité max du Pokémon ennemi mettant K.O. par contact.</p>"
+    }
+  },
+  {
+    "name": "Boost Acier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance du 50% des capacités de type Acier du Pokémon et des Pokémon alliés.</p>"
+    }
+  },
+  {
+    "name": "Boost Chimère",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 1 la stat la plus élevée du Pokémon quand il met K.O. un autre Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Bouclier-Carcan",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon a deux formes, une Coque et une Noyau. Sous sa forme Coque (au-dessus de 50% de la Vitalité max), son Endurance et sa Volonté augmentent et il est immunisés aux changements de statuts. Sous sa forme Noyau (en-dessous de 50% de sa Vitalité), sa Dextérité, sa Force et sa Concentration augmente.</p>"
+    }
+  },
+  {
+    "name": "Boule de Poils",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Divise par 2 la puissance des capacités directes mais multiplie par 2 si elles sont de type Feu.</p>"
+    }
+  },
+  {
+    "name": "Brasier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des attaques de type Feu de 50% lorsque le Pokémon a moins d'1/3 de sa Vitalité max,</p>"
+    }
+  },
+  {
+    "name": "Breuvage Suspect",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand il entre au combat, tous les changements de stats de ses alliés sont annulés.</p>"
+    }
+  },
+  {
+    "name": "Brise Moule",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Peut toucher un Pokémon adverse malgré son talent.</p>"
+    }
+  },
+  {
+    "name": "Brise-Barrière",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Un Pokémon doté de ce talent ignore les effets d'affaiblissement ou d'annulation (de dégâts ou d'effets) que le talent de son adversaire peut déclencher.</p>"
+    }
+  },
+  {
+    "name": "Cacophonie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon n'est pas sensible aux attaques sonores</p>"
+    }
+  },
+  {
+    "name": "Calque",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Copie le talent du Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Cercle d'Énergie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des capacités des Pokémon alliés de 30%.</p>"
+    }
+  },
+  {
+    "name": "Cérébro-Force",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des capacités super efficaces de 25%.</p>"
+    }
+  },
+  {
+    "name": "Chanceux",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les chances de critiques du Pokémon sont doublés (s'applique avant tout autre modificateur),</p>"
+    }
+  },
+  {
+    "name": "Chasse-Neige",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double la Dextérité sous la grêle.</p>"
+    }
+  },
+  {
+    "name": "Cherche Miel",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Trouver du miel</p>"
+    }
+  },
+  {
+    "name": "Chlorophylle",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la Dextérité au soleil.</p>"
+    }
+  },
+  {
+    "name": "Ciel Gris",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Annule les effets du climat.</p>"
+    }
+  },
+  {
+    "name": "Cœur de Coq",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche l'Endurance du Pokémon d'être baissée.</p>"
+    }
+  },
+  {
+    "name": "Cœur Noble",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Si le Pokémon est touché par une attaque de type Ténèbres, sa Force augmente de 1.</p>"
+    }
+  },
+  {
+    "name": "Cœur Soin",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>À la fin de chaque tour, le Pokémon a 30% de chance de guérir ses alliés d'une altération d'état en combat double ou triple.</p>"
+    }
+  },
+  {
+    "name": "Colérique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : la Force du Pokémon augmente de 2 lorsqu'il subit un coup critique.</p>"
+    }
+  },
+  {
+    "name": "Coloforce",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la Force du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Contestation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Inverse les effets des attaques modifiant les statistiques.</p>"
+    }
+  },
+  {
+    "name": "Coque Armure",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Annule les chances de coups critiques du Pokémon ennemi.</p>"
+    }
+  },
+  {
+    "name": "Corps Ardent",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>30% de chance de provoquer une brûlure sur le Pokémon adverse ayant touché avec une attaque de contact.</p>"
+    }
+  },
+  {
+    "name": "Corps Coloré",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche l'adversaire d'utiliser des attaques de priorité.</p>"
+    }
+  },
+  {
+    "name": "Corps Condamné",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le Pokémon est directement touché par une attaque, l'assaillant et lui tomberont K.O. dans trois tours, à moins qu'ils ne soient remplacés entre temps.</p>"
+    }
+  },
+  {
+    "name": "Corps Gel",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Régénère 1/10 de la Vitalité max par temps de grêle. Immunise les Pokémon n'ayant pas le type Glace contre la grêle.</p>"
+    }
+  },
+  {
+    "name": "Corps Maudit",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Toute attaque portée par l'adversaire a 30% de chance de s'entraver.</p>"
+    }
+  },
+  {
+    "name": "Corps Sain",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Empêche la diminution de statistiques par le Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Corrosion",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet d'empoisonner n'importe quel Pokémon quel que soit son type.</p>"
+    }
+  },
+  {
+    "name": "Crachin",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Fait tomber la pluie pendant 5 tours (8 avec la Roche Humide) à l'entrée du Pokémon en jeu.</p>"
+    }
+  },
+  {
+    "name": "Cran",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente de 50% la Force du Pokémon s'il subit un changement de statut. De plus, sa Force n'est pas divisé s'il subit une brûlure.</p>"
+    }
+  },
+  {
+    "name": "Créa-Brume",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Pose un Champ Brumeux au sol qui diminue la puissance des attaques Dragon de 50% et empêche les altérations de statuts.</p>"
+    }
+  },
+  {
+    "name": "Créa-Élec",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Pose un Champ Électrifié au sol qui augmente la puissance des attaques Électrik de 50% et empêche le sommeil.</p>"
+    }
+  },
+  {
+    "name": "Créa-Herbe",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Pose un Champ Herbu au sol qui restaure 1/10 de la Vitalité max et augmente la puissance des attaques Plante de 50%.</p>"
+    }
+  },
+  {
+    "name": "Créa-Psy",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Pose un Champ Psychique au sol qui bloque toute attaque de priorité et augmente la puissance des attaques Psy de 50%.</p>"
+    }
+  },
+  {
+    "name": "Cruauté",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Inflige toujours des coups critiques à un ennemi empoisonné.</p>"
+    }
+  },
+  {
+    "name": "Cuvette",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Régénère 1/10ème de la Vitalité max par temps de pluie.</p>"
+    }
+  },
+  {
+    "name": "Danseuse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon reproduit les capacités de danse de tous les Pokémons sur le terrain.</p>"
+    }
+  },
+  {
+    "name": "Début Calme",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Divise par deux la Force et la Dextérité du Pokémon pendant 5 tours.</p>"
+    }
+  },
+  {
+    "name": "Déclic Fringale",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon change de forme et le type de la capacité Roue Libre. Celle-ci est de type Électrik en Mode Rassasié, et de type Ténèbres en Mode Affamé.</p>"
+    }
+  },
+  {
+    "name": "Déclic Tactique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon prend la forme Parade dès qu'il utilise l'attaque Bouclier Royal, et prend la forme Assaut dès qu'il utilise des attaques physiques ou spéciales. Les attaques de statut ne changent pas la forme actuelle.</p>"
+    }
+  },
+  {
+    "name": "Défaitiste",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Divise par 2 la Force et la Concentration du Pokémon s'il a moins de 50% de sa Vitalité totale.</p>"
+    }
+  },
+  {
+    "name": "Dégobage",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon utilise la capacité Surf ou Plongée, il réapparaît avec une prise dans le bec. S'il subit des dégâts pendant qu'il tient une prise, Le Pokémon riposte en recrachant ce qu'il a dans le bec.</p>"
+    }
+  },
+  {
+    "name": "Déguisement",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Change le type du Pokémon en celui de la dernière attaque subie.</p>"
+    }
+  },
+  {
+    "name": "Délestage",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la Dextérité lorsqu'un objet tenu est utilisé, lancé ou perdu.</p>"
+    }
+  },
+  {
+    "name": "Dent de Dragon",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 50% la puissance des attaques de type Dragon du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Don Floral",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Force et la Volonté de 50% par temps ensoleillé.</p>"
+    }
+  },
+  {
+    "name": "Dracolère",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la Concentration de 1 du Pokémon lorsqu'il perd plus de la moitié de sa Vitalité max.</p>"
+    }
+  },
+  {
+    "name": "Écaille Spéciale",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente l'Endurance de 50% lorsque le Pokémon subit un changement de statut.</p>"
+    }
+  },
+  {
+    "name": "Écailles Glacées",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon est protégé par des écailles de glace. Les dégâts qu'il subit par des capacités spéciales sont divisés par deux.</p>"
+    }
+  },
+  {
+    "name": "Échauffement",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre la paralysie.</p>"
+    }
+  },
+  {
+    "name": "Écran Fumée",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la diminution de statistiques par le Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Écran Poudre",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche les effets secondaires des attaques subies.</p>"
+    }
+  },
+  {
+    "name": "Effilochage",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand son possesseur est touché par une attaque, il libère des fils de coton qui diminuent la Dextérité de 1 du Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Égide Inflexible",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente l'Endurance de 1 lorsque le Pokémon entre sur le terrain.</p>"
+    }
+  },
+  {
+    "name": "Endurance",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente l'Endurance de 1 lorsque le Pokémon est touché par une attaque directe.</p>"
+    }
+  },
+  {
+    "name": "Engrais",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des attaques de type Plante de 50% lorsque le Pokémon a moins d'1/3 de sa Vitalité max.</p>"
+    }
+  },
+  {
+    "name": "Entêtement",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la Force de 50%, mais empêche d'utiliser toute autre capacité que celle utilisée en premier par le Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Envelocape",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre les dégâts causés par la grêle et les tempêtes de sable.</p>"
+    }
+  },
+  {
+    "name": "Épine de Fer",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Retire 1/10ème de sa Vitalité max à l'adversaire lorsque celui-ci porte une attaque directe.</p>"
+    }
+  },
+  {
+    "name": "Escampette",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet la fuite ou le switch si le Pokémon passe en-dessous de la moitié de sa Vitalité.</p>"
+    }
+  },
+  {
+    "name": "Esprit Vital",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche le Pokémon d'être endormi.</p>"
+    }
+  },
+  {
+    "name": "Essaim",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des attaques de type Insecte de 50% lorsque le Pokémon a moins d'1/3 de sa Vitalité max.</p>"
+    }
+  },
+  {
+    "name": "Expert Acier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des capacités de type Acier de 50%.</p>"
+    }
+  },
+  {
+    "name": "Expul'Sable",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon déclenche une tempête de sable qui dure 5 tours (8 avec la Roche Lisse) quand il subit une attaque.</p>"
+    }
+  },
+  {
+    "name": "Expuls'Organes",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Inflige des dégâts équivalents à la Vitalité restante après le coup de grâce.</p>"
+    }
+  },
+  {
+    "name": "Fantômasque",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le premier coup porté au lanceur est absorbé par le déguisement.</p>"
+    }
+  },
+  {
+    "name": "Farceur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la priorité des attaques de statut d'un niveau.</p>"
+    }
+  },
+  {
+    "name": "Fermeté",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre les attaques OHKO. À partir de la 5ème génération, ce talent fait aussi conserver 1 de Vitalité au Pokémon même après une attaque qui aurait dû le terrassé, s'il a toute sa Vitalité.</p>"
+    }
+  },
+  {
+    "name": "Feuille Garde",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Soigne les altérations d'état par temps ensoleillé.</p>"
+    }
+  },
+  {
+    "name": "Filature",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Inflige le double de dégâts aux Pokémon arrivant au milieu d'un combat.</p>"
+    }
+  },
+  {
+    "name": "Filtre",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Retire 1/4 des dégâts subis lors d'une attaque super efficace.</p>"
+    }
+  },
+  {
+    "name": "Flora-Voile",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la diminution des statistiques des alliés de type Plante par les Pokémon adverses.</p>"
+    }
+  },
+  {
+    "name": "Force Pure",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la Force du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Force Sable",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lors d'une tempête de sable, la puissance des attaques de type Acier, Roche et Sol augmente de 30 %.</p>"
+    }
+  },
+  {
+    "name": "Force Soleil",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Concentration de 50% par temps ensoleillé, mais diminue la Vitalité de 1/10ème par tour.</p>"
+    }
+  },
+  {
+    "name": "Fouille",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet de connaitre l'objet tenu d'un Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Frein",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon attaque toujours en second pour deux attaques de même priorité.</p>"
+    }
+  },
+  {
+    "name": "Fuite",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Assure la fuite du Pokémon contre les pokémons sauvages. Lui permet également de se défaire des liens et étreintes.</p>"
+    }
+  },
+  {
+    "name": "Garde Amie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Réduire de 25% les dégâts infligés aux alliés en combat double ou triple.</p>"
+    }
+  },
+  {
+    "name": "Garde Magik",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon ne subit de dégâts que lors d'attaques directes.</p>"
+    }
+  },
+  {
+    "name": "Garde Mystik",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Ne subit que les dégâts d'attaques super efficaces.</p>"
+    }
+  },
+  {
+    "name": "Gaz Inhibiteur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Neutralise les talents des autres Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Glissade",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la Dextérité par temps de pluie.</p>"
+    }
+  },
+  {
+    "name": "Gloutonnerie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon utilise la baie portée lorsque la Vitalité descend en dessous de 50%.</p>"
+    }
+  },
+  {
+    "name": "Gluco-Voile",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche les Pokémon alliés de s'endormir.</p>"
+    }
+  },
+  {
+    "name": "Glue",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la perte de l'objet tenu.</p>"
+    }
+  },
+  {
+    "name": "Griffe Dure",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 33% la puissance des attaques directes.</p>"
+    }
+  },
+  {
+    "name": "Heavy Metal",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double la masse du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Herbivore",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Si le Pokémon est touché par une attaque de type Plante, sa Force augmente de 1. De plus, il ne reçoit aucun dégât,</p>"
+    }
+  },
+  {
+    "name": "Hydrata-Son",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Toutes les attaques sonores du Pokémon prennent le type Eau.</p>"
+    }
+  },
+  {
+    "name": "Hydratation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Soigne les altérations d'état par temps de pluie.</p>"
+    }
+  },
+  {
+    "name": "Hyper Cutter",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Empêche la diminution d'attaque du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Hypersommeil",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche de subir toute altération de statut autres que le sommeil.</p>"
+    }
+  },
+  {
+    "name": "Ignifuge",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Divise par 2 les dégâts des attaques de type Feu et les effets de brûlure subis par le Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Ignifu-Voile",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre la brûlure.</p>"
+    }
+  },
+  {
+    "name": "Illusion",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsqu'il entre en combat, le Pokémon prend l'apparence du dernier Pokémon de l'équipe.</p>"
+    }
+  },
+  {
+    "name": "Impassible",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente de 1 la Dextérité du Pokémon lorsqu'il est apeuré.</p>"
+    }
+  },
+  {
+    "name": "Imposteur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon entrant en combat prend automatiquement l'apparence du Pokémon adverse. Il copie son talent, ses stats, ses modifications de statistiques, ses attaques.</p>"
+    }
+  },
+  {
+    "name": "Impudence",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Monte la Force du Pokémon de 1 lorsqu'il met un adversaire K.O.</p>"
+    }
+  },
+  {
+    "name": "Inconscient",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Ignore les améliorations de statistiques du Pokémon adverse, à l'exception de sa Dextérité.</p>"
+    }
+  },
+  {
+    "name": "Infiltration",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche les attaques de protection adverses tels que Protection ou Mur Lumière de fonctionner. N'influe pas sur Détection et Abri.</p>"
+    }
+  },
+  {
+    "name": "Insomnia",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche le Pokémon d'être endormi.</p>"
+    }
+  },
+  {
+    "name": "Intimidation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Diminue de 1 la Force du Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Isograisse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les dégâts provoqués par les attaques des types Feu ou Glace sont divisés par 2.</p>"
+    }
+  },
+  {
+    "name": "Joli Sourire",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>A 30% de chance de provoquer l'attirance du Pokémon adverse ayant touché directement le Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Lame Indomptable",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la Force de 1 lorsque le Pokémon entre sur le terrain.</p>"
+    }
+  },
+  {
+    "name": "Lavabo",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Attire toutes les attaques de type Eau. Augmente de 1 la Concentration du Pokémon recevant l'attaque. Le Pokémon recevant l'attaque ne subit aucun dégât</p>"
+    }
+  },
+  {
+    "name": "Lentiteintée",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double les dégâts des attaques peu efficaces portées au Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Lévitation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre les attaques de type Sol.</p>"
+    }
+  },
+  {
+    "name": "Light Metal",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Divise par deux la masse du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Longue Portée",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Toutes les capacités du Pokémon sont considérées comme sans contact.</p>"
+    }
+  },
+  {
+    "name": "Lumiattirance",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon attire facilement les Pokémons sauvages</p>"
+    }
+  },
+  {
+    "name": "Lunatique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Aléatoirement, à la fin de chaque tour, une statistique du Pokémon augmente de 2, et une autre baisse de 1 (précision et esquive comprises).</p>"
+    }
+  },
+  {
+    "name": "Magicien",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Vole l'objet d'une cible après l'avoir touché avec une attaque directe.</p>"
+    }
+  },
+  {
+    "name": "Magnépiège",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la fuite et le changement des Pokémon de type Acier.</p>"
+    }
+  },
+  {
+    "name": "Maladresse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche l'utilisation et/ou ignore l'effet des objets tenus en combat.</p>"
+    }
+  },
+  {
+    "name": "Marque Ombre",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la fuite des Pokémon sauvage et le changement du Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Matinal",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Réduit le nombre de tours de sommeil du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Mauvais Rêve",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Fait perdre 1/10ème de sa Vitalité max au Pokémon adverse s'il est endormi.</p>"
+    }
+  },
+  {
+    "name": "Mèche Rebelle",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Baisse de 1 la Dextérité de l'attaquant lorsque le Pokémon subit une attaque directe.</p>"
+    }
+  },
+  {
+    "name": "Médic Nature",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon est soigné de toute altération d'état lorsqu'il est changé ou en fin de combat.</p>"
+    }
+  },
+  {
+    "name": "Méga Blaster",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Un Pokémon doté de ce talent verra la puissance de ses capacités d'aura augmentée de 50%.</p>"
+    }
+  },
+  {
+    "name": "Mer Primaire",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Fait tomber une Pluie ne pouvant être annulée par capacité ou talent tant que le Pokémon est en jeu. Annule toutes les capacités de type Feu.</p>"
+    }
+  },
+  {
+    "name": "Métallo-Garde",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la réduction de statistiques imposées par l'adversaire (que ce soit par capacités ou talents).</p>"
+    }
+  },
+  {
+    "name": "Météo",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Change le type et la forme du Pokémon selon le climat.</p>"
+    }
+  },
+  {
+    "name": "Mimétisme",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon adopte le même type que le terrain lorsqu'un champ est actif.</p>"
+    }
+  },
+  {
+    "name": "Minus",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Concentration de 50% en match double, si le partenaire à le talent Plus.</p>"
+    }
+  },
+  {
+    "name": "Miroir Magik",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Retourne les attaques de statut contre l'adversaire.</p>"
+    }
+  },
+  {
+    "name": "Mode Transe",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon change de forme et modifie la répartition de ses statistiques lorsque sa Vitalité max sont inférieurs à 50%.</p>"
+    }
+  },
+  {
+    "name": "Moiteur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche l'utilisation d'attaques autodestructrices par le Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Momie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon subit une attaque de contact, le talent de l'adversaire devient Momie. Ce talent est sans effet en lui-même.</p>"
+    }
+  },
+  {
+    "name": "Motorisé",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise le Pokémon contre les attaques de type Électrik et augmente la Dextérité du Pokémon de 1 par attaque Électrik subie.</p>"
+    }
+  },
+  {
+    "name": "Mue",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>À chaque tour, le Pokémon a 33% de chance d'être soigné d'une altération d'état.</p>"
+    }
+  },
+  {
+    "name": "Multi-Coups",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Utilise toujours le nombre de coups maximum d'une attaque.</p>"
+    }
+  },
+  {
+    "name": "Multiécaille",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon possède 100% de sa Vitalité, alors les dégâts infligés par l'adversaire sont divisés par deux.</p>"
+    }
+  },
+  {
+    "name": "Multitype",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le type et la forme du Pokémon changent en fonction de la plaque qu'il porte.</p>"
+    }
+  },
+  {
+    "name": "Mûrissement",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon fait mûrir la Baie qu'il tient et double ainsi son effet.</p>"
+    }
+  },
+  {
+    "name": "Nerfs d'Acier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet d'ignorer l'effet des capacités ou des talents qui attirent les capacités.</p>"
+    }
+  },
+  {
+    "name": "Normalise",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Toutes les attaques du Pokémon sont considérées comme étant de type Normal.</p>"
+    }
+  },
+  {
+    "name": "Œil Composé",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Double la précision du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Osmose",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Obtient le Talent du Pokémon allié tombé K.O.</p>"
+    }
+  },
+  {
+    "name": "Osmose Équine",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Combine les talents Tension et Blanche Ruade pour Sylveroy Cavalier du Froid ou Tension et Sombre Ruade pour Sylveroy Cavalier d'Effroi.</p>"
+    }
+  },
+  {
+    "name": "Paratonnerre",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Attire toutes les attaques de type Électrik et les rend inefficace. Ce talent augmente aussi la Concentration du Pokémon recevant l'attaque de 1.</p>"
+    }
+  },
+  {
+    "name": "Pare-Balles",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Protège contre les capacités balles et bombes, par exemple Balle Graine ou Canon Graine.</p>"
+    }
+  },
+  {
+    "name": "Peau Céleste",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Transforme les capacités de type Normal en type Vol et augmente leur puissance de 20%</p>"
+    }
+  },
+  {
+    "name": "Peau Dure",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Fait perdre 1/10 de la Vitalité du Pokémon adverse ayant lancé une attaque de contact.</p>"
+    }
+  },
+  {
+    "name": "Peau Électrique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Transforme les capacités de type Normal en type Électrik et augmente leur puissance de 20%.</p>"
+    }
+  },
+  {
+    "name": "Peau Féérique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Transforme les capacités de type Normal en type Fée et augmente leur puissance de 20%.</p>"
+    }
+  },
+  {
+    "name": "Peau Gelée",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Transforme les capacités de type Normal en type Glace et augmente leur puissance de 20%.</p>"
+    }
+  },
+  {
+    "name": "Peau Miracle",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>50% de chance de faire échouer les attaques de statut portées par l'adversaire.</p>"
+    }
+  },
+  {
+    "name": "Peau Sèche",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les attaques de type Eau soignent le Pokémon, qui regagne 1/4 de sa Vitalité max. Par temps de pluie, il gagne 1/10ème de sa Vitalité max par tour. Les attaques de type Feu infligent 25% de dégâts en plus. Par temps ensoleillé, il perd 1/10ème de sa Vitalité max par tour.</p>"
+    }
+  },
+  {
+    "name": "Phobique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Si le Pokémon est touché par une attaque de type Insecte, Spectre ou Ténèbres, sa Dextérité augmente de 1.</p>"
+    }
+  },
+  {
+    "name": "Pickpocket",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon subit une attaque physique, il récupère l'objet tenu par son adversaire.</p>"
+    }
+  },
+  {
+    "name": "Pied Confus",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente l'esquive de 20% lorsque le Pokémon est confus.</p>"
+    }
+  },
+  {
+    "name": "Pied Véloce",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Dextérité de 50% lorsque le Pokémon subit une altération d'état.</p>"
+    }
+  },
+  {
+    "name": "Piège",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche la fuite et le changement du Pokémon adverse, s'il est au sol.</p>"
+    }
+  },
+  {
+    "name": "Plus",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Concentration de 50% en match double, si le partenaire à le talent Minus.</p>"
+    }
+  },
+  {
+    "name": "Poing de Fer",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 20% la puissance des attaques de 'Poing'.</p>"
+    }
+  },
+  {
+    "name": "Poing Invisible",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet d'ignorer Abri et ses équivalents (sauf Gardomax) si la capacité utilisée est de contact.</p>"
+    }
+  },
+  {
+    "name": "Point Poison",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>30% de chance de provoquer l'empoisonnement du Pokémon adverse ayant lancé une attaque de contact.</p>"
+    }
+  },
+  {
+    "name": "Poisseux",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Baisse de 1 la Dextérité des Pokémon qui touchent ce Pokémon avec une attaque directe.  Si c'est avec une attauqe multi-coup, chaque coup provoque l'activation de ce talent.</p>"
+    }
+  },
+  {
+    "name": "Pose Spore",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>30% de chance de provoquer l'empoisonnement, le sommeil ou la paralysie du Pokémon adverse ayant lancé une attaque de contact.</p>"
+    }
+  },
+  {
+    "name": "Prédiction",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Alerte le Pokémon de l'attaque la plus puissante du Pokémon adverse (en terme de dégât de base).</p>"
+    }
+  },
+  {
+    "name": "Pression",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double l'utilisation d'énergie des attaques offensives du Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Prestance Royale",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche l'adversaire d'utiliser des attaques de priorité.</p>"
+    }
+  },
+  {
+    "name": "Prioguérison",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Donne la priorité aux capacités de soin.</p>"
+    }
+  },
+  {
+    "name": "Prisme-Armure",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Réduit de 1/4 les dégâts subis lorsque le Pokémon est touché par une capacité super efficace.</p>"
+    }
+  },
+  {
+    "name": "Prognathe",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 50% la puissance des attaques à base de morsures.</p>"
+    }
+  },
+  {
+    "name": "Propulseur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet d'ignorer l'effet des capacités ou des talents qui attirent les capacités.</p>"
+    }
+  },
+  {
+    "name": "Protéen",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Change le type du Pokémon en celui de toute capacité qu'il utilise.</p>"
+    }
+  },
+  {
+    "name": "Puanteur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les attaques physiques ont 10% d'apeurer la cible.</p>"
+    }
+  },
+  {
+    "name": "Punk Rock",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 30% la puissance des capacités basées sur le son. Le Pokémon ne subit que la moitié des dégâts quand il est touché par ce genre de capacités.</p>"
+    }
+  },
+  {
+    "name": "Querelleur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet de toucher les Pokémon de type Spectre avec des attaques de type Normal ou Combat.</p>"
+    }
+  },
+  {
+    "name": "Rage Brûlure",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Concentration du Pokémon de 50% en cas de brûlure.</p>"
+    }
+  },
+  {
+    "name": "Rage Poison",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Force du Pokémon de 50% en cas d'empoisonnement.</p>"
+    }
+  },
+  {
+    "name": "Ramassage",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Donne une chance au Pokémon de ramasser un objet après un combat.</p>"
+    }
+  },
+  {
+    "name": "Ramasse Ball",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le détenteur de Ramasse Ball ne tient pas d'objet et que son dresseur rate la capture d'un Pokémon sauvage, il récupère la première Ball perdue, quel que soit son modèle.</p>"
+    }
+  },
+  {
+    "name": "Rassemblement",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque Zygarde possède moins de la moitié de sa Vitalité max, il peut accéder à la Forme Parfaite.</p>"
+    }
+  },
+  {
+    "name": "Receveur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Obtient le Talent du Pokémon allié tombé K.O.</p>"
+    }
+  },
+  {
+    "name": "Récolte",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Une baie consommée par le Pokémon a 50% de chances d'être récupérée à la fin de chaque tour.</p>"
+    }
+  },
+  {
+    "name": "Regard Vif",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Empêche la perte de précision.</p>"
+    }
+  },
+  {
+    "name": "Régé-Force",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Restaure 1/3 de la Vitalité max si le Pokémon est retiré du combat.</p>"
+    }
+  },
+  {
+    "name": "Repli Tactique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Fuit le combat ou échange sa place avec un autre Pokémon de l'équipe si le Pokémon passe en dessous de 50% de sa Vitalité max.</p>"
+    }
+  },
+  {
+    "name": "Rideau Neige",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente l'esquive de 20% par temps de grêle. Immunise les Pokémon n'ayant pas le type Glace contre la grêle.</p>"
+    }
+  },
+  {
+    "name": "Rivalité",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente la Force et la Concentration de 25% si le Pokémon adverse est de même sexe. Les diminue s'il est de sexe opposé.</p>"
+    }
+  },
+  {
+    "name": "Sable Humide",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente l'Endurance de 2 s'il est touché par une attaque de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Sable Volant",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Déclenche une tempête de sable qui dure 5 tours (8 avec la Roche Lisse) quand le Pokémon entre en jeu.</p>"
+    }
+  },
+  {
+    "name": "Sans Limite",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 30% la puissance des attaques pouvant avoir un effet secondaire. L'effet secondaire est annulé.</p>"
+    }
+  },
+  {
+    "name": "Sécheresse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Crée un temps ensoleillé pendant 5 tours (8 tours avec Roche Chaude) quand le Pokémon entre en jeu.</p>"
+    }
+  },
+  {
+    "name": "Sérénité",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double les chances de réussite des effets secondaires des attaques.</p>"
+    }
+  },
+  {
+    "name": "Simple",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double les effets des modifications de statistiques, positives ou négatives.</p>"
+    }
+  },
+  {
+    "name": "Sniper",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Triple la puissance des coups critiques.</p>"
+    }
+  },
+  {
+    "name": "Soin Poison",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon récupère 1/10è de sa Vitalité max par tour lors d'un empoisonnement.</p>"
+    }
+  },
+  {
+    "name": "Solide Roc",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Retire 1/4 des dégâts subis si le Pokémon reçoit une attaque super efficace.</p>"
+    }
+  },
+  {
+    "name": "Sombre Ruade",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand le Pokémon met un ennemi K.O., sa Concentration augmente de 1.</p>"
+    }
+  },
+  {
+    "name": "Souffle Delta",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Annule tout effet de climat, même Mer Primaire et Terre Finale. Annule les faiblesses du type Vol.</p>"
+    }
+  },
+  {
+    "name": "Spectro-Bouclier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Divise par 2 les dégâts infligés par une capacité si la Vitalité est au maximum.</p>"
+    }
+  },
+  {
+    "name": "Statik",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>30% de chance de provoquer la paralysie du Pokémon adverse ayant lancé une attaque de contact.</p>"
+    }
+  },
+  {
+    "name": "Suintement",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les attaques absorbantes du Pokémon adverse lui font perdre de la Vitalité.</p>"
+    }
+  },
+  {
+    "name": "Surf Caudal",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Double la Dextérité du Pokémon lorsqu'il y a un Champ Électrifié.</p>"
+    }
+  },
+  {
+    "name": "Symbiose",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Passe un objet tenu à un Pokémon allié lorsque l'allié utilise son objet.</p>"
+    }
+  },
+  {
+    "name": "Synchro",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Toute altération d'état subie est transmise au Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Synergie",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon change de forme et la puissance de l'attaque Sheauriken passe à 3 et touche 3 fois après avoir mis K.O. un Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Système Alpha",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Permet de changer de type selon l'objet tenu.</p>"
+    }
+  },
+  {
+    "name": "Technicien",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 50% la puissance des attaques dont la puissance est inférieure ou égale à 6.</p>"
+    }
+  },
+  {
+    "name": "Télécharge",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente de 1 la Force ou la Concentration du Pokémon, selon la statistique de défense (Endurance/Volonté) la plus faible du Pokémon adverse.</p>"
+    }
+  },
+  {
+    "name": "Télépathe",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Anticipe et évite les attaques des alliés en combat double ou triple.</p>"
+    }
+  },
+  {
+    "name": "Téméraire",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 20% la puissance des attaques infligeant des dégâts de recul.</p>"
+    }
+  },
+  {
+    "name": "Tempo Perso",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre la confusion.</p>"
+    }
+  },
+  {
+    "name": "Tension",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche l'adversaire de consommer sa baie.</p>"
+    }
+  },
+  {
+    "name": "Téra-Voltage",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Peut toucher un Pokémon adverse malgré son talent.</p>"
+    }
+  },
+  {
+    "name": "Terre Finale",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Crée un temps ensoleillé ne pouvant être annulé par capacité ou talent tant que le Pokémon est en jeu. Annule toutes les capacités de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Tête de Gel",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le glaçon sur la tête du Pokémon encaisse une attaque physique à sa place, mais sa destruction modifie son apparence. Le glaçon se reforme quand il grêle.</p>"
+    }
+  },
+  {
+    "name": "Tête de Roc",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon ne subit pas de dégâts de contrecoup.</p>"
+    }
+  },
+  {
+    "name": "Tir Vif",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon a 20% de chance d'attaquer en premier.</p>"
+    }
+  },
+  {
+    "name": "Toison Épaisse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Divise par deux les dégâts reçus lors d'une attaque physique.</p>"
+    }
+  },
+  {
+    "name": "Toison Herbue",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente l'Endurance de 50% lorsque Champ Herbu est en vigueur.</p>"
+    }
+  },
+  {
+    "name": "Torche",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le Pokémon est touché par une attaque de type feu, annule les dégâts de cette attaque et augmente de 50% la puissance des attaques de type Feu lancées.</p>"
+    }
+  },
+  {
+    "name": "Torrent",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente la puissance des attaques de type Eau de 50% lorsque le Pokémon a moins d'1/3 de sa Vitalité max.</p>"
+    }
+  },
+  {
+    "name": "Toxitouche",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>30% de chance d'empoisonner l'adversaire après lui avoir porté une attaque physique.</p>"
+    }
+  },
+  {
+    "name": "Transistor",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 50% la puissance des attaques de type Électrik du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Turbine",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>La Dextérité du Pokémon augmente de 6 s'il est touché par une capacité de type Feu ou Eau en combat.</p>"
+    }
+  },
+  {
+    "name": "Turbo",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : La Dextérité du Pokémon augmente de 1 à chaque fin de tour.</p>"
+    }
+  },
+  {
+    "name": "TurboBrasier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Peut toucher un Pokémon adverse malgré son talent.</p>"
+    }
+  },
+  {
+    "name": "Vaccin",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre l'empoisonnement.</p>"
+    }
+  },
+  {
+    "name": "Ventouse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche d'être changé de force par une attaque adverse.</p>"
+    }
+  },
+  {
+    "name": "Victorieux",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Monte de 10% la précision des alliés en combat double ou triple.</p>"
+    }
+  },
+  {
+    "name": "Voile Pastel",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Protège le Pokémon et ses alliés contre toutes les altérations de statut liées à l'empoisonnement. En Combat Duo et Multi, soigne un allié empoisonné lorsque le Pokémon arrive sur le terrain.</p>"
+    }
+  },
+  {
+    "name": "Voile Sable",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Statistiques : Augmente l'esquive de 20% lors d'une tempête de sable et immunise contre ses dégâts.</p>"
+    }
+  },
+  {
+    "name": "Libéro",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Change le type du Pokémon en celui de toute capacité qu'il utilise.</p>"
+    }
+  },
+  {
+    "name": "Incisif",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les attaques tranchantes de ce Pokémon gagne 50% de puissance</p>"
+    }
+  },
+  {
+    "name": "Oeil Révélateur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>La Précision du lanceur ne peut être baissé et il ignore les modifications d'esquive de sa cible. Ses attaques de type Normal et Combat peuvent toucher les Pokémons de type Spectre, malgré leur immunité.</p>"
+    }
+  },
+  {
+    "name": "Odeur Tenace",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Un pokémon utilisant une attaque de contact sur ce pokémon perdra son Talent et gagnera à la place le talent Odeur Étrange</p>"
+    }
+  },
+  {
+    "name": "Bien Cuit",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le pokémon estg touché par une attaque de type Feu,  les dégats sont annulés et sa Dextérité augmente de 2</p>"
+    }
+  },
+  {
+    "name": "Semencier",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le pokémon subit une attaque offensive, il applique un Champ Herbu à la zone pendant 5 tours</p>"
+    }
+  },
+  {
+    "name": "Sel Purificateur",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise contre les altérations de statut majeures (paralysie, sommeil, gel, brûlure, empoisonnement) et réduit de moitié les dégâts des attaques de type Spectre subies</p>"
+    }
+  },
+  {
+    "name": "Opportuniste",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Copie les augmentation de statistique des pokémons adverses</p>"
+    }
+  },
+  {
+    "name": "Courroupace",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand le pokémon atteint la moitié de sa Vitalité max par une attaque adverse, son Endurance et sa Volonté baisse de 1, mais sa Force, sa Concentration et sa Dextérité augmente de 1.</p>"
+    }
+  },
+  {
+    "name": "Force Fongique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon agit toujours plus lentement quand il utilise une capacité de statut, mais il ignore les talents adverses.</p>"
+    }
+  },
+  {
+    "name": "Aéroporté",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>La Force du Pokémon augmente de 1 si un vent arrière souffle ou s'il est touché par une capacité faisant appel au vent. Dans ce dernier cas, il ne subit aucun dégât.</p>"
+    }
+  },
+  {
+    "name": "Chien de Garde",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>La Force du Pokémon augmente de 1 s'il subit l'effet du talent Intimidation. Les capacités ou objets qui font changer de Pokémon n'ont aucun effet sur lui.</p>"
+    }
+  },
+  {
+    "name": "Turbine Éolienne",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon est touché par une capacité faisant appel au vent, il se charge en électricité, doublant la puissance de sa prochaine attaque de type Electrik.</p>"
+    }
+  },
+  {
+    "name": "Grecharge",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon subit des dégâts, il se charge en électricité, doublant la puissance de sa prochaine attaque de type Electrik</p>"
+    }
+  },
+  {
+    "name": "Collab",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Copie les modifications de statistique d'un allié</p>"
+    }
+  },
+  {
+    "name": "Dépôt Toxique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand le pokémon est touché par une attaque physique, il répand dans le Zone Ennemie des Pics Toxiks</p>"
+    }
+  },
+  {
+    "name": "Absorbe-Terre",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le Pokémon est touché par une capacité de type Sol, il regagne 1/4 de sa Vitalité Max au lieu de subir des dégâts.</p>"
+    }
+  },
+  {
+    "name": "Supermutation",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le Pokémon prend sa Forme Super en quittant le combat. Ce talent ne peut être modifié, échangé, perdu, ou copié par un talent ou une attaque</p>"
+    }
+  },
+  {
+    "name": "Porte-Roche",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Augmente de 50% la puissance des attaques de type Roche du pokémon</p>"
+    }
+  },
+  {
+    "name": "Paléosynthèse",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le pokémon gagne +1 dans sa caractéristique la plus élevé si le soleil brille ou si il possède un capsule d'Énergie Booster. Si le Pokémon tient une capsule d'Énergie Booster et que le soleil brille, il conserve l'objet et ne le consomme que lorsque le soleil cesse de briller.</p>"
+    }
+  },
+  {
+    "name": "Général Suprême",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>A l'entrée du pokémon en combat, augmente sa Force et sa Concentration de 1 par pokémon KO dans votre équipe.</p>"
+    }
+  },
+  {
+    "name": "Armure Caudale",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Empêche les pokémons adverses d'utiliser des attaques de priorité</p>"
+    }
+  },
+  {
+    "name": "Ruminant",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Les effets d'une Baie mangée par ce pokémon s'applique également au tour suivant.</p>"
+    }
+  },
+  {
+    "name": "Commandant",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>En Combat Duo, si un Nigirigon ayant ce talent arrive sur le terrain aux côtés d'un Oyacata allié en jeu, alors il est avalé par l'Oyacata. Nigirigon ne peut alors plus agir directement, mais reste considéré comme présent sur le terrain. En retour, toutes les statistiques d'Oyacata augmentent de 2 (hormis l'Esquive et la Précision), mais il ne peut plus être retiré du combat tant que le Nigirigon est dans sa bouche. Les capacités lancées sur Nigirigon échouent systématiquement une fois qu'il est avalé, mais il peut toujours subir des dégâts résiduels et donc tomber K.O.</p>"
+    }
+  },
+  {
+    "name": "Moteur à Hadrons",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>En rentrant sur le terrain, le pokémon active un Champ Électrifié. Le pokémon gagne 1 en concentration tant qu'il est sur un Champ Électrifié.</p>"
+    }
+  },
+  {
+    "name": "Pouls Orichalque",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Active le soleil en entrant sur le Terrain. La Force du pokémon augmente de 1 tant qu'il est sous le soleil.</p>"
+    }
+  },
+  {
+    "name": "Charge Quantique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Le pokémon gagne +1 dans sa caractéristique la plus élevé si il y a un Champ Électrifié ou si il possède un capsule d'Énergie Booster. Si le Pokémon tient une capsule d'Énergie Booster et qu'il y a un Champ Électrifié, il conserve l'objet et ne le consomme que lorsque le champ s'arrête.</p>"
+    }
+  },
+  {
+    "name": "Perles du Fléau",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Tant qu'il est sur le terrain, La volonté des pokémons est réduites de 25%</p>"
+    }
+  },
+  {
+    "name": "Bois du Fléau",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Tant qu'il est sur le terrain, la Force des pokémons présentes baisse de 25%</p>"
+    }
+  },
+  {
+    "name": "Épée du Fléau",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Tant qu'il est sur le terrain, l'Endurance de tous les pokémons présents baisse de 25%.</p>"
+    }
+  },
+  {
+    "name": "Urne du Fléau",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Tant que le pokémon est présent sur le terrain, la Concentration de tous les pokémons présents baisse de 25%</p>"
+    }
+  },
+  {
+    "name": "Corps en Or",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Immunise le pokémon au attaques de type Autre des autres pokémons.</p>"
+    }
+  },
+  {
+    "name": "Thermodynamique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le Pokémon est touché par une capacité de type Feu, sa Force augmente. de 1 Il ne peut pas être brûlé.</p>"
+    }
+  },
+  {
+    "name": "Emprise Toxique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Si le pokémon empoisonne directement le pokémon, il le rend également confus.</p>"
+    }
+  },
+  {
+    "name": "Téraformation 0",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsque le pokémon entre en combat il utilise son pouvoir enfoui pour annuler les effets de la météo et des champs actifs.</p>"
+    }
+  },
+  {
+    "name": "Téra-Carapace",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Grâce à sa carapace qui renferme l'énergie de tous les types, les capacités subies par ce Pokémon quand sa Vitalité est au maximum ne sont pas très efficaces.</p>"
+    }
+  },
+  {
+    "name": "Téramorphose",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Quand le Pokémon rejoint le combat, il absorbe l'énergie alentour et prend sa forme Téracristal.</p>"
+    }
+  },
+  {
+    "name": "Force Mémorielle",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsqu'il Téracristallise, Le pokémon augmente l'une de ses statistiques d'un niveau selon le masque qu'il porte. S'il est sous forme de Masque Turquoise, sa Dextérité augmente de 1; s'il porte le Masque du Puits, sa Volonté augmente de 1; s'il porte le Masque du Fourneau, sa Force augmente de 1; s'il porte le Masque de la Pierre, son Endurance augmente de 1.</p>"
+    }
+  },
+  {
+    "name": "Chaîne Toxique",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsqu'un Pokémon doté de ce talent touche un adversaire avec une capacité, il a 30% chances de l'empoisonner gravement.</p>"
+    }
+  },
+  {
+    "name": "Aux Petits Soins",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>Lorsqu'il entre au combat, un Pokémon doté de ce talent rend à son allié 1/4 de sa Vitalité max. Ce talent est sans effet en Combat Solo.</p>"
+    }
+  },
+  {
+    "name": "Nectar Mielleux",
+    "system": {
+      "emplacement": "premier",
+      "description": "<p>La première fois que le Pokémon entre au combat, une odeur de nectar sucré se répand sur le terrain, ce qui baisse l'Esquive de l'adversaire. de 1</p>"
+    }
+  }
+]
