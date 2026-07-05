@@ -1,0 +1,30 @@
+<div class="hk-chat-card hk-jet-attaque">
+  <header class="hk-chat-header">
+    <strong>{{attaquant.name}}</strong> → <strong>{{cible.name}}</strong>
+  </header>
+  <p class="hk-attaque-nom">
+    {{attaque.name}}
+    <span class="hk-badge hk-type-{{attaque.system.type}}">{{typeLabel}}</span>
+    <span class="hk-badge">{{categorieLabel}}</span>
+  </p>
+
+  {{#if seuil}}
+    <p>{{localize "HK.Jet.Marge"}} : {{marge}} — {{localize "HK.Jet.Seuil"}} : {{seuil}}+ ({{jetAttaque}} au d10)</p>
+  {{else if jetAttaque}}
+    <p>{{jetAttaque}} au d100 (précision {{precisionEffective}}%)</p>
+  {{/if}}
+
+  {{#if touche}}
+    <p class="hk-resultat hk-reussite">
+      {{localize "HK.Jet.Touche"}}
+      {{#if critique}}<strong>{{localize "HK.Jet.Critique"}}</strong>{{/if}}
+    </p>
+    {{#if degats}}<p class="hk-degats">{{localize "HK.Jet.Degats"}} : <strong>{{degats}}</strong></p>{{/if}}
+    {{#if efficaciteLabel}}<p class="hk-efficacite">{{localize efficaciteLabel}}</p>{{/if}}
+  {{else}}
+    <p class="hk-resultat hk-echec">{{localize "HK.Jet.Manque"}}</p>
+  {{/if}}
+  {{#if echecCritique}}
+    <p class="hk-resultat hk-echec-critique">{{localize "HK.Jet.EchecCritique"}}</p>
+  {{/if}}
+</div>

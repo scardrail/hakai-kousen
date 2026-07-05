@@ -1,0 +1,122 @@
+<div class="hk-sheet hk-dresseur">
+  <header class="hk-header">
+    <img class="hk-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}">
+    <div class="hk-header-champs">
+      <input class="hk-nom" type="text" name="name" value="{{actor.name}}">
+      <div class="hk-header-ligne">
+        <label>{{localize "HK.Sheet.Dresseur.Vocation"}}
+          <input type="text" name="system.vocation" value="{{system.vocation}}">
+        </label>
+        <label>{{localize "HK.Sheet.Dresseur.Nature"}}
+          <select name="system.nature">
+            <option value=""></option>
+            {{#each config.natures as |nature cle|}}
+              <option value="{{cle}}" {{#if (eq ../system.nature cle)}}selected{{/if}}>{{nature.nom}}</option>
+            {{/each}}
+          </select>
+        </label>
+        <label>{{localize "HK.Sheet.Dresseur.Argent"}}
+          <input type="number" name="system.argent" value="{{system.argent}}">
+        </label>
+        <label>{{localize "HK.Sheet.Dresseur.XpDresseur"}}
+          <input type="number" name="system.xp" value="{{system.xp}}">
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <section class="hk-caracteristiques">
+    {{#each caracteristiquesList as |car|}}
+      <label class="hk-car">
+        <span>{{localize car.label}}</span>
+        <input type="number" name="system.caracteristiques.{{car.key}}.base" value="{{car.base}}" min="1">
+      </label>
+    {{/each}}
+    <label class="hk-car hk-vita">
+      <span>VITA</span>
+      <input type="number" name="system.vita.value" value="{{system.vita.value}}"> / {{system.vita.max}}
+    </label>
+  </section>
+
+  <section class="hk-colonnes">
+    <fieldset>
+      <legend>{{localize "HK.Sheet.Dresseur.Onglet.Competences"}}</legend>
+      <ul class="hk-item-liste">
+        {{#each competences as |item|}}
+          <li data-item-id="{{item.id}}">
+            <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
+            <input type="number" min="0" max="5" name="items.{{item.id}}.system.score" value="{{item.system.score}}">
+            <button type="button" data-action="itemUse">{{localize "HK.Sheet.Commun.JetCompetence"}}</button>
+            <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+      </ul>
+      <button type="button" data-action="itemCreate" data-type="competence">+ {{localize "TYPES.Item.competence"}}</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>{{localize "HK.Sheet.Dresseur.Onglet.Connaissances"}}</legend>
+      <ul class="hk-item-liste">
+        {{#each connaissances as |item|}}
+          <li data-item-id="{{item.id}}">
+            <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
+            <input type="number" min="0" max="5" name="items.{{item.id}}.system.score" value="{{item.system.score}}">
+            <button type="button" data-action="itemUse">{{localize "HK.Sheet.Commun.JetCompetence"}}</button>
+            <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+      </ul>
+      <button type="button" data-action="itemCreate" data-type="connaissance">+ {{localize "TYPES.Item.connaissance"}}</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>{{localize "TYPES.Item.specialisation"}}</legend>
+      <ul class="hk-item-liste">
+        {{#each specialisations as |item|}}
+          <li data-item-id="{{item.id}}">
+            <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
+            <span class="hk-item-detail">{{item.system.cible}}</span>
+            <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+      </ul>
+      <button type="button" data-action="itemCreate" data-type="specialisation">+ {{localize "TYPES.Item.specialisation"}}</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>{{localize "HK.Sheet.Dresseur.Onglet.Inventaire"}}</legend>
+      <ul class="hk-item-liste">
+        {{#each objets as |item|}}
+          <li data-item-id="{{item.id}}">
+            <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
+            <span class="hk-item-detail">×{{item.system.quantite}}</span>
+            <button type="button" data-action="itemUse">{{localize "HK.Sheet.Commun.Utiliser"}}</button>
+            <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+        {{#each armes as |item|}}
+          <li data-item-id="{{item.id}}">
+            <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
+            <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+      </ul>
+      <button type="button" data-action="itemCreate" data-type="objet">+ {{localize "TYPES.Item.objet"}}</button>
+      <button type="button" data-action="itemCreate" data-type="arme">+ {{localize "TYPES.Item.arme"}}</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>{{localize "HK.Sheet.Dresseur.Onglet.Equipe"}}</legend>
+      <ul class="hk-item-liste">
+        {{#each equipe as |pokemon|}}
+          <li><a class="hk-item-nom">{{pokemon.name}}</a></li>
+        {{/each}}
+      </ul>
+    </fieldset>
+  </section>
+
+  <section class="hk-historique">
+    <label>{{localize "HK.Sheet.Dresseur.Onglet.Historique"}}</label>
+    <textarea name="system.historique">{{{system.historique}}}</textarea>
+  </section>
+</div>

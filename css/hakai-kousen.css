@@ -1,0 +1,278 @@
+.hakai-kousen {
+  --hk-accent: #b5322c;
+  --hk-accent-soft: #e8c4c2;
+  --hk-bg-panel: rgba(0, 0, 0, 0.04);
+  --hk-border: rgba(0, 0, 0, 0.15);
+}
+
+.hk-sheet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 13px;
+}
+
+.hk-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.hk-portrait {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 2px solid var(--hk-accent);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.hk-header-champs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.hk-nom {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  border-bottom: 1px solid var(--hk-border);
+  background: transparent;
+}
+
+.hk-header-ligne {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hk-header-ligne label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  gap: 0.15rem;
+}
+
+.hk-checkbox {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.35rem !important;
+}
+
+.hk-caracteristiques {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background: var(--hk-bg-panel);
+  border-radius: 4px;
+}
+
+.hk-caracteristiques-pokemon {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.hk-car {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.2rem;
+}
+
+.hk-car-label {
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.hk-car-total {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--hk-accent);
+}
+
+.hk-car-detail {
+  display: flex;
+  gap: 0.25rem;
+  font-size: 0.65rem;
+}
+
+.hk-car-detail label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hk-car input[type="number"] {
+  width: 3rem;
+  text-align: center;
+}
+
+.hk-ressources,
+.hk-obeissance {
+  display: flex;
+  gap: 1rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--hk-bg-panel);
+  border-radius: 4px;
+  align-items: center;
+}
+
+.hk-sous-champ {
+  font-size: 0.65rem;
+  display: inline-flex;
+  gap: 0.2rem;
+  align-items: center;
+  margin-left: 0.35rem;
+}
+
+.hk-sous-champ input {
+  width: 2.5rem;
+}
+
+.hk-colonnes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem;
+}
+
+.hk-colonnes fieldset {
+  border: 1px solid var(--hk-border);
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+.hk-colonnes legend {
+  font-weight: 700;
+  padding: 0 0.3rem;
+}
+
+.hk-item-liste {
+  list-style: none;
+  margin: 0 0 0.35rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.hk-item-liste li {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.25rem;
+  border-radius: 3px;
+}
+
+.hk-item-liste li:nth-child(odd) {
+  background: var(--hk-bg-panel);
+}
+
+.hk-item-nom {
+  flex: 1;
+  cursor: pointer;
+}
+
+.hk-item-nom:hover {
+  text-decoration: underline;
+  color: var(--hk-accent);
+}
+
+.hk-item-detail {
+  font-size: 0.7rem;
+  opacity: 0.75;
+}
+
+.hk-item-liste input[type="number"] {
+  width: 2.5rem;
+}
+
+.hk-avertissement {
+  color: var(--hk-accent);
+  font-weight: 700;
+  margin: 0;
+}
+
+.hk-historique textarea {
+  width: 100%;
+  min-height: 4rem;
+}
+
+.hk-modif-stats ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hk-modif-stats li {
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+/* Cartes de chat */
+.hk-chat-card {
+  border: 1px solid var(--hk-border, #999);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+}
+
+.hk-chat-header {
+  margin-bottom: 0.25rem;
+}
+
+.hk-des {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.hk-de {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 3px;
+  border: 1px solid #999;
+  font-weight: 700;
+}
+
+.hk-de-succes {
+  background: #2e7d32;
+  color: white;
+  border-color: #2e7d32;
+}
+
+.hk-de-echec {
+  background: #b5322c;
+  color: white;
+  border-color: #b5322c;
+}
+
+.hk-resultat {
+  font-weight: 700;
+}
+
+.hk-reussite {
+  color: #2e7d32;
+}
+
+.hk-echec,
+.hk-echec-critique {
+  color: #b5322c;
+}
+
+.hk-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 8px;
+  background: var(--hk-accent-soft, #ddd);
+  margin-left: 0.25rem;
+}
