@@ -1,0 +1,223 @@
+{
+  "TYPES": {
+    "Actor": {
+      "dresseur": "Dresseur",
+      "pokemon": "Pokémon"
+    },
+    "Item": {
+      "attaque": "Attaque",
+      "talent": "Talent",
+      "competence": "Compétence",
+      "connaissance": "Connaissance",
+      "specialisation": "Spécialisation",
+      "objet": "Objet",
+      "ct": "CT/CS",
+      "arme": "Arme"
+    }
+  },
+  "HK": {
+    "Car": {
+      "For": "Force",
+      "End": "Endurance",
+      "Con": "Concentration",
+      "Vol": "Volonté",
+      "Dex": "Dextérité"
+    },
+    "CarAbbr": {
+      "for": "FOR",
+      "end": "END",
+      "con": "CON",
+      "vol": "VOL",
+      "dex": "DEX"
+    },
+    "Type": {
+      "normal": "Normal",
+      "feu": "Feu",
+      "eau": "Eau",
+      "plante": "Plante",
+      "electrik": "Électrik",
+      "glace": "Glace",
+      "combat": "Combat",
+      "poison": "Poison",
+      "sol": "Sol",
+      "vol": "Vol",
+      "psy": "Psy",
+      "insecte": "Insecte",
+      "roche": "Roche",
+      "spectre": "Spectre",
+      "dragon": "Dragon",
+      "tenebres": "Ténèbres",
+      "acier": "Acier",
+      "fee": "Fée"
+    },
+    "Categorie": {
+      "physique": "Physique",
+      "speciale": "Spéciale",
+      "autre": "Autre"
+    },
+    "Portee": {
+      "cible": "Cible",
+      "rayon": "Rayon",
+      "zone": "Zone",
+      "zoneAmie": "Zone amie",
+      "zoneEnnemie": "Zone ennemie",
+      "personnel": "Personnel",
+      "sonore": "Sonore"
+    },
+    "Rarete": {
+      "commun": "Commun",
+      "peuCommun": "Peu commun",
+      "starter": "Starter",
+      "rare": "Rare",
+      "tresRare": "Très rare",
+      "semiLegendaire": "Semi-légendaire",
+      "legendaire": "Légendaire"
+    },
+    "Genre": {
+      "male": "Mâle",
+      "femelle": "Femelle",
+      "asexue": "Asexué"
+    },
+    "RareteCompetence": {
+      "commune": "Commune",
+      "peuCommune": "Peu commune",
+      "rare": "Rare"
+    },
+    "CategorieObjet": {
+      "baie": "Baie",
+      "ball": "Ball",
+      "medicament": "Médicament",
+      "tenu": "Objet tenu",
+      "noigrume": "Noigrume",
+      "equipement": "Équipement",
+      "cristalZ": "Cristal Z",
+      "megaPierre": "Méga-Pierre",
+      "divers": "Divers"
+    },
+    "Statut": {
+      "brulure": "Brûlure",
+      "poison": "Empoisonnement",
+      "poisonGrave": "Empoisonnement grave",
+      "paralysie": "Paralysie",
+      "sommeil": "Sommeil",
+      "gel": "Gel",
+      "confusion": "Confusion",
+      "attraction": "Attraction",
+      "peur": "Peur",
+      "piege": "Piège"
+    },
+    "Sheet": {
+      "Dresseur": {
+        "Onglet": {
+          "Principal": "Principal",
+          "Competences": "Compétences",
+          "Connaissances": "Connaissances",
+          "Equipe": "Équipe",
+          "Inventaire": "Inventaire",
+          "Historique": "Historique"
+        },
+        "Vocation": "Vocation",
+        "Argent": "Argent",
+        "Nature": "Nature",
+        "Historique": "Historique",
+        "XpDresseur": "XP Dresseur"
+      },
+      "Pokemon": {
+        "Onglet": {
+          "Principal": "Principal",
+          "Attaques": "Attaques",
+          "Talents": "Talents",
+          "Competences": "Compétences",
+          "Obeissance": "Obéissance",
+          "Historique": "Historique"
+        },
+        "Espece": "Espèce",
+        "Surnom": "Surnom",
+        "Types": "Types",
+        "Nature": "Nature",
+        "Talent": "Talent",
+        "Genre": "Genre",
+        "Taille": "Taille",
+        "Poids": "Poids",
+        "ObjetTenu": "Objet tenu",
+        "Rarete": "Rareté",
+        "Confiance": "Confiance",
+        "Dressage": "Dressage",
+        "Obeissance": "Obéissance",
+        "Niveau": "Niveau",
+        "Xp": "XP",
+        "Energie": "Énergie",
+        "IV": "IV",
+        "EV": "EV"
+      },
+      "Commun": {
+        "Nouveau": "Nouveau {type}",
+        "Ajouter": "Ajouter",
+        "Supprimer": "Supprimer",
+        "Modifier": "Modifier",
+        "JetCompetence": "Jet",
+        "Utiliser": "Utiliser",
+        "Base": "Base",
+        "Actuel": "Actuel",
+        "Max": "Max"
+      }
+    },
+    "Jet": {
+      "Competence": "Jet de {competence}",
+      "Attaque": "{nom} utilise {attaque}",
+      "EnergieInsuffisante": "{nom} n'a pas assez d'Énergie pour cette attaque.",
+      "CibleManquante": "Sélectionnez une cible avant d'utiliser cette attaque.",
+      "CibleAucuneValide": "Aucune cible valide pour cette capacité (portée {portee}).",
+      "Succes": "Succès",
+      "Echec": "Échec",
+      "Touche": "Touché !",
+      "Manque": "Raté !",
+      "Critique": "Coup critique !",
+      "EchecCritique": "Échec critique !",
+      "Marge": "Marge",
+      "Seuil": "Seuil",
+      "Degats": "Dégâts",
+      "Lanceur": "Lanceur",
+      "Cible": "Cible",
+      "Efficacite": {
+        "TresEfficace": "C'est très efficace !",
+        "PeuEfficace": "Ce n'est pas très efficace...",
+        "SansEffet": "Ça n'affecte pas la cible..."
+      }
+    },
+    "Combat": {
+      "Initiative": "Initiative",
+      "TourSuivant": "Tour suivant",
+      "KO": "{nom} est mis K.O. !",
+      "Mort": "{nom} meurt...",
+      "MeteoDefinie": "La météo devient : {meteo}.",
+      "MeteoActuelle": "Météo actuelle : {meteo}.",
+      "MeteoInconnue": "Météo inconnue. Valeurs possibles : {valeurs}.",
+      "MeteoReserveMJ": "Seul le MJ peut changer la météo.",
+      "MeteoAucunCombat": "Aucun combat actif."
+    },
+    "Meteo": {
+      "Aucune": "Aucune",
+      "Soleil": "Soleil",
+      "Pluie": "Pluie",
+      "TempeteSable": "Tempête de sable",
+      "Grele": "Grêle",
+      "Brouillard": "Brouillard",
+      "CielObscur": "Ciel obscur",
+      "SoleilIntense": "Soleil intense",
+      "PluieBattante": "Pluie battante",
+      "CourantAerien": "Courant aérien",
+      "Nuageux": "Nuageux",
+      "Neige": "Neige"
+    },
+    "Talent": {
+      "Premier": "Premier Talent",
+      "Second": "Second Talent",
+      "Cache": "Talent caché"
+    },
+    "Arme": {
+      "Melee": "Mêlée",
+      "Distance": "Distance"
+    }
+  }
+}
