@@ -1,0 +1,14 @@
+{
+  "name": "hakai-kousen-foundry",
+  "version": "0.1.0",
+  "description": "Système FoundryVTT pour le JDR Hakaï Kōsen (Pokémon réaliste).",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "pack": "node tools/build-packs.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "^3.0.4",
+    "cheerio": "^1.2.0"
+  }
+}
