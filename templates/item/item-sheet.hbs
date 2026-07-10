@@ -1,7 +1,13 @@
 <div class="hk-sheet hk-item">
-  <header class="hk-header">
-    <img class="hk-portrait" src="{{item.img}}" data-action="editImage" data-edit="img" alt="{{item.name}}">
-    <input class="hk-nom" type="text" name="name" value="{{item.name}}">
+  {{{typeIconSprite}}}
+  <header class="hk-band">
+    <div class="hk-band-top">
+      <img class="hk-portrait" src="{{item.img}}" data-action="editImage" data-edit="img" alt="{{item.name}}">
+      <div class="hk-identite">
+        <input class="hk-nom" type="text" name="name" value="{{item.name}}">
+      </div>
+      {{#if (eq item.type "attaque")}}{{typePill system.type}}{{/if}}
+    </div>
   </header>
 
   {{#if (eq item.type "attaque")}}
@@ -54,11 +60,11 @@
           </li>
         {{/each}}
       </ul>
-      <button type="button" data-action="modifStatAjouter">+ Modificateur</button>
+      <button type="button" class="hk-bouton-ajout" data-action="modifStatAjouter">+ Modificateur</button>
     </section>
 
     <label>Effets (texte libre)
-      <textarea name="system.effets">{{{system.effets}}}</textarea>
+      <prose-mirror name="system.effets" value="{{system.effets}}"></prose-mirror>
     </label>
   {{/if}}
 
@@ -70,7 +76,7 @@
         <option value="cache" {{#if (eq system.emplacement "cache")}}selected{{/if}}>{{localize "HK.Talent.Cache"}}</option>
       </select>
     </label>
-    <label>Description <textarea name="system.description">{{{system.description}}}</textarea></label>
+    <label>Description <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror></label>
   {{/if}}
 
   {{#if (or (eq item.type "competence") (eq item.type "connaissance"))}}
@@ -81,12 +87,12 @@
         {{#each config.rareteCompetence as |label cle|}}<option value="{{cle}}" {{#if (eq ../system.rarete cle)}}selected{{/if}}>{{localize label}}</option>{{/each}}
       </select>
     </label>
-    <label>Description <textarea name="system.description">{{{system.description}}}</textarea></label>
+    <label>Description <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror></label>
   {{/if}}
 
   {{#if (eq item.type "specialisation")}}
     <label>Compétence/Connaissance visée <input type="text" name="system.cible" value="{{system.cible}}"></label>
-    <label>Description <textarea name="system.description">{{{system.description}}}</textarea></label>
+    <label>Description <prose-mirror name="system.description" value="{{system.description}}"></prose-mirror></label>
   {{/if}}
 
   {{#if (eq item.type "objet")}}
@@ -97,7 +103,7 @@
     </label>
     <label>Prix <input type="number" name="system.prix" value="{{system.prix}}" min="0"></label>
     <label>Quantité <input type="number" name="system.quantite" value="{{system.quantite}}" min="0"></label>
-    <label>Effet <textarea name="system.effet">{{{system.effet}}}</textarea></label>
+    <label>Effet <prose-mirror name="system.effet" value="{{system.effet}}"></prose-mirror></label>
   {{/if}}
 
   {{#if (eq item.type "ct")}}
@@ -105,7 +111,7 @@
     <label>Attaque enseignée <input type="text" name="system.attaqueEnseignee" value="{{system.attaqueEnseignee}}"></label>
     <label>Prix <input type="number" name="system.prix" value="{{system.prix}}" min="0"></label>
     <label class="hk-checkbox">Usage unique <input type="checkbox" name="system.usageUnique" {{#if system.usageUnique}}checked{{/if}}></label>
-    <label>Effet <textarea name="system.effet">{{{system.effet}}}</textarea></label>
+    <label>Effet <prose-mirror name="system.effet" value="{{system.effet}}"></prose-mirror></label>
   {{/if}}
 
   {{#if (eq item.type "arme")}}
@@ -117,6 +123,6 @@
     </label>
     <label>Dégâts <input type="text" name="system.degats" value="{{system.degats}}"></label>
     <label>Portée <input type="text" name="system.portee" value="{{system.portee}}"></label>
-    <label>Notes <textarea name="system.notes">{{{system.notes}}}</textarea></label>
+    <label>Notes <prose-mirror name="system.notes" value="{{system.notes}}"></prose-mirror></label>
   {{/if}}
 </div>

@@ -1,59 +1,429 @@
+/**
+ * Direction artistique "Pokédex" : bandeau rouge façon boîtier, écran sombre pour les jauges et
+ * caractéristiques, sections en petites fiches à liseré coloré, pastilles de type (pictogrammes
+ * maison, cf. module/helpers/type-icons.mjs) dans les couleurs officielles de la licence.
+ */
+/* Défini sur :root (pas seulement .hakai-kousen) : les cartes de tchat (jet-attaque.hbs,
+   jet-competence.hbs) vivent dans le journal de Foundry, hors de toute fiche, donc hors de la
+   classe .hakai-kousen — elles ont quand même besoin de ces variables. */
+:root {
+  --hk-red: #d6362a;
+  --hk-red-deep: #7a1b14;
+  --hk-red-bright: #ef4638;
+  --hk-card: #fffaf1;
+  --hk-screen-bg: #241416;
+  --hk-screen-ink: #ffe9d6;
+  --hk-section-bg: #f7f1e4;
+  --hk-row-bg: #ffffff;
+  --hk-row-alt: #efe7d6;
+  --hk-ink: #2b231a;
+  --hk-ink-soft: #6b5d4c;
+  --hk-gold: #e8b33d;
+  --hk-line: rgba(43, 35, 26, 0.18);
+  --hk-shadow: rgba(0, 0, 0, 0.35);
+
+  --hk-t-normal: #a8a878;
+  --hk-t-feu: #f08030;
+  --hk-t-eau: #6890f0;
+  --hk-t-plante: #78c850;
+  --hk-t-electrik: #f0c419;
+  --hk-t-glace: #98d8d8;
+  --hk-t-combat: #c03028;
+  --hk-t-poison: #a040a0;
+  --hk-t-sol: #d9a441;
+  --hk-t-vol: #a890f0;
+  --hk-t-psy: #f85888;
+  --hk-t-insecte: #a8b820;
+  --hk-t-roche: #b8a038;
+  --hk-t-spectre: #705898;
+  --hk-t-dragon: #7038f8;
+  --hk-t-tenebres: #5b4a3f;
+  --hk-t-acier: #8f96b8;
+  --hk-t-fee: #ee99ac;
+
+  --hk-font-display: -apple-system, "SF Pro Rounded", "Segoe UI Variable", "Segoe UI", Verdana, sans-serif;
+  --hk-font-body: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --hk-font-mono: "SF Mono", "Consolas", "Cascadia Code", monospace;
+}
+
 .hakai-kousen {
-  --hk-accent: #b5322c;
-  --hk-accent-soft: #e8c4c2;
-  --hk-bg-panel: rgba(0, 0, 0, 0.04);
-  --hk-border: rgba(0, 0, 0, 0.15);
+  font-family: var(--hk-font-body);
 }
 
 .hk-sheet {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  padding: 0.5rem;
+  gap: 0.85rem;
+  background: var(--hk-card);
+  color: var(--hk-ink);
   font-size: 13px;
+  padding-bottom: 0.75rem;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
 }
 
-.hk-header {
-  display: flex;
-  gap: 0.75rem;
-  align-items: flex-start;
+.hk-sheet input,
+.hk-sheet select,
+.hk-sheet textarea {
+  font-family: var(--hk-font-body);
+  color: var(--hk-ink);
+  background: #fff;
+  border: 1px solid var(--hk-line);
+  border-radius: 6px;
+  padding: 0.15rem 0.35rem;
 }
 
-.hk-portrait {
-  width: 72px;
-  height: 72px;
-  object-fit: cover;
-  border: 2px solid var(--hk-accent);
-  border-radius: 4px;
+.hk-sheet input:focus,
+.hk-sheet select:focus,
+.hk-sheet textarea:focus {
+  outline: 2px solid var(--hk-red-bright);
+  outline-offset: 1px;
+}
+
+.hk-sheet prose-mirror {
+  font-family: var(--hk-font-body);
+  color: var(--hk-ink);
+  background: #fff;
+  border: 1px solid var(--hk-line);
+  border-radius: 6px;
+}
+
+/* Le CSS coeur de Foundry (thème sombre par défaut) colore les titres en clair, invisibles sur
+   le fond blanc de nos fiches ; les paragraphes n'héritent pas de cette couleur donc restent
+   corrects. On force une couleur sombre sur tous les titres du texte édité. */
+.hk-sheet prose-mirror h1,
+.hk-sheet prose-mirror h2,
+.hk-sheet prose-mirror h3,
+.hk-sheet prose-mirror h4,
+.hk-sheet prose-mirror h5,
+.hk-sheet prose-mirror h6 {
+  color: var(--hk-ink) !important;
+}
+
+/* L'éditeur intègre son propre défilement interne par défaut : on le désactive pour qu'il
+   grandisse plutôt avec son contenu (la fiche entière défile déjà, cf. .hk-sheet). Dans l'onglet
+   Historique, la zone éditable remplit aussi tout l'espace disponible (min-height:100%) même à
+   vide, plutôt que de ne coller qu'à la hauteur de son texte. */
+.hk-sheet prose-mirror .editor-content,
+.hk-sheet prose-mirror .ProseMirror {
+  height: auto !important;
+  min-height: 100%;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.hk-sheet button {
+  font-family: var(--hk-font-body);
   cursor: pointer;
 }
 
-.hk-header-champs {
-  flex: 1;
+/* ---------------------------------------------------------------- Bandeau (portrait + identité) */
+
+.hk-band {
+  background: linear-gradient(160deg, var(--hk-red-bright), var(--hk-red) 60%, var(--hk-red-deep));
+  color: #fff;
+  padding: 0.85rem 1rem 1.4rem;
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.5rem;
+}
+
+.hk-band::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 16px;
+  background: var(--hk-card);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+.hk-band-top {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.hk-portrait {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--hk-gold);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hk-identite {
+  flex: 1;
+  min-width: 0;
 }
 
 .hk-nom {
-  font-size: 1.3rem;
-  font-weight: 700;
-  border: none;
-  border-bottom: 1px solid var(--hk-border);
+  font-family: var(--hk-font-display);
+  font-weight: 800;
+  font-size: 1.35rem;
+  letter-spacing: -0.01em;
+  color: #fff;
   background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  text-shadow: 0 2px 0 var(--hk-red-deep);
+  width: 100%;
+  padding: 0 0 0.1rem;
 }
 
-.hk-header-ligne {
+.hk-nom:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.hk-joueur {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.hk-joueur input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: none;
+  padding: 0.1rem 0;
+}
+
+.hk-joueur input:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.hk-badge-coin {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--hk-font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.25rem 0.55rem;
+  white-space: nowrap;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.hk-badge-coin input {
+  width: 2.2rem;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0;
+  text-align: center;
+}
+
+.hk-badge-coin input:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.hk-types-actuels {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.hk-type-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--hk-font-body);
+  font-weight: 700;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fff;
+  padding: 0.18rem 0.6rem 0.18rem 0.3rem;
+  border-radius: 999px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3) inset, 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hk-type-pill svg {
+  width: 13px;
+  height: 13px;
+  fill: #fff;
+  flex-shrink: 0;
+}
+
+.hk-type-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hk-type-badge svg {
+  width: 11px;
+  height: 11px;
+  fill: #fff;
+}
+
+/* ---------------------------------------------------------------- Onglets */
+
+.hk-onglets {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--hk-line);
+}
+
+.hk-onglet {
+  font-family: var(--hk-font-display);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--hk-ink-soft);
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 0.5rem 0.3rem 0.4rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+
+.hk-onglet:hover {
+  color: var(--hk-ink);
+}
+
+.hk-onglet.actif {
+  color: var(--hk-red);
+  border-bottom-color: var(--hk-red);
+}
+
+/* ---------------------------------------------------------------- Détails (champs secondaires) */
+
+.hk-details {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.65rem;
+  padding: 0 1rem;
 }
 
-.hk-header-ligne label {
+.hk-details label {
   display: flex;
   flex-direction: column;
-  font-size: 0.75rem;
   gap: 0.15rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--hk-ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.hk-types-combo {
+  position: relative;
+}
+
+.hk-types-combo summary {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  min-height: 1.9rem;
+  max-width: 13rem;
+  background: #fff;
+  border: 1px solid var(--hk-line);
+  border-radius: 6px;
+  padding: 0.2rem 1.4rem 0.2rem 0.35rem;
+  cursor: pointer;
+}
+
+.hk-types-combo summary::after {
+  content: "▾";
+  position: absolute;
+  right: 0.55rem;
+  top: 0.35rem;
+  color: var(--hk-ink-soft);
+}
+
+.hk-types-combo[open] summary::after {
+  content: "▴";
+}
+
+.hk-types-combo-placeholder {
+  color: var(--hk-ink-soft);
+  font-size: 0.7rem;
+  font-style: italic;
+  text-transform: none;
+}
+
+.hk-types-combo-menu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  width: max-content;
+  max-width: 16rem;
+  max-height: 12rem;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem;
+  background: #fff;
+  border: 1px solid var(--hk-line);
+  border-radius: 8px;
+  padding: 0.4rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+}
+
+.hk-types-combo-option {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--hk-ink);
+  padding: 0.2rem 0.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hk-types-combo-option:hover {
+  background: var(--hk-row-alt);
+}
+
+.hk-types-combo-option input {
+  margin: 0;
+}
+
+.hk-types-combo-option svg {
+  width: 12px;
+  height: 12px;
+  fill: var(--hk-ink-soft);
+  flex-shrink: 0;
 }
 
 .hk-checkbox {
@@ -62,144 +432,599 @@
   gap: 0.35rem !important;
 }
 
-.hk-caracteristiques {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.5rem;
-  padding: 0.5rem;
-  background: var(--hk-bg-panel);
-  border-radius: 4px;
+.hk-gouts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--hk-ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
-.hk-caracteristiques-pokemon {
+.hk-gouts-valeur {
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--hk-ink);
+}
+
+.hk-gouts-valeur strong {
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------------- Écran (jauges + caractéristiques) */
+
+.hk-screen {
+  margin: 0 1rem;
+  background: var(--hk-screen-bg);
+  color: var(--hk-screen-ink);
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem 0.9rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4) inset;
+}
+
+.hk-jauges {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.hk-jauge-ligne {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hk-jauge-label {
+  font-family: var(--hk-font-display);
+  font-weight: 800;
+  font-size: 0.68rem;
+  width: 2.6rem;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+  flex-shrink: 0;
+}
+
+.hk-jauge-piste {
+  flex: 1;
+  height: 11px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hk-jauge-remplissage {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3f9142, #6fce6f);
+  transition: width 0.2s ease;
+}
+
+.hk-jauge-remplissage.moyen {
+  background: linear-gradient(90deg, #c98a12, #f4c542);
+}
+
+.hk-jauge-remplissage.faible {
+  background: linear-gradient(90deg, #a3271f, #e0453a);
+}
+
+.hk-jauge-remplissage.energie {
+  background: linear-gradient(90deg, #2f6fc4, #6fb0f7);
+}
+
+.hk-jauge-chiffres {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+  font-family: var(--hk-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 0.72rem;
+  flex-shrink: 0;
+}
+
+.hk-jauge-chiffres input {
+  width: 2.6rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--hk-screen-ink);
+  text-align: center;
+  border-radius: 4px;
+  padding: 0.05rem 0.1rem;
+}
+
+.hk-jauge-chiffres span {
+  opacity: 0.7;
+}
+
+.hk-caracteristiques {
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
+  gap: 0.45rem;
 }
 
 .hk-car {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-  gap: 0.2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 0.3rem 0.15rem 0.4rem;
 }
 
 .hk-car-label {
+  font-family: var(--hk-font-body);
+  font-size: 0.6rem;
   font-weight: 700;
-  font-size: 0.7rem;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+  display: block;
+  margin-bottom: 0.1rem;
 }
 
 .hk-car-total {
-  font-size: 1.4rem;
+  font-family: var(--hk-font-mono);
+  font-variant-numeric: tabular-nums;
   font-weight: 700;
-  color: var(--hk-accent);
+  font-size: 1.15rem;
+  color: #ff9d7a;
+  display: block;
 }
 
 .hk-car-detail {
   display: flex;
-  gap: 0.25rem;
-  font-size: 0.65rem;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 0.6rem;
+  margin-top: 0.15rem;
 }
 
 .hk-car-detail label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.05rem;
+  opacity: 0.75;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
-.hk-car input[type="number"] {
-  width: 3rem;
+.hk-car-total-input {
+  width: 100%;
   text-align: center;
+  font-family: var(--hk-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #ff9d7a;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-top: 0.15rem;
 }
 
-.hk-ressources,
+.hk-car input[type="number"],
+.hk-car-detail input {
+  width: 2.6rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--hk-screen-ink);
+}
+
 .hk-obeissance {
   display: flex;
-  gap: 1rem;
-  padding: 0.35rem 0.5rem;
-  background: var(--hk-bg-panel);
-  border-radius: 4px;
   align-items: center;
+  gap: 0.85rem;
+  margin-top: 0.7rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  flex-wrap: wrap;
 }
 
-.hk-sous-champ {
-  font-size: 0.65rem;
-  display: inline-flex;
-  gap: 0.2rem;
+.hk-obeissance label {
+  display: flex;
   align-items: center;
-  margin-left: 0.35rem;
+  gap: 0.3rem;
+  font-weight: 700;
 }
 
-.hk-sous-champ input {
-  width: 2.5rem;
+.hk-obeissance input {
+  width: 2.6rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: var(--hk-screen-ink);
 }
+
+/* ---------------------------------------------------------------- Grille de sections */
 
 .hk-colonnes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.5rem;
+  gap: 0.65rem;
+  padding: 0 1rem;
 }
 
-.hk-colonnes fieldset {
-  border: 1px solid var(--hk-border);
-  border-radius: 4px;
-  padding: 0.4rem;
+.hk-colonnes fieldset,
+.hk-encart {
+  background: var(--hk-section-bg);
+  border: 1px solid var(--hk-line);
+  border-radius: 12px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-.hk-colonnes legend {
-  font-weight: 700;
-  padding: 0 0.3rem;
+.hk-colonnes legend,
+.hk-encart > legend {
+  display: block;
+  width: 100%;
+  font-family: var(--hk-font-display);
+  font-weight: 800;
+  font-size: 0.76rem;
+  letter-spacing: 0.03em;
+  color: #fff;
+  background: var(--hk-ink);
+  padding: 0.35rem 0.7rem;
+}
+
+.hk-encart {
+  margin: 0 1rem 0.65rem;
+}
+
+/* Enfant direct de .hk-sheet (flex column) : sans ça, le fieldset "Description" du Principal
+   (overflow: hidden hérité de .hk-encart) se voit attribuer un min-height auto de 0 par les
+   règles flexbox et se fait comprimer/rogner par flexbox pour tenir dans la hauteur de fenêtre au
+   lieu de forcer .hk-sheet à défiler — ses champs restaient dans le DOM (taille calculée correcte)
+   mais invisibles, écrasés à une hauteur nulle. */
+.hk-sheet > .hk-encart {
+  flex-shrink: 0;
+}
+
+.hk-historique-bloc.hk-encart {
+  margin: 0;
+}
+
+.hk-encart .hk-details {
+  padding: 0.6rem 0.7rem;
+}
+
+.hk-details.hk-details-ligne {
+  flex-wrap: nowrap;
+}
+
+.hk-details.hk-details-ligne label {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.hk-details.hk-details-grille {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .hk-item-liste {
   list-style: none;
-  margin: 0 0 0.35rem 0;
-  padding: 0;
+  margin: 0;
+  padding: 0.3rem;
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.25rem;
+}
+
+.hk-points-competence {
+  margin: 0.3rem 0.4rem 0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--hk-red);
 }
 
 .hk-item-liste li {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.15rem 0.25rem;
-  border-radius: 3px;
+  gap: 0.4rem;
+  padding: 0.3rem 0.4rem;
+  border-radius: 7px;
+  background: var(--hk-row-bg);
+  border-left: 4px solid var(--hk-line);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
-.hk-item-liste li:nth-child(odd) {
-  background: var(--hk-bg-panel);
+.hk-item-liste li:nth-child(even) {
+  background: var(--hk-row-alt);
+}
+
+.hk-mini-sprite {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--hk-line);
+  flex-shrink: 0;
 }
 
 .hk-item-nom {
   flex: 1;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 0.82rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .hk-item-nom:hover {
   text-decoration: underline;
-  color: var(--hk-accent);
+  color: var(--hk-red);
 }
 
 .hk-item-detail {
-  font-size: 0.7rem;
-  opacity: 0.75;
+  font-size: 0.68rem;
+  color: var(--hk-ink-soft);
+  white-space: nowrap;
 }
 
 .hk-item-liste input[type="number"] {
-  width: 2.5rem;
+  width: 2.4rem;
+}
+
+.hk-item-liste button,
+.hk-pill-btn {
+  font-family: var(--hk-font-body);
+  font-weight: 700;
+  font-size: 0.65rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  background: var(--hk-ink);
+  color: #fff;
+  white-space: nowrap;
+}
+
+.hk-item-liste button:hover,
+.hk-pill-btn:hover {
+  background: var(--hk-red);
+}
+
+.hk-pill-btn.actif {
+  background: #3f9142;
+}
+
+.hk-item-liste a[data-action="itemDelete"],
+.hk-item-liste a[data-action="retirerPokemon"],
+.hk-item-liste a[data-action="badgeSupprimer"] {
+  color: var(--hk-red);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.hk-item-liste input[type="text"] {
+  flex: 1;
+  min-width: 0;
+}
+
+.hk-bouton-ajout {
+  display: block;
+  width: calc(100% - 0.6rem);
+  margin: 0 0.3rem 0.3rem;
+  font-family: var(--hk-font-body);
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--hk-red);
+  background: #fff;
+  border: 1.5px dashed var(--hk-red);
+  border-radius: 8px;
+  padding: 0.3rem;
+  text-align: center;
+}
+
+.hk-bouton-ajout:hover {
+  background: var(--hk-red);
+  color: #fff;
+}
+
+.hk-sensibilites {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+  gap: 0.4rem;
+  padding: 0.6rem 0.7rem;
+}
+
+.hk-sensibilite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.25rem 0.1rem;
+  border-radius: 8px;
+  background: var(--hk-row-bg);
+}
+
+.hk-sensibilite-mult {
+  font-family: var(--hk-font-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 0.72rem;
+  color: var(--hk-ink-soft);
+}
+
+.hk-sensibilite-faible {
+  background: rgba(214, 54, 42, 0.12);
+}
+
+.hk-sensibilite-faible .hk-sensibilite-mult {
+  color: var(--hk-red);
+}
+
+.hk-sensibilite-resistant {
+  background: rgba(63, 145, 66, 0.12);
+}
+
+.hk-sensibilite-resistant .hk-sensibilite-mult {
+  color: #2e7d32;
+}
+
+.hk-sensibilite-immune .hk-sensibilite-mult {
+  text-decoration: line-through;
+}
+
+.hk-sensibilite-neutre {
+  opacity: 0.55;
+}
+
+.hk-entrainement-mj {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed var(--hk-line);
+  font-size: 0.72rem;
+}
+
+/* ---------------------------------------------------------------- Historique */
+
+.hk-historique {
+  padding: 0 1rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.hk-historique-bloc {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.hk-historique-bloc-court {
+  flex: 0 0 160px;
+}
+
+.hk-historique-bloc-long {
+  flex: 1 1 auto;
+}
+
+.hk-historique-corps {
+  flex: 1 1 auto;
+  min-height: 0;
+  padding: 0.5rem;
+  display: flex;
+}
+
+/* Le défilement doit vivre ici, pas sur .hk-historique-corps : la règle globale
+   ".hk-sheet prose-mirror .ProseMirror" force la zone éditable en height:auto!important (elle est
+   censée grandir avec son texte, cf. plus bas), donc c'est <prose-mirror> lui-même (contraint par
+   flex/min-height ci-dessous) qui doit rogner+scroller ce contenu forcé à sa hauteur naturelle. */
+.hk-historique-corps prose-mirror {
+  width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
 }
 
 .hk-avertissement {
-  color: var(--hk-accent);
+  margin: 0 1rem;
+  color: var(--hk-red);
   font-weight: 700;
-  margin: 0;
 }
 
-.hk-historique textarea {
-  width: 100%;
-  min-height: 4rem;
+/* ---------------------------------------------------------------- Évolution */
+
+.hk-niveau-groupe {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.25rem;
+  flex-shrink: 0;
+}
+
+.hk-evolution-mini {
+  font-family: var(--hk-font-body);
+  font-size: 0.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 999px;
+  padding: 0.15rem 0.5rem;
+  background: rgba(0, 0, 0, 0.28);
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 8rem;
+}
+
+.hk-evolution-mini:hover {
+  background: var(--hk-red-deep);
+}
+
+.hk-evolution-mini-mj {
+  background: rgba(0, 0, 0, 0.15);
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------------- Fiche d'Item */
+
+.hk-item .hk-band {
+  padding-bottom: 0.9rem;
+}
+
+.hk-item .hk-band::after {
+  display: none;
+}
+
+.hk-grille-champs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.6rem;
+  padding: 0 1rem;
+}
+
+.hk-grille-champs label,
+.hk-item > label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--hk-ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin: 0 1rem;
+}
+
+.hk-item > label:has(prose-mirror) {
+  margin-top: 0.5rem;
+}
+
+.hk-item prose-mirror {
+  min-height: 5rem;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: normal;
+}
+
+.hk-modif-stats {
+  margin: 0 1rem;
+}
+
+.hk-modif-stats h3 {
+  font-family: var(--hk-font-display);
+  font-size: 0.85rem;
+  margin: 0.5rem 0 0.3rem;
 }
 
 .hk-modif-stats ul {
@@ -212,24 +1037,52 @@
   display: flex;
   gap: 0.3rem;
   align-items: center;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.25rem;
 }
 
-/* Cartes de chat */
+/* ---------------------------------------------------------------- Cartes de tchat */
+
 .hk-chat-card {
-  border: 1px solid var(--hk-border, #999);
-  border-radius: 4px;
-  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--hk-line, rgba(0, 0, 0, 0.15));
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--hk-font-body, system-ui, sans-serif);
+  background: var(--hk-card, #fffaf1);
+  color: var(--hk-ink, #2b231a);
 }
 
 .hk-chat-header {
-  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--hk-ink, #2b231a);
+  color: #fff;
+  padding: 0.35rem 0.6rem;
+  font-family: var(--hk-font-display, sans-serif);
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+.hk-chat-card > p,
+.hk-chat-card > .hk-degats,
+.hk-chat-card > .hk-efficacite,
+.hk-chat-card > .hk-resultat,
+.hk-chat-card .hk-attaque-nom {
+  margin: 0.35rem 0.6rem;
+}
+
+.hk-attaque-nom {
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
 }
 
 .hk-des {
   display: flex;
   gap: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin: 0.4rem 0.6rem;
 }
 
 .hk-de {
@@ -238,21 +1091,22 @@
   justify-content: center;
   width: 1.6rem;
   height: 1.6rem;
-  border-radius: 3px;
-  border: 1px solid #999;
+  border-radius: 5px;
+  border: 1px solid var(--hk-line, #999);
   font-weight: 700;
+  font-family: var(--hk-font-mono, monospace);
 }
 
 .hk-de-succes {
-  background: #2e7d32;
+  background: #3f9142;
   color: white;
-  border-color: #2e7d32;
+  border-color: #3f9142;
 }
 
 .hk-de-echec {
-  background: #b5322c;
+  background: var(--hk-red, #d6362a);
   color: white;
-  border-color: #b5322c;
+  border-color: var(--hk-red, #d6362a);
 }
 
 .hk-resultat {
@@ -265,14 +1119,15 @@
 
 .hk-echec,
 .hk-echec-critique {
-  color: #b5322c;
+  color: var(--hk-red, #d6362a);
 }
 
 .hk-badge {
   display: inline-block;
-  font-size: 0.7rem;
-  padding: 0.05rem 0.35rem;
-  border-radius: 8px;
-  background: var(--hk-accent-soft, #ddd);
-  margin-left: 0.25rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 0.08rem 0.4rem;
+  border-radius: 999px;
+  background: var(--hk-ink-soft, #999);
+  color: #fff;
 }

@@ -1,127 +1,214 @@
 <div class="hk-sheet hk-pokemon">
-  <header class="hk-header">
-    <img class="hk-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}">
-    <div class="hk-header-champs">
-      <input class="hk-nom" type="text" name="name" value="{{actor.name}}">
-      <div class="hk-header-ligne">
-        <label>{{localize "HK.Sheet.Pokemon.Espece"}}
-          <input type="text" name="system.espece" value="{{system.espece}}">
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.Surnom"}}
-          <input type="text" name="system.surnom" value="{{system.surnom}}">
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.Niveau"}}
-          <input type="number" name="system.niveau" value="{{system.niveau}}" min="1">
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.Xp"}}
-          <input type="number" name="system.xp" value="{{system.xp}}" min="0">
-        </label>
+  {{{typeIconSprite}}}
+  <header class="hk-band">
+    <div class="hk-band-top">
+      <img class="hk-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}">
+      <div class="hk-identite">
+        <input class="hk-nom" type="text" name="name" value="{{actor.name}}">
       </div>
-      <div class="hk-header-ligne">
-        <label>{{localize "HK.Sheet.Pokemon.Genre"}}
-          <select name="system.genre">
-            {{#each config.genres as |label cle|}}
-              <option value="{{cle}}" {{#if (eq ../system.genre cle)}}selected{{/if}}>{{localize label}}</option>
-            {{/each}}
-          </select>
+      <div class="hk-niveau-groupe">
+        <label class="hk-badge-coin" title="{{localize 'HK.Sheet.Pokemon.Niveau'}}">
+          Niv. <input type="number" name="system.niveau" value="{{system.niveau}}" min="1">
         </label>
-        <label>{{localize "HK.Sheet.Pokemon.Rarete"}}
-          <select name="system.rarete">
-            {{#each config.raretes as |label cle|}}
-              <option value="{{cle}}" {{#if (eq ../system.rarete cle)}}selected{{/if}}>{{localize label}}</option>
-            {{/each}}
-          </select>
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.Taille"}}
-          <input type="text" name="system.taille" value="{{system.taille}}">
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.Poids"}}
-          <input type="text" name="system.poids" value="{{system.poids}}">
-        </label>
-        <label class="hk-checkbox">Shiny
-          <input type="checkbox" name="system.shiny" {{#if system.shiny}}checked{{/if}}>
-        </label>
+        {{#each evolutions as |evo|}}
+          {{#if evo.eligible}}
+            <button type="button" class="hk-evolution-mini" data-action="evoluer" data-cible="{{evo.cible}}" title="{{evo.resume}}">{{localize "HK.Evolution.Bouton"}} {{evo.cible}}</button>
+          {{else if estMJ}}
+            <button type="button" class="hk-evolution-mini hk-evolution-mini-mj" data-action="evoluer" data-cible="{{evo.cible}}" data-force="true" title="{{evo.resume}}{{#if evo.pierreStaseActive}} — {{localize 'HK.Evolution.Bloquee'}}{{/if}}">{{localize "HK.Evolution.BoutonForcer"}} {{evo.cible}}</button>
+          {{/if}}
+        {{/each}}
       </div>
-      <div class="hk-header-ligne">
-        <label>{{localize "HK.Sheet.Pokemon.Types"}}
-          <select name="system.types" multiple size="3">
-            {{#each config.types as |label cle|}}
-              <option value="{{cle}}" {{#if (includes ../system.types cle)}}selected{{/if}}>{{localize label}}</option>
-            {{/each}}
-          </select>
-        </label>
-        <label>{{localize "HK.Sheet.Dresseur.Nature"}}
-          <select name="system.nature">
-            {{#each config.natures as |nature cle|}}
-              <option value="{{cle}}" {{#if (eq ../system.nature cle)}}selected{{/if}}>{{nature.nom}}</option>
-            {{/each}}
-          </select>
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.Talent"}}
-          <input type="text" name="system.talent" value="{{system.talent}}">
-        </label>
-        <label>{{localize "HK.Sheet.Pokemon.ObjetTenu"}}
-          <input type="text" name="system.objetTenu" value="{{system.objetTenu}}">
-        </label>
-      </div>
+    </div>
+    <div class="hk-types-actuels">
+      {{#each system.types as |cle|}}{{typePill cle}}{{/each}}
     </div>
   </header>
 
-  <section class="hk-caracteristiques hk-caracteristiques-pokemon">
-    {{#each caracteristiquesList as |car|}}
-      <div class="hk-car">
-        <span class="hk-car-label">{{localize car.label}}</span>
-        <span class="hk-car-total">{{car.total}}</span>
-        <span class="hk-car-detail">
-          <label>Base <input type="number" name="system.caracteristiques.{{car.key}}.base" value="{{car.base}}" min="0"></label>
-          <label>IV <input type="number" name="system.caracteristiques.{{car.key}}.iv" value="{{car.iv}}" min="0" max="3"></label>
-          <label>EV <input type="number" name="system.caracteristiques.{{car.key}}.ev" value="{{car.ev}}" min="0"></label>
+  <nav class="hk-onglets">
+    <button type="button" class="hk-onglet{{#if (eq ongletActif "principal")}} actif{{/if}}" data-action="changerOnglet" data-onglet="principal">{{localize "HK.Onglet.Principal"}}</button>
+    <button type="button" class="hk-onglet{{#if (eq ongletActif "historique")}} actif{{/if}}" data-action="changerOnglet" data-onglet="historique">{{localize "HK.Onglet.Historique"}}</button>
+  </nav>
+
+  {{#if (eq ongletActif "historique")}}
+  <section class="hk-historique">
+    <prose-mirror name="system.historique" value="{{system.historique}}"></prose-mirror>
+  </section>
+  {{else}}
+  <section class="hk-details">
+    <label>{{localize "HK.Sheet.Pokemon.Espece"}}
+      <input type="text" name="system.espece" value="{{system.espece}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Surnom"}}
+      <input type="text" name="system.surnom" value="{{system.surnom}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Famille"}}
+      <input type="text" name="system.famille" value="{{system.famille}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Ball"}}
+      <input type="text" name="system.ball" value="{{system.ball}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Provenance"}}
+      <input type="text" name="system.provenance" value="{{system.provenance}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Xp"}}
+      <input type="number" name="system.xp" value="{{system.xp}}" min="0">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Genre"}}
+      <select name="system.genre">
+        {{#each config.genres as |label cle|}}
+          <option value="{{cle}}" {{#if (eq ../system.genre cle)}}selected{{/if}}>{{localize label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Rarete"}}
+      <select name="system.rarete">
+        {{#each config.raretes as |label cle|}}
+          <option value="{{cle}}" {{#if (eq ../system.rarete cle)}}selected{{/if}}>{{localize label}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Taille"}}
+      <input type="text" name="system.taille" value="{{system.taille}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Poids"}}
+      <input type="text" name="system.poids" value="{{system.poids}}">
+    </label>
+    <label class="hk-checkbox">Shiny
+      <input type="checkbox" name="system.shiny" {{#if system.shiny}}checked{{/if}}>
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.Types"}}
+      <details class="hk-types-combo">
+        <summary>
+          {{#if system.types.length}}
+            {{#each system.types as |cle|}}{{typePill cle}}{{/each}}
+          {{else}}
+            <span class="hk-types-combo-placeholder">{{localize "HK.Sheet.Pokemon.TypesPlaceholder"}}</span>
+          {{/if}}
+        </summary>
+        <div class="hk-types-combo-menu">
+          {{#each config.types as |label cle|}}
+            <label class="hk-types-combo-option">
+              <input type="checkbox" data-action="toggleType" data-type="{{cle}}" {{#if (includes ../system.types cle)}}checked{{/if}}>
+              <svg><use href="#i-{{cle}}"></use></svg>{{localize label}}
+            </label>
+          {{/each}}
+        </div>
+      </details>
+    </label>
+    <label>{{localize "HK.Sheet.Dresseur.Nature"}}
+      <select name="system.nature">
+        {{#each config.natures as |nature cle|}}
+          <option value="{{cle}}" {{#if (eq ../system.nature cle)}}selected{{/if}}>{{nature.nom}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <div class="hk-gouts">
+      <span class="hk-gouts-label">{{localize "HK.Sheet.Pokemon.Gouts"}}</span>
+      <span class="hk-gouts-valeur">
+        {{localize "HK.Sheet.Pokemon.GoutPrefere"}} :
+        <strong>{{#if natureGouts.aime}}{{localize natureGouts.aime}}{{else}}{{localize "HK.Sheet.Pokemon.GoutAucun"}}{{/if}}</strong>
+        · {{localize "HK.Sheet.Pokemon.GoutDeteste"}} :
+        <strong>{{#if natureGouts.deteste}}{{localize natureGouts.deteste}}{{else}}{{localize "HK.Sheet.Pokemon.GoutAucun"}}{{/if}}</strong>
+      </span>
+    </div>
+    <label>{{localize "HK.Sheet.Pokemon.Talent"}}
+      <input type="text" name="system.talent" value="{{system.talent}}">
+    </label>
+    <label>{{localize "HK.Sheet.Pokemon.ObjetTenu"}}
+      <input type="text" name="system.objetTenu" value="{{system.objetTenu}}">
+    </label>
+  </section>
+
+  <section class="hk-screen">
+    <div class="hk-jauges">
+      <div class="hk-jauge-ligne">
+        <span class="hk-jauge-label">VITA</span>
+        <span class="hk-jauge-piste"><span class="hk-jauge-remplissage {{jaugeEtat system.vita.value system.vita.max}}" style="width:{{jaugePct system.vita.value system.vita.max}}%"></span></span>
+        <span class="hk-jauge-chiffres">
+          <input type="number" name="system.vita.value" value="{{system.vita.value}}">
+          <span>/ {{system.vita.max}}</span>
         </span>
       </div>
-    {{/each}}
+      <div class="hk-jauge-ligne">
+        <span class="hk-jauge-label">{{localize "HK.Sheet.Pokemon.Energie"}}</span>
+        <span class="hk-jauge-piste"><span class="hk-jauge-remplissage energie" style="width:{{jaugePct system.energie.value system.energie.max}}%"></span></span>
+        <span class="hk-jauge-chiffres">
+          <input type="number" name="system.energie.value" value="{{system.energie.value}}">
+          <span>/</span>
+          <input type="number" name="system.energie.max" value="{{system.energie.max}}">
+        </span>
+      </div>
+    </div>
+
+    <div class="hk-caracteristiques">
+      {{#each caracteristiquesList as |car|}}
+        <div class="hk-car">
+          <span class="hk-car-label">{{localize car.label}}</span>
+          <span class="hk-car-total">{{car.total}}</span>
+          <div class="hk-car-detail">
+            <label>Base <input type="number" name="system.caracteristiques.{{car.key}}.base" value="{{car.base}}" min="0"></label>
+            <label>IV <input type="number" name="system.caracteristiques.{{car.key}}.iv" value="{{car.iv}}" min="0" max="3"></label>
+            <label>EV <input type="number" name="system.caracteristiques.{{car.key}}.ev" value="{{car.ev}}" min="0"></label>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="hk-obeissance">
+      <label>{{localize "HK.Sheet.Pokemon.Confiance"}}
+        <input type="number" name="system.obeissance.confiance" value="{{system.obeissance.confiance}}" min="0" max="9">
+      </label>
+      <label>{{localize "HK.Sheet.Pokemon.Dressage"}}
+        <input type="number" name="system.obeissance.dressage" value="{{system.obeissance.dressage}}" min="0" max="9">
+      </label>
+      <span>{{localize "HK.Sheet.Pokemon.Obeissance"}} : <strong>{{system.obeissance.total}}</strong> / 18</span>
+      <button type="button" class="hk-pill-btn{{#if system.combat.esquiveActive}} actif{{/if}}" data-action="toggleEsquive" title="{{localize 'HK.Combat.EsquiveDesc'}}">
+        {{localize "HK.Combat.Esquive"}}
+      </button>
+      {{#if system.combat.megaEvolue}}
+        <button type="button" class="hk-pill-btn actif" data-action="annulerMega">{{localize "HK.Mega.Annuler"}}</button>
+      {{else}}
+        <button type="button" class="hk-pill-btn" data-action="megaEvoluer">{{localize "HK.Mega.Bouton"}}</button>
+      {{/if}}
+      {{#if system.combat.dynamax.actif}}
+        <button type="button" class="hk-pill-btn actif" data-action="annulerDynamax" title="{{localize 'HK.Dynamax.ToursRestants'}} : {{system.combat.dynamax.toursRestants}}">{{localize "HK.Dynamax.Annuler"}}</button>
+      {{else}}
+        <button type="button" class="hk-pill-btn" data-action="dynamaxer">{{localize "HK.Dynamax.Bouton"}}</button>
+      {{/if}}
+    </div>
   </section>
+
   {{#if system.ivDepasseLimite}}
     <p class="hk-avertissement">Total d'IV supérieur à 10 (limite de création).</p>
   {{/if}}
 
-  <section class="hk-ressources">
-    <label class="hk-car hk-vita">
-      <span>VITA</span>
-      <input type="number" name="system.vita.value" value="{{system.vita.value}}"> / {{system.vita.max}}
-      <span class="hk-sous-champ">Base <input type="number" name="system.vita.base" value="{{system.vita.base}}"></span>
-      <span class="hk-sous-champ">IV <input type="number" name="system.vita.iv" value="{{system.vita.iv}}" min="0" max="3"></span>
-      <span class="hk-sous-champ">EV <input type="number" name="system.vita.ev" value="{{system.vita.ev}}" min="0"></span>
-    </label>
-    <label class="hk-car hk-energie">
-      <span>{{localize "HK.Sheet.Pokemon.Energie"}}</span>
-      <input type="number" name="system.energie.value" value="{{system.energie.value}}"> / <input type="number" name="system.energie.max" value="{{system.energie.max}}">
-    </label>
-  </section>
-
-  <section class="hk-obeissance">
-    <label>{{localize "HK.Sheet.Pokemon.Confiance"}}
-      <input type="number" name="system.obeissance.confiance" value="{{system.obeissance.confiance}}" min="0" max="9">
-    </label>
-    <label>{{localize "HK.Sheet.Pokemon.Dressage"}}
-      <input type="number" name="system.obeissance.dressage" value="{{system.obeissance.dressage}}" min="0" max="9">
-    </label>
-    <span>{{localize "HK.Sheet.Pokemon.Obeissance"}} : <strong>{{system.obeissance.total}}</strong> / 18</span>
-  </section>
+  <fieldset class="hk-encart hk-sensibilites-bloc">
+    <legend>{{localize "HK.Sheet.Pokemon.Sensibilites"}}</legend>
+    <div class="hk-sensibilites">
+      {{#each sensibilitesList as |s|}}
+        <div class="hk-sensibilite hk-sensibilite-{{s.niveau}}">
+          {{typeBadge s.type}}
+          <span class="hk-sensibilite-mult">×{{s.multiplicateur}}</span>
+        </div>
+      {{/each}}
+    </div>
+  </fieldset>
 
   <section class="hk-colonnes">
     <fieldset>
       <legend>{{localize "HK.Sheet.Pokemon.Onglet.Attaques"}}</legend>
       <ul class="hk-item-liste">
         {{#each attaques as |item|}}
-          <li data-item-id="{{item.id}}">
+          <li data-item-id="{{item.id}}" style="border-left-color:var(--hk-t-{{item.system.type}})">
+            {{typeBadge item.system.type}}
             <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
-            <span class="hk-item-detail">{{item.system.type}} · {{item.system.categorie}} · {{item.system.energie}} PP</span>
+            <span class="hk-item-detail">{{item.system.categorie}} · {{item.system.energie}} PP</span>
             <button type="button" data-action="itemUse">{{localize "HK.Sheet.Commun.Utiliser"}}</button>
             <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
           </li>
         {{/each}}
       </ul>
-      <button type="button" data-action="itemCreate" data-type="attaque">+ {{localize "TYPES.Item.attaque"}}</button>
+      <button type="button" class="hk-bouton-ajout" data-action="itemCreate" data-type="attaque">+ {{localize "TYPES.Item.attaque"}}</button>
     </fieldset>
 
     <fieldset>
@@ -139,22 +226,30 @@
           </li>
         {{/each}}
       </ul>
-      <button type="button" data-action="itemCreate" data-type="talent">+ {{localize "TYPES.Item.talent"}}</button>
+      <button type="button" class="hk-bouton-ajout" data-action="itemCreate" data-type="talent">+ {{localize "TYPES.Item.talent"}}</button>
     </fieldset>
 
     <fieldset>
       <legend>{{localize "HK.Sheet.Pokemon.Onglet.Competences"}}</legend>
+      {{#if system.pointsCompetence}}
+        <p class="hk-points-competence">{{localize "HK.Niveau.PointsCompetenceDisponibles" points=system.pointsCompetence}}</p>
+      {{/if}}
       <ul class="hk-item-liste">
         {{#each competences as |item|}}
           <li data-item-id="{{item.id}}">
             <span class="hk-item-nom" data-action="itemEdit">{{item.name}}</span>
-            <input type="number" min="0" max="5" name="items.{{item.id}}.system.score" value="{{item.system.score}}">
+            <input type="number" min="0" max="5" data-item-field="system.score" value="{{item.system.score}}">
+            {{#if ../system.pointsCompetence}}
+              {{#if (lt item.system.score 5)}}
+                <button type="button" class="hk-pill-btn" data-action="ajouterPointCompetence" title="{{localize 'HK.Niveau.AjouterPoint'}}">{{localize "HK.Niveau.AjouterPoint"}}</button>
+              {{/if}}
+            {{/if}}
             <button type="button" data-action="itemUse">{{localize "HK.Sheet.Commun.JetCompetence"}}</button>
             <a data-action="itemDelete"><i class="fa-solid fa-trash"></i></a>
           </li>
         {{/each}}
       </ul>
-      <button type="button" data-action="itemCreate" data-type="competence">+ {{localize "TYPES.Item.competence"}}</button>
+      <button type="button" class="hk-bouton-ajout" data-action="itemCreate" data-type="competence">+ {{localize "TYPES.Item.competence"}}</button>
     </fieldset>
 
     <fieldset>
@@ -167,12 +262,8 @@
           </li>
         {{/each}}
       </ul>
-      <button type="button" data-action="itemCreate" data-type="objet">+ {{localize "TYPES.Item.objet"}}</button>
+      <button type="button" class="hk-bouton-ajout" data-action="itemCreate" data-type="objet">+ {{localize "TYPES.Item.objet"}}</button>
     </fieldset>
   </section>
-
-  <section class="hk-historique">
-    <label>{{localize "HK.Sheet.Pokemon.Onglet.Historique"}}</label>
-    <textarea name="system.historique">{{{system.historique}}}</textarea>
-  </section>
+  {{/if}}
 </div>

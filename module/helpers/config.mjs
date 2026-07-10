@@ -104,6 +104,34 @@ HK.categoriesObjet = {
 };
 
 /**
+ * Types de condition d'évolution reconnus par le parseur (tools/scraper/parse-pokedex.mjs) et par
+ * le bouton "Évoluer" de la fiche Pokémon (module/helpers/evolution.mjs). Les conditions non
+ * automatisables (échanges avec objet précis, formules à base de caractéristiques, "Spécial"...)
+ * restent en texte libre dans l'historique plutôt que d'être devinées.
+ */
+HK.conditionsEvolution = {
+  niveau: "HK.Evolution.Condition.Niveau",
+  objet: "HK.Evolution.Condition.Objet",
+  bonheur: "HK.Evolution.Condition.Bonheur",
+  genre: "HK.Evolution.Condition.Genre",
+  heure: "HK.Evolution.Condition.Heure",
+  echange: "HK.Evolution.Condition.Echange",
+  combat: "HK.Evolution.Condition.Combat"
+};
+
+/**
+ * Goûts de Poffin (Créer un Pokémon.md, cf. https://www.pokepedia.fr/Nature) : chaque Nature
+ * dicte le goût préféré / détesté du Pokémon, jamais saisi à la main (cf. HK.natures ci-dessous).
+ */
+HK.gouts = {
+  acide: "HK.Gout.Acide",
+  epice: "HK.Gout.Epice",
+  amer: "HK.Gout.Amer",
+  sec: "HK.Gout.Sec",
+  sucre: "HK.Gout.Sucre"
+};
+
+/**
  * 25 Natures (Créer un Pokémon.md) : chaque nature augmente une caractéristique de +1
  * et en diminue une autre de -1 (ou aucune des deux si neutre), avec un goût de Poffin
  * préféré / détesté associé.
