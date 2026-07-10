@@ -1,10 +1,10 @@
 <div class="hk-chat-card hk-jet-attaque">
   <header class="hk-chat-header">
-    <strong>{{attaquant.name}}</strong> → <strong>{{cible.name}}</strong>
+    {{attaquant.name}} → {{cible.name}}
   </header>
   <p class="hk-attaque-nom">
-    {{attaque.name}}
-    <span class="hk-badge hk-type-{{attaque.system.type}}">{{typeLabel}}</span>
+    <strong>{{attaque.name}}</strong>
+    <span class="hk-badge" style="background:var(--hk-t-{{attaque.system.type}}, var(--hk-ink-soft, #999))">{{typeLabel}}</span>
     <span class="hk-badge">{{categorieLabel}}</span>
   </p>
 

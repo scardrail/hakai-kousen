@@ -12,6 +12,7 @@
  */
 
 import { isActiveGM } from "../helpers/permissions.mjs";
+import { planchMort } from "./combat-officiel.mjs";
 
 const MODULE_ID = "hakai-kousen";
 
@@ -79,7 +80,7 @@ export async function resoudreDegatsFinDeTour(actor) {
     if (!fraction) continue;
 
     const degats = Math.round(actor.system.vita.max * fraction);
-    await actor.update({ "system.vita.value": Math.max(actor.system.vita.value - degats, -10) });
+    await actor.update({ "system.vita.value": Math.max(actor.system.vita.value - degats, planchMort(game.combat)) });
     ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
       content: `<p>${actor.name} subit ${degats} dégâts (${game.i18n.localize(def.label)}).</p>`
@@ -87,8 +88,10 @@ export async function resoudreDegatsFinDeTour(actor) {
   }
 
   // Les combats.md, "La mort d'un PJ ou d'un Pokémon" : à partir de -1 PV, saignement de 1 PV par
-  // tour jusqu'à -10 (mort), sauf soin. Le KO/la mort eux-mêmes sont détectés par combat/ko.mjs.
-  if (actor.system.vita.value < 0 && actor.system.vita.value > -10) {
+  // tour jusqu'à -10 (mort) en combat non officiel, sauf soin (jamais sous 0 en combat officiel,
+  // cf. combat-officiel.mjs). Le KO/la mort eux-mêmes sont détectés par combat/ko.mjs.
+  const plancher = planchMort(game.combat);
+  if (actor.system.vita.value < 0 && actor.system.vita.value > plancher) {
     await actor.update({ "system.vita.value": actor.system.vita.value - 1 });
   }
 }
@@ -134,7 +137,7 @@ export async function verifierPeutAgir(actor) {
       await effet.setFlag(MODULE_ID, "seuil", Math.max(3, seuil - 1));
 
       if (cle === "confusion") {
-        await actor.update({ "system.vita.value": Math.max(actor.system.vita.value - 4, -10) });
+        await actor.update({ "system.vita.value": Math.max(actor.system.vita.value - 4, planchMort(game.combat)) });
         return { peutAgir: false, motif: "HK.Statut.Confusion" };
       }
       return { peutAgir: false, motif: def.label };

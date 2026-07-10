@@ -1,5 +1,7 @@
 import { HK } from "../helpers/config.mjs";
 import { isActiveGM } from "../helpers/permissions.mjs";
+import { planchMort } from "./combat-officiel.mjs";
+import { texteBrut } from "../helpers/chat-parse.mjs";
 
 const MODULE_ID = "hakai-kousen";
 
@@ -35,24 +37,12 @@ async function resoudreMeteoDebutDeRound(combat) {
     const degats = Math.round(actor.system.vita.max * def.fraction);
     if (!degats) continue;
 
-    await actor.update({ "system.vita.value": Math.max(actor.system.vita.value - degats, -10) });
+    await actor.update({ "system.vita.value": Math.max(actor.system.vita.value - degats, planchMort(combat)) });
     await ChatMessage.create({
       speaker: ChatMessage.getSpeaker({ actor }),
       content: `<p>${actor.name} subit ${degats} dégâts (${game.i18n.localize(def.label)}).</p>`
     });
   }
-}
-
-/**
- * Le champ de tchat (ProseMirror) envoie du HTML au hook "chatMessage" (ex. "<p>/meteo pluie</p>"),
- * pas du texte brut : on en extrait le texte comme le fait le parseur de commandes de Foundry
- * lui-même (ChatLog.parse), sans quoi la regex de commande ne matche jamais.
- */
-function texteBrut(message) {
-  const template = document.createElement("template");
-  template.innerHTML = message;
-  template.content.querySelectorAll("br").forEach((br) => br.replaceWith("\n"));
-  return template.content.textContent.trim();
 }
 
 export function registerMeteoHooks() {
@@ -80,6 +70,14 @@ export function registerMeteoHooks() {
 
     if (!HK.meteos[cle]) {
       ui.notifications.warn(game.i18n.format("HK.Combat.MeteoInconnue", { valeurs: Object.keys(HK.meteos).join(", ") }));
+      return false;
+    }
+
+    // Les combats.md, Soleil intense/Pluie battante/Courant aérien : "impossible de changer le
+    // climat" tant que ce climat est actif (hors narratif MJ, sans déclencheur jouable ici).
+    const actuelle = getMeteoActuelle(combat);
+    if (HK.meteos[actuelle]?.verrouille && cle !== actuelle) {
+      ui.notifications.warn(game.i18n.format("HK.Combat.MeteoVerrouillee", { meteo: game.i18n.localize(HK.meteos[actuelle].label) }));
       return false;
     }
 

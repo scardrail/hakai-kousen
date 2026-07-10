@@ -2,6 +2,7 @@ import { getSeuilTableUnique } from "./table-unique.mjs";
 import { calculerDegats } from "./damage.mjs";
 import { getEfficacite } from "../helpers/type-chart.mjs";
 import { verifierPeutAgir, appliquerStatut } from "../combat/status-effects.mjs";
+import { planchMort } from "../combat/combat-officiel.mjs";
 import { HK } from "../helpers/config.mjs";
 
 function libelleEfficacite(efficacite) {
@@ -15,6 +16,25 @@ const CARACTERISTIQUE_PAR_CATEGORIE = {
   physique: { attaque: "for", defense: "end" },
   speciale: { attaque: "con", defense: "vol" }
 };
+
+/**
+ * Esquive active (Créer un Pokémon.md) : si déclarée, remplace la caractéristique défensive
+ * statique par Dextérité + le meilleur d10 parmi autant de dés que le niveau de Compétence
+ * Esquive du défenseur. Consommée dès qu'elle s'applique (une seule attaque).
+ */
+async function resoudreDefense(cible, caracteristiqueDefense) {
+  if (cible.type !== "pokemon" || !cible.system.combat.esquiveActive) {
+    return cible.system.caracteristiques[caracteristiqueDefense].total;
+  }
+
+  await cible.update({ "system.combat.esquiveActive": false });
+
+  const niveauEsquive = cible.items.find((i) => i.type === "competence" && i.name === "Esquive")?.system.score ?? 0;
+  if (!niveauEsquive) return cible.system.caracteristiques[caracteristiqueDefense].total;
+
+  const jet = await new Roll(`${niveauEsquive}d10kh1`).evaluate();
+  return cible.system.caracteristiques.dex.total + jet.total;
+}
 
 /**
  * Résout une attaque Pokémon (Les combats.md) contre une seule cible : Marge/seuil via la Table
@@ -38,7 +58,8 @@ async function resoudreUneCible({ attaquant, cible, attaqueItem, meteo, precisio
     }
   } else if (!attaqueItem.system.toujoursTouche) {
     const paire = CARACTERISTIQUE_PAR_CATEGORIE[categorie];
-    marge = attaquant.system.caracteristiques[paire.attaque].total - cible.system.caracteristiques[paire.defense].total;
+    const defense = await resoudreDefense(cible, paire.defense);
+    marge = attaquant.system.caracteristiques[paire.attaque].total - defense;
     seuil = getSeuilTableUnique(marge, precision);
     jetAttaque = await new Roll("1d10").evaluate();
     touche = jetAttaque.total >= seuil;
@@ -52,7 +73,15 @@ async function resoudreUneCible({ attaquant, cible, attaqueItem, meteo, precisio
     const resultat = calculerDegats({ attaquant, cible, attaqueItem, critique, meteo });
     degats = resultat.total;
     efficacite = resultat.efficacite;
-    await cible.update({ "system.vita.value": Math.max(cible.system.vita.value - degats, -10) });
+    const misesAJour = { "system.vita.value": Math.max(cible.system.vita.value - degats, planchMort(game.combat)) };
+    if (resultat.baieDeclenchee) misesAJour["system.objetTenu"] = "";
+    await cible.update(misesAJour);
+    if (resultat.baieDeclenchee) {
+      await ChatMessage.create({
+        speaker: ChatMessage.getSpeaker({ actor: cible }),
+        content: `<p>${game.i18n.format("HK.Combat.BaieResistanceDeclenchee", { pokemon: cible.name, baie: resultat.baieDeclenchee })}</p>`
+      });
+    }
   } else if (touche && categorie !== "autre") {
     efficacite = getEfficacite(attaqueItem.system.type, cible.system.types ?? []);
   }
