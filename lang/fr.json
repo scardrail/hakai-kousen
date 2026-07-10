@@ -16,6 +16,10 @@
     }
   },
   "HK": {
+    "Onglet": {
+      "Principal": "Principal",
+      "Historique": "Historique"
+    },
     "Car": {
       "For": "Force",
       "End": "Endurance",
@@ -31,80 +35,87 @@
       "dex": "DEX"
     },
     "Type": {
-      "normal": "Normal",
-      "feu": "Feu",
-      "eau": "Eau",
-      "plante": "Plante",
-      "electrik": "Électrik",
-      "glace": "Glace",
-      "combat": "Combat",
-      "poison": "Poison",
-      "sol": "Sol",
-      "vol": "Vol",
-      "psy": "Psy",
-      "insecte": "Insecte",
-      "roche": "Roche",
-      "spectre": "Spectre",
-      "dragon": "Dragon",
-      "tenebres": "Ténèbres",
-      "acier": "Acier",
-      "fee": "Fée"
+      "Normal": "Normal",
+      "Feu": "Feu",
+      "Eau": "Eau",
+      "Plante": "Plante",
+      "Electrik": "Électrik",
+      "Glace": "Glace",
+      "Combat": "Combat",
+      "Poison": "Poison",
+      "Sol": "Sol",
+      "Vol": "Vol",
+      "Psy": "Psy",
+      "Insecte": "Insecte",
+      "Roche": "Roche",
+      "Spectre": "Spectre",
+      "Dragon": "Dragon",
+      "Tenebres": "Ténèbres",
+      "Acier": "Acier",
+      "Fee": "Fée"
     },
     "Categorie": {
-      "physique": "Physique",
-      "speciale": "Spéciale",
-      "autre": "Autre"
+      "Physique": "Physique",
+      "Speciale": "Spéciale",
+      "Autre": "Autre"
     },
     "Portee": {
-      "cible": "Cible",
-      "rayon": "Rayon",
-      "zone": "Zone",
-      "zoneAmie": "Zone amie",
-      "zoneEnnemie": "Zone ennemie",
-      "personnel": "Personnel",
-      "sonore": "Sonore"
+      "Cible": "Cible",
+      "Rayon": "Rayon",
+      "Zone": "Zone",
+      "ZoneAmie": "Zone amie",
+      "ZoneEnnemie": "Zone ennemie",
+      "Personnel": "Personnel",
+      "Sonore": "Sonore"
     },
     "Rarete": {
-      "commun": "Commun",
-      "peuCommun": "Peu commun",
-      "starter": "Starter",
-      "rare": "Rare",
-      "tresRare": "Très rare",
-      "semiLegendaire": "Semi-légendaire",
-      "legendaire": "Légendaire"
+      "Commun": "Commun",
+      "PeuCommun": "Peu commun",
+      "Starter": "Starter",
+      "Rare": "Rare",
+      "TresRare": "Très rare",
+      "SemiLegendaire": "Semi-légendaire",
+      "Legendaire": "Légendaire"
     },
     "Genre": {
-      "male": "Mâle",
-      "femelle": "Femelle",
-      "asexue": "Asexué"
+      "Male": "Mâle",
+      "Femelle": "Femelle",
+      "Asexue": "Asexué"
     },
     "RareteCompetence": {
-      "commune": "Commune",
-      "peuCommune": "Peu commune",
-      "rare": "Rare"
+      "Commune": "Commune",
+      "PeuCommune": "Peu commune",
+      "Rare": "Rare"
+    },
+    "Gout": {
+      "Acide": "Acide",
+      "Epice": "Épicé",
+      "Amer": "Amer",
+      "Sec": "Sec",
+      "Sucre": "Sucré"
     },
     "CategorieObjet": {
-      "baie": "Baie",
-      "ball": "Ball",
-      "medicament": "Médicament",
-      "tenu": "Objet tenu",
-      "noigrume": "Noigrume",
-      "equipement": "Équipement",
-      "cristalZ": "Cristal Z",
-      "megaPierre": "Méga-Pierre",
-      "divers": "Divers"
+      "Baie": "Baie",
+      "Ball": "Ball",
+      "Medicament": "Médicament",
+      "Tenu": "Objet tenu",
+      "Noigrume": "Noigrume",
+      "Equipement": "Équipement",
+      "CristalZ": "Cristal Z",
+      "MegaPierre": "Méga-Pierre",
+      "Divers": "Divers"
     },
     "Statut": {
-      "brulure": "Brûlure",
-      "poison": "Empoisonnement",
-      "poisonGrave": "Empoisonnement grave",
-      "paralysie": "Paralysie",
-      "sommeil": "Sommeil",
-      "gel": "Gel",
-      "confusion": "Confusion",
-      "attraction": "Attraction",
-      "peur": "Peur",
-      "piege": "Piège"
+      "Brulure": "Brûlure",
+      "Poison": "Empoisonnement",
+      "PoisonGrave": "Empoisonnement grave",
+      "Paralysie": "Paralysie",
+      "Sommeil": "Sommeil",
+      "Gel": "Gel",
+      "Confusion": "Confusion",
+      "Attraction": "Attraction",
+      "Peur": "Peur",
+      "Piege": "Piège"
     },
     "Sheet": {
       "Dresseur": {
@@ -113,14 +124,37 @@
           "Competences": "Compétences",
           "Connaissances": "Connaissances",
           "Equipe": "Équipe",
+          "Pc": "PC",
+          "Pension": "Pension",
           "Inventaire": "Inventaire",
+          "CristauxZ": "Boîte à Cristaux Z",
+          "Badges": "Boîte à Badges",
           "Historique": "Historique"
         },
+        "Apparence": {
+          "Age": "Âge",
+          "Genre": "Genre",
+          "Peau": "Peau",
+          "Origine": "Origine",
+          "YeuxCheveux": "Yeux / Cheveux",
+          "Corpulence": "Corpulence",
+          "Taille": "Taille",
+          "Poids": "Poids",
+          "Description": "Description"
+        },
+        "Joueur": "Joueur",
         "Vocation": "Vocation",
         "Argent": "Argent",
         "Nature": "Nature",
-        "Historique": "Historique",
-        "XpDresseur": "XP Dresseur"
+        "Biographie": "Biographie",
+        "XpDresseur": "XP Dresseur",
+        "XpSpecialisationInsuffisante": "XP Dresseur insuffisante pour acheter une spécialisation (5 XP requis).",
+        "Badges": "Badges",
+        "AjouterBadge": "Ajouter un badge",
+        "BadgeNomPlaceholder": "Nom du badge",
+        "Retirer": "Retirer le Pokémon",
+        "ConfirmerRetrait": "Retirer {pokemon} de ce dresseur ?",
+        "EquipeComplete": "L'équipe est déjà complète (6 Pokémon) — direction le PC."
       },
       "Pokemon": {
         "Onglet": {
@@ -133,8 +167,16 @@
         },
         "Espece": "Espèce",
         "Surnom": "Surnom",
+        "Famille": "Famille",
+        "Ball": "Ball",
+        "Provenance": "Provenance",
         "Types": "Types",
+        "TypesPlaceholder": "Sélectionner...",
         "Nature": "Nature",
+        "Gouts": "Goûts",
+        "GoutPrefere": "Goût préféré",
+        "GoutDeteste": "Goût détesté",
+        "GoutAucun": "Aucun",
         "Talent": "Talent",
         "Genre": "Genre",
         "Taille": "Taille",
@@ -148,7 +190,8 @@
         "Xp": "XP",
         "Energie": "Énergie",
         "IV": "IV",
-        "EV": "EV"
+        "EV": "EV",
+        "Sensibilites": "Sensibilités"
       },
       "Commun": {
         "Nouveau": "Nouveau {type}",
@@ -164,6 +207,9 @@
     },
     "Jet": {
       "Competence": "Jet de {competence}",
+      "TitreCompetence": "Jet de {competence}",
+      "Caracteristique": "Caractéristique liée (facultatif)",
+      "Difficulte": "Difficulté (1-10)",
       "Attaque": "{nom} utilise {attaque}",
       "EnergieInsuffisante": "{nom} n'a pas assez d'Énergie pour cette attaque.",
       "CibleManquante": "Sélectionnez une cible avant d'utiliser cette attaque.",
@@ -194,7 +240,16 @@
       "MeteoActuelle": "Météo actuelle : {meteo}.",
       "MeteoInconnue": "Météo inconnue. Valeurs possibles : {valeurs}.",
       "MeteoReserveMJ": "Seul le MJ peut changer la météo.",
-      "MeteoAucunCombat": "Aucun combat actif."
+      "MeteoAucunCombat": "Aucun combat actif.",
+      "MeteoVerrouillee": "Impossible de changer le climat : {meteo} est verrouillé(e).",
+      "AttaqueInterditeMeteo": "{attaque} est inutilisable sous ce climat ({meteo}).",
+      "BaieResistanceDeclenchee": "{pokemon} mange {baie}, réduisant les dégâts de moitié (baie consommée).",
+      "OfficielDefini": "Ce combat est maintenant : {etat}.",
+      "OfficielReserveMJ": "Seul le MJ peut définir si le combat est officiel.",
+      "Officiel": "officiel (aucune mort possible)",
+      "NonOfficiel": "non officiel (mort possible sous -10 PV)",
+      "Esquive": "Esquive",
+      "EsquiveDesc": "Déclarer l'esquive active pour la prochaine attaque reçue (Dextérité + meilleur d10 parmi le niveau de Compétence Esquive, à la place de la caractéristique défensive)."
     },
     "Meteo": {
       "Aucune": "Aucune",
@@ -209,6 +264,144 @@
       "CourantAerien": "Courant aérien",
       "Nuageux": "Nuageux",
       "Neige": "Neige"
+    },
+    "Capture": {
+      "Titre": "Capturer {cible}",
+      "CibleRequise": "Cible-toi un seul Pokémon sauvage avant d'utiliser une Ball.",
+      "Ajustement": "Ajustement (bonus de Ball conditionnel : pêche, nuit, premier tour...)",
+      "Flavor": "{dresseur} tente de capturer {cible}",
+      "JetDetail": "Jet",
+      "Seuil": "seuil",
+      "CaptureAutomatique": "Capture automatique (Master Ball).",
+      "Impossible": "Capture impossible dans cet état (seuil négatif).",
+      "Reussie": "Capturé !",
+      "Echouee": "Le Pokémon s'est échappé.",
+      "Bebe": "Bébé Pokémon (+1)",
+      "Stade": {
+        "Label": "Stade d'évolution",
+        "Option": "Stade {stade}"
+      },
+      "Approche": {
+        "Label": "Approche",
+        "Neutre": "Neutre",
+        "Tendresse": "Avec tendresse (+1 Confiance)",
+        "Violence": "Avec violence (+1 Dressage)"
+      }
+    },
+    "Mega": {
+      "Bouton": "Méga-évoluer",
+      "Annuler": "Méga-évolué",
+      "DejaMegaEvolue": "Ce Pokémon est déjà méga-évolué.",
+      "ConfianceInsuffisante": "Confiance et Dressage doivent être au maximum (9/9) pour méga-évoluer.",
+      "UneParEquipe": "Un seul Pokémon peut être méga-évolué par équipe et par combat.",
+      "AucuneFormeMega": "Aucune forme méga trouvée pour {espece} dans le Pokédex.",
+      "ChoixForme": "Choix de la forme méga",
+      "Forme": "Forme",
+      "Reussie": "{pokemon} méga-évolue en {forme} !",
+      "Terminee": "{pokemon} reprend sa forme normale."
+    },
+    "Dynamax": {
+      "Bouton": "Dynamaxer",
+      "Annuler": "Dynamaxé",
+      "Niveau": "Niveau Dynamax (0-10)",
+      "ToursRestants": "Tours restants",
+      "DejaActif": "Ce Pokémon est déjà Dynamax.",
+      "Reussi": "{pokemon} Dynamax pour {tours} tours !",
+      "Termine": "{pokemon} n'est plus Dynamax."
+    },
+    "Rencontre": {
+      "ReserveMJ": "Seul le MJ peut générer une rencontre.",
+      "Resultat": "Rencontre sauvage : niveau {niveau} ({palier}){shiny}",
+      "Shiny": " — chromatique !",
+      "PasShiny": "",
+      "Palier": {
+        "tresFaible": "très faible",
+        "faible": "faible",
+        "moyen": "moyen",
+        "normal": "normal",
+        "fort": "fort",
+        "tresFort": "très fort",
+        "legende": "légende"
+      }
+    },
+    "Soin": {
+      "Titre": "Utiliser {objet}",
+      "Cible": "Pokémon",
+      "PlusStock": "Il n'en reste plus.",
+      "AucunPokemon": "Ce dresseur ne possède aucun Pokémon.",
+      "SansEffet": "Sans effet ici (déjà au maximum, ou pas K.O.).",
+      "Utilise": "{proprietaire} utilise {objet} sur {cibles}."
+    },
+    "Boutique": {
+      "Bouton": "Boutique",
+      "Titre": "Boutique — catégorie",
+      "Categorie": "Catégorie",
+      "TitreArticle": "Boutique (argent : {argent})",
+      "Article": "Article",
+      "ArgentInsuffisant": "Argent insuffisant pour cet achat.",
+      "Achat": "{dresseur} achète {article} ({prix})."
+    },
+    "Obeissance": {
+      "Reussie": "{pokemon} obéit à l'ordre (jet {jet} / seuil {seuil}).",
+      "Echouee": "{pokemon} n'obéit pas et agit à sa manière ! (jet {jet} / seuil {seuil})"
+    },
+    "Entrainement": {
+      "Titre": "Entraînement",
+      "Entrainer": "Entraîner un Pokémon",
+      "Pokemon": "Pokémon",
+      "Action": "Action",
+      "ActionXp": "Entraînement (XP)",
+      "ActionConfiance": "Renforcer la Confiance",
+      "ActionDressage": "Renforcer le Dressage",
+      "JourCourant": "Jour",
+      "MoisCourant": "Mois",
+      "JourSuivant": "Jour suivant",
+      "MoisSuivant": "Mois suivant",
+      "EquipeVide": "Ce dresseur n'a aucun Pokémon dans son équipe.",
+      "XpDisponible": "XP Dresseur disponible : {xp}",
+      "XpInsuffisante": "XP Dresseur insuffisante.",
+      "PlafondMoisAtteint": "Ce Pokémon a déjà été entraîné 7 fois ce mois-ci.",
+      "DejaFaitAujourdhui": "Déjà fait aujourd'hui pour ce Pokémon.",
+      "SuccesXp": "{dresseur} entraîne {pokemon} (+50 XP).",
+      "SuccesObeissance": "{dresseur} passe du temps avec {pokemon} ({cle} +1)."
+    },
+    "Localisation": {
+      "Equipe": "Équipe",
+      "Pc": "PC",
+      "Pension": "Pension"
+    },
+    "Niveau": {
+      "Monte": "{pokemon} passe niveau {niveau} !",
+      "NouvellesCapacites": "Nouvelle(s) capacité(s) apprise(s) : {attaques}.",
+      "PointsCompetenceDisponibles": "Points de compétence à distribuer : {points}",
+      "AjouterPoint": "+1"
+    },
+    "Evolution": {
+      "Titre": "Évolution",
+      "Bouton": "Évoluer",
+      "BoutonForcer": "Forcer (MJ)",
+      "Confirmer": "Faire évoluer {pokemon} en {cible} ?",
+      "Reussie": "{pokemon} évolue en {cible} !",
+      "Bloquee": "Bloquée par la Pierre Stase",
+      "Condition": {
+        "Niveau": "Niveau",
+        "Objet": "Objet :",
+        "Bonheur": "Bonheur",
+        "Genre": "Genre :",
+        "Heure": "Moment :",
+        "Echange": "Échange",
+        "Combat": "En combat"
+      }
+    },
+    "CT": {
+      "Enseigner": "Enseigner",
+      "Titre": "Enseigner {attaque}",
+      "Pokemon": "Pokémon",
+      "AucunPokemon": "Ce dresseur ne possède aucun Pokémon.",
+      "AucuneAttaqueDefinie": "Cette CT n'a pas d'attaque enseignée définie.",
+      "DejaConnue": "{pokemon} connaît déjà {attaque}.",
+      "AttaqueIntrouvable": "Attaque \"{attaque}\" introuvable dans le compendium — ajoutée avec son nom seul, à compléter manuellement.",
+      "Apprise": "{pokemon} apprend {attaque} !"
     },
     "Talent": {
       "Premier": "Premier Talent",

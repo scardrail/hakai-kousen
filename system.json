@@ -2,7 +2,7 @@
   "id": "hakai-kousen",
   "title": "Hakaï Kōsen",
   "description": "Système de jeu de rôle Hakaï Kōsen (Pokémon réaliste) pour Foundry VTT : dresseurs, Pokémon, combats via la Table Unique, écoles de dressage.",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "compatibility": {
     "minimum": "13",
     "verified": "13",
@@ -45,7 +45,7 @@
   "packs": [
     {
       "name": "pokedex",
-      "label": "Pokédex (échantillon)",
+      "label": "Pokédex",
       "system": "hakai-kousen",
       "path": "packs/pokedex",
       "type": "Actor",
@@ -64,6 +64,46 @@
       "label": "Talents",
       "system": "hakai-kousen",
       "path": "packs/talents",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "objets",
+      "label": "Objets",
+      "system": "hakai-kousen",
+      "path": "packs/objets",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "ct",
+      "label": "CT/CS",
+      "system": "hakai-kousen",
+      "path": "packs/ct",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "armes",
+      "label": "Armes",
+      "system": "hakai-kousen",
+      "path": "packs/armes",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "competences",
+      "label": "Compétences",
+      "system": "hakai-kousen",
+      "path": "packs/competences",
+      "type": "Item",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "connaissances",
+      "label": "Connaissances",
+      "system": "hakai-kousen",
+      "path": "packs/connaissances",
       "type": "Item",
       "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }

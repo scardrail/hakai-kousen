@@ -11,13 +11,19 @@ import CtDataModel from "./data-models/items/ct.mjs";
 import ArmeDataModel from "./data-models/items/arme.mjs";
 import HKActor from "./documents/hk-actor.mjs";
 import HKItem from "./documents/hk-item.mjs";
-import DresseurSheet from "./sheets/dresseur-sheet.mjs";
+import DresseurSheet, { registerDresseurSheetSync } from "./sheets/dresseur-sheet.mjs";
 import PokemonSheet from "./sheets/pokemon-sheet.mjs";
 import HKItemSheet from "./sheets/item-sheet.mjs";
 import { registerCombatHooks } from "./combat/status-effects.mjs";
 import { registerMeteoHooks } from "./combat/meteo.mjs";
 import { registerKoHooks } from "./combat/ko.mjs";
 import { registerHandlebarsHelpers } from "./helpers/handlebars-helpers.mjs";
+import { registerEntrainementSettings } from "./helpers/entrainement.mjs";
+import { registerNiveauHooks } from "./helpers/niveau.mjs";
+import { registerRencontreHooks } from "./helpers/rencontre.mjs";
+import { registerCombatOfficielHooks } from "./combat/combat-officiel.mjs";
+import { registerMegaEvolutionHooks } from "./helpers/mega-evolution.mjs";
+import { registerDynamaxHooks } from "./combat/dynamax.mjs";
 
 Hooks.once("init", () => {
   console.log("Hakaï Kōsen | Initialisation du système");
@@ -55,6 +61,13 @@ Hooks.once("init", () => {
   registerMeteoHooks();
   registerKoHooks();
   registerHandlebarsHelpers();
+  registerEntrainementSettings();
+  registerDresseurSheetSync();
+  registerNiveauHooks();
+  registerRencontreHooks();
+  registerCombatOfficielHooks();
+  registerMegaEvolutionHooks();
+  registerDynamaxHooks();
 });
 
 Hooks.once("ready", () => {
