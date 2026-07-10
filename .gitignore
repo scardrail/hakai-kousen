@@ -4,3 +4,4 @@ tmp-extract/
 *.log
 tools/scraper/cache/
 .claude/
+Docs_source/
