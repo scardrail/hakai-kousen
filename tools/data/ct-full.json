@@ -1,0 +1,2032 @@
+[
+  {
+    "name": "À la Queue",
+    "system": {
+      "numero": "CT1",
+      "attaqueEnseignee": "À la Queue",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Force la cible à attaquer en dernier.</p>"
+    }
+  },
+  {
+    "name": "Abîme",
+    "system": {
+      "numero": "CT2",
+      "attaqueEnseignee": "Abîme",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Met les cibles KO. Précision = (Niveau du lanceur - Niveau de la cible) + 30</p>"
+    }
+  },
+  {
+    "name": "Aboiement",
+    "system": {
+      "numero": "CT3",
+      "attaqueEnseignee": "Aboiement",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Baisser la Concentration de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Abri",
+    "system": {
+      "numero": "CT4",
+      "attaqueEnseignee": "Abri",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Protège de tout effet, direct ou indirect, d'une attaque de la cible. Si réutilisé, 50% de chances de réussite, puis 25% et enfin 12.5%. À la cinquième utilisation successive, Abri échouera systématiquement.</p>"
+    }
+  },
+  {
+    "name": "Acrobatie",
+    "system": {
+      "numero": "CT5",
+      "attaqueEnseignee": "Acrobatie",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>L'attaque est de 6 si le lanceur ne tient pas d'objet sinon elle est de 11.</p>"
+    }
+  },
+  {
+    "name": "Aéropique",
+    "system": {
+      "numero": "CT6",
+      "attaqueEnseignee": "Aéropique",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>La technique n'échoue jamais, excepté si la cible est dans le premier tour d'attaques comme Plongée ou Tunnel.</p>"
+    }
+  },
+  {
+    "name": "Aiguisage",
+    "system": {
+      "numero": "CT7",
+      "attaqueEnseignee": "Aiguisage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Force du lanceur de +1 et sa Précision de +10%.</p>"
+    }
+  },
+  {
+    "name": "Aile D'Acier",
+    "system": {
+      "numero": "CT8",
+      "attaqueEnseignee": "Aile D'Acier",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 augmente l'Endurance du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Anti-Air",
+    "system": {
+      "numero": "CT9",
+      "attaqueEnseignee": "Anti-Air",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Rend les Pokémon de type vol ainsi que ceux possédant les effets de type vol sensibles aux attaques Sol.</p>"
+    }
+  },
+  {
+    "name": "Anti-Brume",
+    "system": {
+      "numero": "CT10",
+      "attaqueEnseignee": "Anti-Brume",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Réduit l'esquive de la cible d'un niveau. Dissipe toutes les capacités de type Pics Toxik, Piège de Roc, Toile Gluante, Picots, et ce du côté adverse comme du côté joueur. Efface aussi Brume, Rune Protect, Protection et Mur Lumière, mais seulement du côté adverse.</p>"
+    }
+  },
+  {
+    "name": "Atterrissage",
+    "system": {
+      "numero": "CT11",
+      "attaqueEnseignee": "Atterrissage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Restaure la moitié de la Vitalité maximale du lanceur. Pendant ce tour si le type du lanceur est Vol celui-ci devient Normal.</p>"
+    }
+  },
+  {
+    "name": "Attraction",
+    "system": {
+      "numero": "CT12",
+      "attaqueEnseignee": "Attraction",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Attraction rend la cible amoureuse si celle-ci est de sexe opposé. La cible n'a qu'une chance sur deux d'attaquer le lanceur.</p>"
+    }
+  },
+  {
+    "name": "Avalanche",
+    "system": {
+      "numero": "CT13",
+      "attaqueEnseignee": "Avalanche",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de l'attaque sont de 12 si le lanceur a déjà encaissé des dégâts durant ce tour, sinon ils sont de 6.</p>"
+    }
+  },
+  {
+    "name": "Balayette",
+    "system": {
+      "numero": "CT14",
+      "attaqueEnseignee": "Balayette",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Dextérité de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Balle Graine",
+    "system": {
+      "numero": "CT15",
+      "attaqueEnseignee": "Balle Graine",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur attaque de 2 à 5 fois sur jusqu'à 5 cibles.</p>"
+    }
+  },
+  {
+    "name": "Ball'Ombre",
+    "system": {
+      "numero": "CT16",
+      "attaqueEnseignee": "Ball'Ombre",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 baisse la Volonté de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Bélier",
+    "system": {
+      "numero": "CT17",
+      "attaqueEnseignee": "Bélier",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur subit 1/4 des dégâts infligés en tant que dégâts de recul. Si le lanceur possède Tête de Roc il ne subit pas les dégâts de recul.</p>"
+    }
+  },
+  {
+    "name": "Blabla Dodo",
+    "system": {
+      "numero": "CT18",
+      "attaqueEnseignee": "Blabla Dodo",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur utilise une technique au hasard parmi toutes les techniques existantes s'il est endormi. Aucune énergie n'est utilisée pour lancer la technique au hasard.</p>"
+    }
+  },
+  {
+    "name": "Blizzard",
+    "system": {
+      "numero": "CT19",
+      "attaqueEnseignee": "Blizzard",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 gèle la cible. S'il gèle sur le terrain, le précision ce l'attaque passe à 100% et a 30% de chance de passer au travers d'Abri ou de Détection.</p>"
+    }
+  },
+  {
+    "name": "Bomb-Beurk",
+    "system": {
+      "numero": "CT20",
+      "attaqueEnseignee": "Bomb-Beurk",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 empoisonne la cible.</p>"
+    }
+  },
+  {
+    "name": "Bomb'Oeuf",
+    "system": {
+      "numero": "CT21",
+      "attaqueEnseignee": "Bomb'Oeuf",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Un jet d'œuf sur la cible.</p>"
+    }
+  },
+  {
+    "name": "Boost",
+    "system": {
+      "numero": "CT22",
+      "attaqueEnseignee": "Boost",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Copie les changements de Stats de la cible.</p>"
+    }
+  },
+  {
+    "name": "Boul'Armure",
+    "system": {
+      "numero": "CT23",
+      "attaqueEnseignee": "Boul'Armure",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente l'Endurance du lanceur de +2.</p>"
+    }
+  },
+  {
+    "name": "Bulles D'O",
+    "system": {
+      "numero": "CT24",
+      "attaqueEnseignee": "Bulles D'O",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 abaisse la Dextérité des cibles de -1.</p>"
+    }
+  },
+  {
+    "name": "Cage-Éclair",
+    "system": {
+      "numero": "CT25",
+      "attaqueEnseignee": "Cage-Éclair",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Paralyse la cible sauf si celle-ci est déjà victime d'un problème de statut majeur ou si elle se trouve derrière un clone. Cette attaque ne fonctionne pas contre les Pokémon de type Électrik.</p>"
+    }
+  },
+  {
+    "name": "Calcination",
+    "system": {
+      "numero": "CT26",
+      "attaqueEnseignee": "Calcination",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Rend la baie ou le joyau tenu par la cible inutilisable.</p>"
+    }
+  },
+  {
+    "name": "Câlinerie",
+    "system": {
+      "numero": "CT27",
+      "attaqueEnseignee": "Câlinerie",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 baisse la Force de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Cascade",
+    "system": {
+      "numero": "CT28",
+      "attaqueEnseignee": "Cascade",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 apeure la cible.</p>"
+    }
+  },
+  {
+    "name": "Casse-Brique",
+    "system": {
+      "numero": "CT29",
+      "attaqueEnseignee": "Casse-Brique",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Annule les effets de Mur Lumière et/ou de Protection même si Casse-Brique échoue sauf si la cible est de type Spectre.</p>"
+    }
+  },
+  {
+    "name": "Cauchemar",
+    "system": {
+      "numero": "CT30",
+      "attaqueEnseignee": "Cauchemar",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Retire 1/4 de la Vitalité maximale de la cible si elle est endormie.</p>"
+    }
+  },
+  {
+    "name": "Centrifugifle",
+    "system": {
+      "numero": "CT31",
+      "attaqueEnseignee": "Centrifugifle",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur pivote pour prendre de l'élan et infliger des dégâts.</p>"
+    }
+  },
+  {
+    "name": "Change Éclair",
+    "system": {
+      "numero": "CT32",
+      "attaqueEnseignee": "Change Éclair",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Change de Pokémon si l'attaque atteint sa cible et que vous avez au minimum un Pokémon à envoyer sur le terrain</p>"
+    }
+  },
+  {
+    "name": "Chant Canon",
+    "system": {
+      "numero": "CT33",
+      "attaqueEnseignee": "Chant Canon",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Si plusieurs Pokémon utilisent l'attaque pendant le tour, l'attaque double à chaque utilisation pendant ce même tour.</p>"
+    }
+  },
+  {
+    "name": "Choc Psy",
+    "system": {
+      "numero": "CT34",
+      "attaqueEnseignee": "Choc Psy",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Inflige des dégâts basés sur l'Endurance et non la Volonté de la cible.</p>"
+    }
+  },
+  {
+    "name": "Choc Venin",
+    "system": {
+      "numero": "CT35",
+      "attaqueEnseignee": "Choc Venin",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>La puissance de l'attaque est doublée si l'adversaire est empoisonné.</p>"
+    }
+  },
+  {
+    "name": "Chute Libre",
+    "system": {
+      "numero": "CT36",
+      "attaqueEnseignee": "Chute Libre",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Emporte l'adversaire dans les airs au premier tour l'empêchant d'attaquer, puis le fait tomber au second.</p>"
+    }
+  },
+  {
+    "name": "Clonage",
+    "system": {
+      "numero": "CT37",
+      "attaqueEnseignee": "Clonage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Sacrifie 25% de la Vitalité max pour crée un clone identique à lui-même mais possédant 25% de la Vitalité max du lanceur.</p>"
+    }
+  },
+  {
+    "name": "Colère",
+    "system": {
+      "numero": "CT38",
+      "attaqueEnseignee": "Colère",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>La technique dure pendant 2 à 3 tours et rend le lanceur confus au troisième tour sauf si l'attaque échoue avant ou est interrompue.</p>"
+    }
+  },
+  {
+    "name": "Confidence",
+    "system": {
+      "numero": "CT39",
+      "attaqueEnseignee": "Confidence",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Concentration de la cible de -1. N'échoue jamais.</p>"
+    }
+  },
+  {
+    "name": "Copie",
+    "system": {
+      "numero": "CT40",
+      "attaqueEnseignee": "Copie",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Copie imite la dernière attaque de la cible pour la durée du combat et disparait si le lanceur de Copie tombe K.O. ou se retire.</p>"
+    }
+  },
+  {
+    "name": "Coud'Boue",
+    "system": {
+      "numero": "CT41",
+      "attaqueEnseignee": "Coud'Boue",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la précision de la cible de -10%.</p>"
+    }
+  },
+  {
+    "name": "Coud'Krâne",
+    "system": {
+      "numero": "CT42",
+      "attaqueEnseignee": "Coud'Krâne",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur se recule au premier tour et frappe la cible au second.</p>"
+    }
+  },
+  {
+    "name": "Coup D'Boule",
+    "system": {
+      "numero": "CT43",
+      "attaqueEnseignee": "Coup D'Boule",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 apeure la cible.</p>"
+    }
+  },
+  {
+    "name": "Coup D'Main",
+    "system": {
+      "numero": "CT44",
+      "attaqueEnseignee": "Coup D'Main",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Augmente les dégâts de l'attaque du partenaire de 50 %.</p>"
+    }
+  },
+  {
+    "name": "Coupe",
+    "system": {
+      "numero": "CT45",
+      "attaqueEnseignee": "Coupe",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Coupe inflige des dégâts et ne présente pas d'effet secondaire particulier.</p>"
+    }
+  },
+  {
+    "name": "Coupe-Vent",
+    "system": {
+      "numero": "CT46",
+      "attaqueEnseignee": "Coupe-Vent",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur génère une bourrasque de vent qui frappe les cibles dans la zone concernée au tour prochain.</p>"
+    }
+  },
+  {
+    "name": "Cradovague",
+    "system": {
+      "numero": "CT47",
+      "attaqueEnseignee": "Cradovague",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 empoisonne la cible.</p>"
+    }
+  },
+  {
+    "name": "Cyclone",
+    "system": {
+      "numero": "CT48",
+      "attaqueEnseignee": "Cyclone",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Éparpille les Pokémon dans la zone. Cela peut mettre fin au combat contre un Pokémon sauvage ou de remplacer le Pokémon adverse par l'un des autres Pokémon de son équipe (choisi aléatoirement).</p>"
+    }
+  },
+  {
+    "name": "Damoclès",
+    "system": {
+      "numero": "CT49",
+      "attaqueEnseignee": "Damoclès",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Une charge qui retire un dixième de la Vitalité du lanceur à chaque coup infligé en tant que dégâts de recul.</p>"
+    }
+  },
+  {
+    "name": "Danse Pluie",
+    "system": {
+      "numero": "CT50",
+      "attaqueEnseignee": "Danse Pluie",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>La pluie tombe pendant 5 tours (8 tours si Roche Humide est tenu). Augmente les dégâts des techniques de type Eau de 50% et baisse ceux du type Feu de 50%.</p>"
+    }
+  },
+  {
+    "name": "Danse-Lames",
+    "system": {
+      "numero": "CT51",
+      "attaqueEnseignee": "Danse-Lames",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Force de la cible de -2.</p>"
+    }
+  },
+  {
+    "name": "Déflagration",
+    "system": {
+      "numero": "CT52",
+      "attaqueEnseignee": "Déflagration",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 brûle les cibles.</p>"
+    }
+  },
+  {
+    "name": "Dégommage",
+    "system": {
+      "numero": "CT53",
+      "attaqueEnseignee": "Dégommage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur tient un objet, il le lance sur la cible et lui inflige 10 dégâts si l'objet n'est pas une Baie, sinon ils sont de 5.</p>"
+    }
+  },
+  {
+    "name": "Demi-Tour",
+    "system": {
+      "numero": "CT54",
+      "attaqueEnseignee": "Demi-Tour",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur attaque la cible et peut être échangé avec un autre Pokémon de l'équipe.</p>"
+    }
+  },
+  {
+    "name": "Destruction",
+    "system": {
+      "numero": "CT55",
+      "attaqueEnseignee": "Destruction",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur est mis KO.</p>"
+    }
+  },
+  {
+    "name": "Détection",
+    "system": {
+      "numero": "CT56",
+      "attaqueEnseignee": "Détection",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Esquive une attaque de la cible. Si réutilisé, 50% de chances de réussite, puis 25% et enfin 12.5%. À la cinquième utilisation successive, Détection échouera systématiquement.</p>"
+    }
+  },
+  {
+    "name": "Dévorêve",
+    "system": {
+      "numero": "CT57",
+      "attaqueEnseignee": "Dévorêve",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur récupère la moitié de la Vitalité qu'a perdue la cible. La technique ne fonctionne que si la cible est endormie.</p>"
+    }
+  },
+  {
+    "name": "Direct Toxik",
+    "system": {
+      "numero": "CT58",
+      "attaqueEnseignee": "Direct Toxik",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 empoisonne la cible.</p>"
+    }
+  },
+  {
+    "name": "Distorsion",
+    "system": {
+      "numero": "CT59",
+      "attaqueEnseignee": "Distorsion",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Inverse l'ordre dans lequel les Pokémon de la zone attaquent pendant 5 tours. Fait effet en dernier.</p>"
+    }
+  },
+  {
+    "name": "Don naturel",
+    "system": {
+      "numero": "CT60",
+      "attaqueEnseignee": "Don naturel",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de l'attaque sont de 10 si la cible utilise sa Baie, sinon ils sont de 5.</p>"
+    }
+  },
+  {
+    "name": "Doux Parfum",
+    "system": {
+      "numero": "CT61",
+      "attaqueEnseignee": "Doux Parfum",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Baisse le Dextérité des Pokémons autour de -2.</p>"
+    }
+  },
+  {
+    "name": "Dracochoc",
+    "system": {
+      "numero": "CT62",
+      "attaqueEnseignee": "Dracochoc",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur possède le talent Méga Blaster, la puissance de l'attaque est augmentée de 50%</p>"
+    }
+  },
+  {
+    "name": "Dracogriffe",
+    "system": {
+      "numero": "CT63",
+      "attaqueEnseignee": "Dracogriffe",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Un coup de griffes.</p>"
+    }
+  },
+  {
+    "name": "Draco-Queue",
+    "system": {
+      "numero": "CT64",
+      "attaqueEnseignee": "Draco-Queue",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Met fin à un combat contre un Pokémon sauvage. Ne fonctionne pas contre une horde. Lors d'un duel remplace le Pokémon adverse par l'un des Pokémon de son équipe.</p>"
+    }
+  },
+  {
+    "name": "Draco-Rage",
+    "system": {
+      "numero": "CT65",
+      "attaqueEnseignee": "Draco-Rage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur envoie des ondes de choc retirant 8 points de Vitalité.</p>"
+    }
+  },
+  {
+    "name": "Dracosouffle",
+    "system": {
+      "numero": "CT66",
+      "attaqueEnseignee": "Dracosouffle",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 paralyse la cible.</p>"
+    }
+  },
+  {
+    "name": "Dynamopoing",
+    "system": {
+      "numero": "CT67",
+      "attaqueEnseignee": "Dynamopoing",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Rend confus la cible.</p>"
+    }
+  },
+  {
+    "name": "Éboulement",
+    "system": {
+      "numero": "CT68",
+      "attaqueEnseignee": "Éboulement",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 apeure la cible.</p>"
+    }
+  },
+  {
+    "name": "Ébullition",
+    "system": {
+      "numero": "CT69",
+      "attaqueEnseignee": "Ébullition",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 brûle les cibles.</p>"
+    }
+  },
+  {
+    "name": "Échange",
+    "system": {
+      "numero": "CT70",
+      "attaqueEnseignee": "Échange",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur et la cible échangent leurs Capacités Spéciales.</p>"
+    }
+  },
+  {
+    "name": "Écho",
+    "system": {
+      "numero": "CT71",
+      "attaqueEnseignee": "Écho",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>À chaque fois que cette technique est réutilisée par le lanceur, les dégâts de base de la technique sont doublés, jusqu'à atteindre 20. L'effet est annulé si la lanceur rate son attaque ou en utilise une autre.</p>"
+    }
+  },
+  {
+    "name": "Éclair Fou",
+    "system": {
+      "numero": "CT72",
+      "attaqueEnseignee": "Éclair Fou",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur reçoit 1/4 des dégâts infligés.</p>"
+    }
+  },
+  {
+    "name": "Éclat Magique",
+    "system": {
+      "numero": "CT73",
+      "attaqueEnseignee": "Éclat Magique",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Libère une puissante décharge lumineuse qui inflige des dégâts à l'ennemi.</p>"
+    }
+  },
+  {
+    "name": "Éclate-Roc",
+    "system": {
+      "numero": "CT74",
+      "attaqueEnseignee": "Éclate-Roc",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 6-10 baisse l'Endurance de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "E-Coque",
+    "system": {
+      "numero": "CT75",
+      "attaqueEnseignee": "E-Coque",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Restaure la moitié de la Vitalité maximale du lanceur.</p>"
+    }
+  },
+  {
+    "name": "Éco-Sphère",
+    "system": {
+      "numero": "CT76",
+      "attaqueEnseignee": "Éco-Sphère",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 baisse la Volonté de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Élécanon",
+    "system": {
+      "numero": "CT77",
+      "attaqueEnseignee": "Élécanon",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Paralyse la cible.</p>"
+    }
+  },
+  {
+    "name": "Embargo",
+    "system": {
+      "numero": "CT78",
+      "attaqueEnseignee": "Embargo",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Empêche la cible d'utiliser un objet tenu et son Dresseur d'utiliser un objet sur lui pendant 5 tours.</p>"
+    }
+  },
+  {
+    "name": "Empal'Korne",
+    "system": {
+      "numero": "CT79",
+      "attaqueEnseignee": "Empal'Korne",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Précision = (Niveau du Lanceur - Niveau de la cible) + 30 Si l'attaque passe, la cible est KO.</p>"
+    }
+  },
+  {
+    "name": "Escalade",
+    "system": {
+      "numero": "CT80",
+      "attaqueEnseignee": "Escalade",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 rend la cible confuse.</p>"
+    }
+  },
+  {
+    "name": "Estocorne",
+    "system": {
+      "numero": "CT81",
+      "attaqueEnseignee": "Estocorne",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>N'échoue jamais, excepté si la cible est dans le premier tour de capacités comme Plongée, Tunnel ou Vol.</p>"
+    }
+  },
+  {
+    "name": "Exploforce",
+    "system": {
+      "numero": "CT82",
+      "attaqueEnseignee": "Exploforce",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 abaisse la Volonté de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Explosion",
+    "system": {
+      "numero": "CT83",
+      "attaqueEnseignee": "Explosion",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur est mis KO.</p>"
+    }
+  },
+  {
+    "name": "Façade",
+    "system": {
+      "numero": "CT84",
+      "attaqueEnseignee": "Façade",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur est brûlé, paralysé ou empoisonné les dégâts sont de 14. Sinon les dégâts sont de 7.</p>"
+    }
+  },
+  {
+    "name": "Fatal-Foudre",
+    "system": {
+      "numero": "CT85",
+      "attaqueEnseignee": "Fatal-Foudre",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Dans des conditions normales, la précision est de 70%. Sous la pluie, la précision est de 100%. En plein Soleil la précision est de 50%. Sur 8-10 paralyse la cible.</p>"
+    }
+  },
+  {
+    "name": "Faux-Chage",
+    "system": {
+      "numero": "CT86",
+      "attaqueEnseignee": "Faux-Chage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Si la technique devait mettre KO la cible, à la place sa Vitalité reste à 1.</p>"
+    }
+  },
+  {
+    "name": "Feu Follet",
+    "system": {
+      "numero": "CT87",
+      "attaqueEnseignee": "Feu Follet",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Inflige une brûlure à la cible. L'attaque est sans effet sur les types Feu.</p>"
+    }
+  },
+  {
+    "name": "Flash",
+    "system": {
+      "numero": "CT88",
+      "attaqueEnseignee": "Flash",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Précision des Pokémon dans la zone de -10%.</p>"
+    }
+  },
+  {
+    "name": "Force",
+    "system": {
+      "numero": "CT89",
+      "attaqueEnseignee": "Force",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Force inflige des dégâts, sans effet secondaire.</p>"
+    }
+  },
+  {
+    "name": "Force Cachée",
+    "system": {
+      "numero": "CT90",
+      "attaqueEnseignee": "Force Cachée",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 change le statut de la cible.</p>"
+    }
+  },
+  {
+    "name": "Force-Nature",
+    "system": {
+      "numero": "CT91",
+      "attaqueEnseignee": "Force-Nature",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Toutes les attaques lancées sont spéciales et dépendent du lieu.</p>"
+    }
+  },
+  {
+    "name": "Frappe Atlas",
+    "system": {
+      "numero": "CT92",
+      "attaqueEnseignee": "Frappe Atlas",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Inflige 1/6 de la Vitalité max de la cible.</p>"
+    }
+  },
+  {
+    "name": "Frénésie",
+    "system": {
+      "numero": "CT93",
+      "attaqueEnseignee": "Frénésie",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Force du lanceur de +1 à chaque coup reçu pendant ce tour.</p>"
+    }
+  },
+  {
+    "name": "Frustration",
+    "system": {
+      "numero": "CT94",
+      "attaqueEnseignee": "Frustration",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de l'attaque sont égaux à la Soumission du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Giga Impact",
+    "system": {
+      "numero": "CT95",
+      "attaqueEnseignee": "Giga Impact",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Une charge qui oblige le lanceur à se reposer au tour suivant.</p>"
+    }
+  },
+  {
+    "name": "Giga-Sangsue",
+    "system": {
+      "numero": "CT96",
+      "attaqueEnseignee": "Giga-Sangsue",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur récupère la moitié de la Vitalité qu'a perdue la cible.</p>"
+    }
+  },
+  {
+    "name": "Gonflette",
+    "system": {
+      "numero": "CT97",
+      "attaqueEnseignee": "Gonflette",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente l'Endurance et la Force du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Grêle",
+    "system": {
+      "numero": "CT98",
+      "attaqueEnseignee": "Grêle",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>La grêle tombe pendant 5 tours (8 tours si Roche Glace est tenu). À chaque tour, les Pokémon qui ne sont pas de type glace perdent 1/10 de leur Vitalité maximale.</p>"
+    }
+  },
+  {
+    "name": "Griffe Ombre",
+    "system": {
+      "numero": "CT99",
+      "attaqueEnseignee": "Griffe Ombre",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Ajoute +1 sur le résultat du dé 10 pour cette attaque.</p>"
+    }
+  },
+  {
+    "name": "Gyroballe",
+    "system": {
+      "numero": "CT100",
+      "attaqueEnseignee": "Gyroballe",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de la technique sont de 12 si la Dextérité du lanceur est inférieure à celle des cibles, sinon ils sont de 6.</p>"
+    }
+  },
+  {
+    "name": "Harcèlement",
+    "system": {
+      "numero": "CT101",
+      "attaqueEnseignee": "Harcèlement",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>La cible perd 1/8 de sa Vitalité Max pendant 5 tours. La cible ne peut ni se retirer ni fuir.</p>"
+    }
+  },
+  {
+    "name": "Hurlement",
+    "system": {
+      "numero": "CT102",
+      "attaqueEnseignee": "Hurlement",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Met fin à un combat contre un Pokémon sauvage. Ne fonctionne pas contre une horde. Lors d'un duel remplace le Pokémon adverse par l'un des Pokémon de son équipe.</p>"
+    }
+  },
+  {
+    "name": "Interversion",
+    "system": {
+      "numero": "CT103",
+      "attaqueEnseignee": "Interversion",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Interversion permet de changer sa position avec un allié, au cours d'un combat double ou triple. Le lanceur augmente son Initiative de +10 pendant ce tour.</p>"
+    }
+  },
+  {
+    "name": "Jackpot",
+    "system": {
+      "numero": "CT104",
+      "attaqueEnseignee": "Jackpot",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Une charge qui fait apparaître 15 Poké $ à chaque cible atteinte.</p>"
+    }
+  },
+  {
+    "name": "Lame de Roc",
+    "system": {
+      "numero": "CT105",
+      "attaqueEnseignee": "Lame de Roc",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>La difficulté du jet de dégâts est réduite pour cette attaque.</p>"
+    }
+  },
+  {
+    "name": "Lance-Flammes",
+    "system": {
+      "numero": "CT106",
+      "attaqueEnseignee": "Lance-Flammes",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 brûle la cible.</p>"
+    }
+  },
+  {
+    "name": "Lance-Soleil",
+    "system": {
+      "numero": "CT107",
+      "attaqueEnseignee": "Lance-Soleil",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur accumule de l'énergie au premier tour et envoie un rayon au second. Si le soleil brille fortement, le lanceur peut accumuler l'énergie et la relâcher en un seul tour.</p>"
+    }
+  },
+  {
+    "name": "Larcin",
+    "system": {
+      "numero": "CT108",
+      "attaqueEnseignee": "Larcin",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur vole l'objet de la cible.</p>"
+    }
+  },
+  {
+    "name": "Laser Glace",
+    "system": {
+      "numero": "CT109",
+      "attaqueEnseignee": "Laser Glace",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 gèle la cible.</p>"
+    }
+  },
+  {
+    "name": "Lévikinésie",
+    "system": {
+      "numero": "CT110",
+      "attaqueEnseignee": "Lévikinésie",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>La cible est soulevée dans les airs pendant 3 tours. Elle est immunisée aux attaques de type Sol, à picots, pics Toxik et piège. En revanche les attaques qu'elle subit de peuvent pas échouer.</p>"
+    }
+  },
+  {
+    "name": "Luminocanon",
+    "system": {
+      "numero": "CT111",
+      "attaqueEnseignee": "Luminocanon",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 abaisse la Volonté des cibles de -1.</p>"
+    }
+  },
+  {
+    "name": "Malédiction",
+    "system": {
+      "numero": "CT112",
+      "attaqueEnseignee": "Malédiction",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur est de type spectre, il sacrifie la moitié de sa Vitalité maximale pour maudire une cible qui perd 1/4 de sa Vitalité à chaque tour. Sinon augmente la Force et l'Endurance du lanceur de +1 et baisse sa Dextérité de -1.</p>"
+    }
+  },
+  {
+    "name": "Mégacorne",
+    "system": {
+      "numero": "CT113",
+      "attaqueEnseignee": "Mégacorne",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Une attaque en charge.</p>"
+    }
+  },
+  {
+    "name": "Méga-Sangsue",
+    "system": {
+      "numero": "CT114",
+      "attaqueEnseignee": "Méga-Sangsue",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur récupère la moitié de la Vitalité qu'a perdue la cible.</p>"
+    }
+  },
+  {
+    "name": "Météores",
+    "system": {
+      "numero": "CT115",
+      "attaqueEnseignee": "Météores",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Ne rate jamais.</p>"
+    }
+  },
+  {
+    "name": "Métronome",
+    "system": {
+      "numero": "CT116",
+      "attaqueEnseignee": "Métronome",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur utilise une technique au hasard parmi toutes les techniques existantes.</p>"
+    }
+  },
+  {
+    "name": "Mitra-Poing",
+    "system": {
+      "numero": "CT117",
+      "attaqueEnseignee": "Mitra-Poing",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur est touché par une attaque avant d'utiliser cette technique, il est déconcentré et ne peut pas attaquer.</p>"
+    }
+  },
+  {
+    "name": "Mur Lumière",
+    "system": {
+      "numero": "CT118",
+      "attaqueEnseignee": "Mur Lumière",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Divise par 2 la Concentration des Pokémons adverses pendant 5 tours (8 tours si Lumargile est tenu).</p>"
+    }
+  },
+  {
+    "name": "Nitrocharge",
+    "system": {
+      "numero": "CT119",
+      "attaqueEnseignee": "Nitrocharge",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Dextérité du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Nœud Herbe",
+    "system": {
+      "numero": "CT120",
+      "attaqueEnseignee": "Nœud Herbe",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de la technique dépendent de son poids : moins de 10kg inflige 2 dégâts ; de 10,1 à 25kg : 4; de 25,1 à 50 : 6; de 50,1 à 100 : 8; de 100,1 à 200 : 10; plus de 200,1 kg : 12. Les cibles dans la zone concernée sont immobilisées pendant 5 tours.</p>"
+    }
+  },
+  {
+    "name": "Onde De Choc",
+    "system": {
+      "numero": "CT121",
+      "attaqueEnseignee": "Onde De Choc",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>N'échoue jamais, sauf si la cible est de type Sol ou dans le premier tour d'attaques comme Plongée, Tunnel ou Vol.</p>"
+    }
+  },
+  {
+    "name": "Patience",
+    "system": {
+      "numero": "CT122",
+      "attaqueEnseignee": "Patience",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur encaisse des attaques sur 2 tours sans riposter et inflige le double de dégâts à la cible sans tenir compte des types.</p>"
+    }
+  },
+  {
+    "name": "Picore",
+    "system": {
+      "numero": "CT123",
+      "attaqueEnseignee": "Picore",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Si la cible tient un baie les dégâts sont de 12 et le lanceur vole la Baie de la cible et s'appliquant ses effets. Sinon inflige 6 dégâts à la cible.</p>"
+    }
+  },
+  {
+    "name": "Piège de Roc",
+    "system": {
+      "numero": "CT124",
+      "attaqueEnseignee": "Piège de Roc",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Inflige 4 dégâts de type Roche aux Pokémon se déplaçant dans la zone.</p>"
+    }
+  },
+  {
+    "name": "Piétisol",
+    "system": {
+      "numero": "CT125",
+      "attaqueEnseignee": "Piétisol",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Dextérité de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Piqué",
+    "system": {
+      "numero": "CT126",
+      "attaqueEnseignee": "Piqué",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le Pokémon s'envole au premier tour et attaque au second. Sur 8-10 apeure la cible. Ajoute +1 sur le résultat du dé 10 pour cette attaque.</p>"
+    }
+  },
+  {
+    "name": "Pistolet à O",
+    "system": {
+      "numero": "CT127",
+      "attaqueEnseignee": "Pistolet à O",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Un jet d'eau sur un rayon.</p>"
+    }
+  },
+  {
+    "name": "Plaie-Croix",
+    "system": {
+      "numero": "CT128",
+      "attaqueEnseignee": "Plaie-Croix",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur taillade la cible.</p>"
+    }
+  },
+  {
+    "name": "Plaquage",
+    "system": {
+      "numero": "CT129",
+      "attaqueEnseignee": "Plaquage",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 paralyse la cible.</p>"
+    }
+  },
+  {
+    "name": "Plénitude",
+    "system": {
+      "numero": "CT130",
+      "attaqueEnseignee": "Plénitude",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Concentration et la Volonté du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Plongée",
+    "system": {
+      "numero": "CT131",
+      "attaqueEnseignee": "Plongée",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Au premier tour le lanceur plonge sous l'eau et attaque au second.</p>"
+    }
+  },
+  {
+    "name": "Poing Boost",
+    "system": {
+      "numero": "CT132",
+      "attaqueEnseignee": "Poing Boost",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Force du lanceur de +1 à chaque utilisation.</p>"
+    }
+  },
+  {
+    "name": "Poing De Feu",
+    "system": {
+      "numero": "CT133",
+      "attaqueEnseignee": "Poing De Feu",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 brûle la cible.</p>"
+    }
+  },
+  {
+    "name": "Poing-Éclair",
+    "system": {
+      "numero": "CT134",
+      "attaqueEnseignee": "Poing-Éclair",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 paralyse la cible sauf si celle-ci est déjà victime d'un problème de statut majeur ou derrière un clone.</p>"
+    }
+  },
+  {
+    "name": "Poing-Glace",
+    "system": {
+      "numero": "CT135",
+      "attaqueEnseignee": "Poing-Glace",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 gèle la cible sauf si celle-ci est déjà victime d'un problème de statut majeur ou derrière un clone.</p>"
+    }
+  },
+  {
+    "name": "Poliroche",
+    "system": {
+      "numero": "CT136",
+      "attaqueEnseignee": "Poliroche",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Dextérité du lanceur de +2.</p>"
+    }
+  },
+  {
+    "name": "Protection",
+    "system": {
+      "numero": "CT137",
+      "attaqueEnseignee": "Protection",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Divise par 2 la Force des Pokémons adverses pendant 5 tours (8 tours si Lumargile est tenu).</p>"
+    }
+  },
+  {
+    "name": "Provoc",
+    "system": {
+      "numero": "CT138",
+      "attaqueEnseignee": "Provoc",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Provoque la cible et l'oblige à n'utiliser que des attaques pendant trois tours. Provoc empêche la cible d'utiliser des attaques de statut.</p>"
+    }
+  },
+  {
+    "name": "Psyko",
+    "system": {
+      "numero": "CT139",
+      "attaqueEnseignee": "Psyko",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 baisse la Volonté de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Puissance Cachée",
+    "system": {
+      "numero": "CT140",
+      "attaqueEnseignee": "Puissance Cachée",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le type de la technique est défini la première fois qu'elle est utilisée. Lancer 2 dés 8 et le type est égal au résultat - 1 : 1:Combat; 2:Vol; 3 Poison; 4:Sol; 5:Roche; 6:Insecte; 7:Spectre; 8:Acier; 9:Feu; 10:Eau; 11:Plante; 12:Electique; 13:Psy; 14:Glace; 15:Dragon; 16:Ténèbres.</p>"
+    }
+  },
+  {
+    "name": "Queue De Fer",
+    "system": {
+      "numero": "CT141",
+      "attaqueEnseignee": "Queue De Fer",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 baisse l'Endurance de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Rayon Chargé",
+    "system": {
+      "numero": "CT142",
+      "attaqueEnseignee": "Rayon Chargé",
+      "prix": 0,
+      "usageUnique": false,
+      "effet": "<p>Sur 3-70 augmente la Concentration du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Recyclage",
+    "system": {
+      "numero": "CT143",
+      "attaqueEnseignee": "Recyclage",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Applique les effets d'un objet à usage unique sans le consommer.</p>"
+    }
+  },
+  {
+    "name": "Reflet",
+    "system": {
+      "numero": "CT144",
+      "attaqueEnseignee": "Reflet",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Dextérité de +1.</p>"
+    }
+  },
+  {
+    "name": "Rengorgement",
+    "system": {
+      "numero": "CT145",
+      "attaqueEnseignee": "Rengorgement",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Force et la Concentration du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Repos",
+    "system": {
+      "numero": "CT146",
+      "attaqueEnseignee": "Repos",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur dort pendant trois tours. Il regagne sa Vitalité maximale et sa condition.</p>"
+    }
+  },
+  {
+    "name": "Représailles",
+    "system": {
+      "numero": "CT147",
+      "attaqueEnseignee": "Représailles",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de l'attaque sont de 10 si la cible a déjà utilisé une technique sur le lanceur durant ce tour, sinon ils sont de 5.</p>"
+    }
+  },
+  {
+    "name": "Retour",
+    "system": {
+      "numero": "CT148",
+      "attaqueEnseignee": "Retour",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de l'attaque sont égaux à la Confiance du Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Riposte",
+    "system": {
+      "numero": "CT149",
+      "attaqueEnseignee": "Riposte",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur est touché par une attaque physique ce tour-ci, il inflige deux fois les dégâts subit, sans tenir compte des types.</p>"
+    }
+  },
+  {
+    "name": "Ronflement",
+    "system": {
+      "numero": "CT150",
+      "attaqueEnseignee": "Ronflement",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Sur 8-10 apeure la cible.</p>"
+    }
+  },
+  {
+    "name": "Roulade",
+    "system": {
+      "numero": "CT151",
+      "attaqueEnseignee": "Roulade",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Dure cinq tours, doublant sa puissance à chaque tour. (revient à 3 après les cinq tours, ou si l'attaque échoue). La puissance est doublée si le lanceur a utilisé Boul'Armure précédemment pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Rune Protect",
+    "system": {
+      "numero": "CT152",
+      "attaqueEnseignee": "Rune Protect",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur et ses alliés sont protégés contre les changements de condition.</p>"
+    }
+  },
+  {
+    "name": "Sacrifice",
+    "system": {
+      "numero": "CT153",
+      "attaqueEnseignee": "Sacrifice",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Une charge qui retire un dixième de la Vitalité du lanceur à chaque coup infligé.</p>"
+    }
+  },
+  {
+    "name": "Saisie",
+    "system": {
+      "numero": "CT154",
+      "attaqueEnseignee": "Saisie",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Acquière les effets des capacités de soin ou de changement de stats utilisés par l'ennemi.</p>"
+    }
+  },
+  {
+    "name": "Saumure",
+    "system": {
+      "numero": "CT155",
+      "attaqueEnseignee": "Saumure",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts de base de l'attaque sont de 14 si la cible a moins de la moitié de sa Vitalité maximale, sinon ils sont de 7.</p>"
+    }
+  },
+  {
+    "name": "Séduction",
+    "system": {
+      "numero": "CT156",
+      "attaqueEnseignee": "Séduction",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Si la cible est du sexe opposé au lanceur, sa Concentration baisse de -2.</p>"
+    }
+  },
+  {
+    "name": "Séisme",
+    "system": {
+      "numero": "CT157",
+      "attaqueEnseignee": "Séisme",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts sont doublés si l'attaque est utilisée durant le tour où l'adversaire est sous terre quand il utilise Tunnel.</p>"
+    }
+  },
+  {
+    "name": "Souffle Glacé",
+    "system": {
+      "numero": "CT158",
+      "attaqueEnseignee": "Souffle Glacé",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Tous les coups sont des coups critiques.</p>"
+    }
+  },
+  {
+    "name": "Surchauffe",
+    "system": {
+      "numero": "CT159",
+      "attaqueEnseignee": "Surchauffe",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Concentration du lanceur de -2.</p>"
+    }
+  },
+  {
+    "name": "Surf",
+    "system": {
+      "numero": "CT160",
+      "attaqueEnseignee": "Surf",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur crée une vague d'eau qui s'abat sur les cibles dans la zone concernée.</p>"
+    }
+  },
+  {
+    "name": "Surpuissance",
+    "system": {
+      "numero": "CT161",
+      "attaqueEnseignee": "Surpuissance",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Force et l'Endurance du lanceur de -2.</p>"
+    }
+  },
+  {
+    "name": "Survinsecte",
+    "system": {
+      "numero": "CT162",
+      "attaqueEnseignee": "Survinsecte",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Concentration de la cible de -1.</p>"
+    }
+  },
+  {
+    "name": "Taillade",
+    "system": {
+      "numero": "CT163",
+      "attaqueEnseignee": "Taillade",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>À chaque fois que cette technique est réutilisée par le lanceur, les dégâts de base de la technique sont doublés, jusqu'à atteindre 16. L'effet est annulé si la lanceur rate son attaque ou en utilise une autre.</p>"
+    }
+  },
+  {
+    "name": "Téléport",
+    "system": {
+      "numero": "CT164",
+      "attaqueEnseignee": "Téléport",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur se téléporte. Il peut quitter un combat contre un Pokémon Sauvage de cette manière. Echoue face à un dresseur.</p>"
+    }
+  },
+  {
+    "name": "Tempête de Sable",
+    "system": {
+      "numero": "CT165",
+      "attaqueEnseignee": "Tempête de Sable",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Dure 5 tours. À chaque tour, retire 1/10 de la Vitalité max à tous les Pokémon sur le terrain qui ne sont pas de type Roche, Sol ou Acier. Augmente de 50% la Volonté des Pokémon de type Roche sous Tempête de Sable.</p>"
+    }
+  },
+  {
+    "name": "Ténacité",
+    "system": {
+      "numero": "CT166",
+      "attaqueEnseignee": "Ténacité",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Si le lanceur devait tomber KO ce tour-ci, à la place sa Vitalité tombe à 1.</p>"
+    }
+  },
+  {
+    "name": "Tomberoche",
+    "system": {
+      "numero": "CT167",
+      "attaqueEnseignee": "Tomberoche",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>La Dextérité de la cible baisse de -1.</p>"
+    }
+  },
+  {
+    "name": "Tonnerre",
+    "system": {
+      "numero": "CT168",
+      "attaqueEnseignee": "Tonnerre",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 paralyse la cible.</p>"
+    }
+  },
+  {
+    "name": "Tourmente",
+    "system": {
+      "numero": "CT169",
+      "attaqueEnseignee": "Tourmente",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Empêche la cible de réutiliser une attaque deux fois de suite.</p>"
+    }
+  },
+  {
+    "name": "Toxik",
+    "system": {
+      "numero": "CT170",
+      "attaqueEnseignee": "Toxik",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Empoisonne gravement la cible qui perdra 1/16 de ses PV maximum à la fin du tour puis 2/16 au tour suivant puis 3/16 et ainsi de suite jusqu'à ce qu'elle tombe K.O. ou qu'elle soit soignée.</p>"
+    }
+  },
+  {
+    "name": "Tricherie",
+    "system": {
+      "numero": "CT171",
+      "attaqueEnseignee": "Tricherie",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts sont basés sur la stat d'Attaque de la cible. A partir de 10, ajoute 1 dégâts tous les 5 points de force.</p>"
+    }
+  },
+  {
+    "name": "Triplattaque",
+    "system": {
+      "numero": "CT172",
+      "attaqueEnseignee": "Triplattaque",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 inflige un effet à la cible. Sur un dé 3 si 3 brûle la cible, 2 gèle la cible et sur 1 paralyse la cible.</p>"
+    }
+  },
+  {
+    "name": "Tunnel",
+    "system": {
+      "numero": "CT173",
+      "attaqueEnseignee": "Tunnel",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur creuse la terre au premier tour et attaque la cible au second.</p>"
+    }
+  },
+  {
+    "name": "Tunnelier",
+    "system": {
+      "numero": "CT174",
+      "attaqueEnseignee": "Tunnelier",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Ajoute +1 sur le résultat du dé 10 pour cette attaque.</p>"
+    }
+  },
+  {
+    "name": "Ultimapoing",
+    "system": {
+      "numero": "CT175",
+      "attaqueEnseignee": "Ultimapoing",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Un coup de poing.</p>"
+    }
+  },
+  {
+    "name": "Ultimawashi",
+    "system": {
+      "numero": "CT176",
+      "attaqueEnseignee": "Ultimawashi",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Un coup de pied.</p>"
+    }
+  },
+  {
+    "name": "Ultralaser",
+    "system": {
+      "numero": "CT177",
+      "attaqueEnseignee": "Ultralaser",
+      "prix": 20000,
+      "usageUnique": false,
+      "effet": "<p>Un rayon d'énergie pur. Le lanceur doit se reposer au tour suivant.</p>"
+    }
+  },
+  {
+    "name": "Vague Psy",
+    "system": {
+      "numero": "CT178",
+      "attaqueEnseignee": "Vague Psy",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Les dégâts sont égaux au nombre d'xp dépensés pour la dernière attaque apprise par le lanceur divisé par 10.</p>"
+    }
+  },
+  {
+    "name": "Vampipoing",
+    "system": {
+      "numero": "CT179",
+      "attaqueEnseignee": "Vampipoing",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur regagne en Vitalité la moitié des dégâts infligés.</p>"
+    }
+  },
+  {
+    "name": "Vampirisme",
+    "system": {
+      "numero": "CT180",
+      "attaqueEnseignee": "Vampirisme",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur récupère la moitié de la Vitalité perdue par la cible.</p>"
+    }
+  },
+  {
+    "name": "Vantardise",
+    "system": {
+      "numero": "CT181",
+      "attaqueEnseignee": "Vantardise",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Augmente la Force de la cible de +2 et lui inflige une confusion.</p>"
+    }
+  },
+  {
+    "name": "Vengeance",
+    "system": {
+      "numero": "CT182",
+      "attaqueEnseignee": "Vengeance",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Si un Pokémon de l'équipe a été mis K.O. au tour d'avant, la puissance est doublée.</p>"
+    }
+  },
+  {
+    "name": "Vent Argenté",
+    "system": {
+      "numero": "CT183",
+      "attaqueEnseignee": "Vent Argenté",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 10 augmente toutes les Stats du lanceur de +1.</p>"
+    }
+  },
+  {
+    "name": "Vent Glace",
+    "system": {
+      "numero": "CT184",
+      "attaqueEnseignee": "Vent Glace",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Baisse la Dextérité des cibles de -1.</p>"
+    }
+  },
+  {
+    "name": "Vibraqua",
+    "system": {
+      "numero": "CT185",
+      "attaqueEnseignee": "Vibraqua",
+      "prix": 10000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 rend la cible confuse.</p>"
+    }
+  },
+  {
+    "name": "Vibrobscur",
+    "system": {
+      "numero": "CT186",
+      "attaqueEnseignee": "Vibrobscur",
+      "prix": 15000,
+      "usageUnique": false,
+      "effet": "<p>Sur 9-10 apeure les cibles.</p>"
+    }
+  },
+  {
+    "name": "Voile Aurore",
+    "system": {
+      "numero": "CT187",
+      "attaqueEnseignee": "Voile Aurore",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Ne peut être lancée que sous la grêle. Divise par 2 les dégâts reçus par les capacités physiques et spéciales pendant 5 tours. L'effet se poursuit même si le lanceur est retiré.</p>"
+    }
+  },
+  {
+    "name": "Vol",
+    "system": {
+      "numero": "CT188",
+      "attaqueEnseignee": "Vol",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le lanceur s'envole au premier tour et fait une attaque en charge au second.</p>"
+    }
+  },
+  {
+    "name": "Zénith",
+    "system": {
+      "numero": "CT189",
+      "attaqueEnseignee": "Zénith",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Le soleil brille fortement pendant 5 tours. Augmente les dégâts des techniques de type Feu de 50% et baisse ceux du type Eau de 50%.</p>"
+    }
+  },
+  {
+    "name": "Anti-Brume",
+    "system": {
+      "numero": "CS1",
+      "attaqueEnseignee": "Anti-Brume",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Supprime la brume dans une zone tant que le lanceur reste dans la zone.</p>"
+    }
+  },
+  {
+    "name": "Cascade",
+    "system": {
+      "numero": "CS2",
+      "attaqueEnseignee": "Cascade",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet de franchir les chutes d'eau.</p>"
+    }
+  },
+  {
+    "name": "Coupe",
+    "system": {
+      "numero": "CS3",
+      "attaqueEnseignee": "Coupe",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet de couper des choses, peut ôter des petits arbres barrant la route.</p>"
+    }
+  },
+  {
+    "name": "Doux Parfum",
+    "system": {
+      "numero": "CS4",
+      "attaqueEnseignee": "Doux Parfum",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Fait apparaître des Pokémon sauvages.</p>"
+    }
+  },
+  {
+    "name": "Éclate-Roc",
+    "system": {
+      "numero": "CS5",
+      "attaqueEnseignee": "Éclate-Roc",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet de casser des rochers.</p>"
+    }
+  },
+  {
+    "name": "Escalade",
+    "system": {
+      "numero": "CS6",
+      "attaqueEnseignee": "Escalade",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet d’escalader des parois.</p>"
+    }
+  },
+  {
+    "name": "Flash",
+    "system": {
+      "numero": "CS7",
+      "attaqueEnseignee": "Flash",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet de générer de la lumière.</p>"
+    }
+  },
+  {
+    "name": "Force",
+    "system": {
+      "numero": "CS8",
+      "attaqueEnseignee": "Force",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet de pousser / porter des objets.</p>"
+    }
+  },
+  {
+    "name": "Plongée",
+    "system": {
+      "numero": "CS9",
+      "attaqueEnseignee": "Plongée",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet au joueur/pokemon de plonger sous l'eau en des endroits spécifiques.</p>"
+    }
+  },
+  {
+    "name": "Siphon",
+    "system": {
+      "numero": "CS10",
+      "attaqueEnseignee": "Siphon",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet d’enlever les tourbillons d’eau.</p>"
+    }
+  },
+  {
+    "name": "Surf",
+    "system": {
+      "numero": "CS11",
+      "attaqueEnseignee": "Surf",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet au joueur/pokemon de traverser des étendues d’eau.</p>"
+    }
+  },
+  {
+    "name": "Téléport",
+    "system": {
+      "numero": "CS12",
+      "attaqueEnseignee": "Téléport",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet au joueur/pokemon de se déplacer d’un endroit à un autre instantanément.</p>"
+    }
+  },
+  {
+    "name": "Tunnel",
+    "system": {
+      "numero": "CS13",
+      "attaqueEnseignee": "Tunnel",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet au joueur/pokemon de se déplacer d’un endroit à un autre en passant sous la terre.</p>"
+    }
+  },
+  {
+    "name": "Vol",
+    "system": {
+      "numero": "CS14",
+      "attaqueEnseignee": "Vol",
+      "prix": 5000,
+      "usageUnique": false,
+      "effet": "<p>Permet au joueur/pokemon de se déplacer d’un endroit à un autre en volant.</p>"
+    }
+  }
+]

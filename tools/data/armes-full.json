@@ -1,0 +1,236 @@
+[
+  {
+    "name": "Epée",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Couteau de Survie",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Couteaux de lancé",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Katana",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Hache",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Arc",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Lance",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Bâton",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Main nue",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Coup de pied",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Arme improvisée",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Poing Américain",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Pistolet de poche",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Pistolet de poing",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Pistolet lourd",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Fusil",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Fusil tranquillisant",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Fusil d'assaut",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Fusil à pompe",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Lance-roquette",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Shuriken",
+    "system": {
+      "categorie": "distance",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Matraque",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Matraque électrique",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Batte",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Barre de fer",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  },
+  {
+    "name": "Prise de Karaté",
+    "system": {
+      "categorie": "melee",
+      "degats": "",
+      "portee": "",
+      "notes": "<p><em>Aucune donnée chiffrée dans les règles source (Les Equipements.md) : dégâts/portée à compléter manuellement.</em></p>"
+    }
+  }
+]

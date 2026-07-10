@@ -115,6 +115,91 @@ function extraireEvolution($, $gen) {
   return $gen.find("section.evo").first().text().replace(/\s+/g, " ").trim();
 }
 
+const MOTS_NIVEAU = "(?:niveau|lvl?|lv)";
+const GENRES = { femelle: "femelle", "mâle": "male", male: "male" };
+const SYNONYMES_HEURE = { jour: "jour", journée: "jour", nuit: "nuit", nuitée: "nuit" };
+
+/**
+ * Ne garde que les blocs "Evolutions" (jamais "Pré-Evolution", cf. structure DOM confirmée sur
+ * Altaria/Amonistar : chaque page ne liste QUE sa propre évolution suivante sous ce libellé, la
+ * précédente étant sous un libellé distinct "Pré-Evolution").
+ */
+function extraireEvolutionsBrutes($, $gen) {
+  const paires = [];
+  $gen.find("div.div-evo").each((_, el) => {
+    const label = $(el).find("p").first().text().trim();
+    if (!/^evolutions?$/i.test(label)) return;
+    $(el)
+      .find("a.a-evo")
+      .each((_, a) => {
+        const conditionTexte = $(a).find(".condition").text().replace(/\s+/g, " ").trim();
+        const cible = $(a).find(".pokemon").text().replace(/\s+/g, " ").trim();
+        if (cible) paires.push({ conditionTexte, cible });
+      });
+  });
+  return paires;
+}
+
+/**
+ * Classification conservatrice (Phase mécaniques de jeu, évolution) : ne structure que les motifs
+ * à haute confiance (niveau seul ou combiné à genre/heure/combat, pierre/objet, bonheur, échange).
+ * Tout le reste (formules de caractéristiques, conditions narratives uniques, "Spécial", "?",
+ * auto-références de données) reste en texte libre dans l'historique et remonte en avertissement
+ * pour être complété manuellement — cf. philosophie déjà suivie pour statut/modifStats (Phase 5).
+ * Les Méga/Primo-évolutions (mécanique distincte, cf. system.combat.megaEvolue) sont ignorées.
+ */
+function classifierConditionEvolution(texteBrut, cible, nomEspece) {
+  const texte = texteBrut.trim();
+
+  if (/^méga[\s-]/i.test(cible) || /^primo-/i.test(cible)) return { ignorer: true };
+  if (!texte || texte === "?" || cible.toLowerCase() === nomEspece.toLowerCase()) {
+    return { ambigu: true, motif: "condition vide, inconnue (?) ou auto-référence" };
+  }
+  if (/[<>=]/.test(texte) || /\b(for|end|con|vol|dex)\b/i.test(texte)) {
+    return { ambigu: true, motif: "formule de comparaison de caractéristiques" };
+  }
+
+  let m = texte.match(new RegExp(`^${MOTS_NIVEAU}?\\s*(\\d+)\\s*(?:[,+]?\\s*(?:de\\s+)?(.+))?$`, "i"));
+  if (m) {
+    const conditions = [{ type: "niveau", valeur: m[1] }];
+    if (m[2]) {
+      const suffixe = m[2].trim().toLowerCase();
+      if (suffixe in GENRES) conditions.push({ type: "genre", valeur: GENRES[suffixe] });
+      else if (suffixe in SYNONYMES_HEURE) conditions.push({ type: "heure", valeur: SYNONYMES_HEURE[suffixe] });
+      else if (suffixe === "en combat") conditions.push({ type: "combat", valeur: "" });
+      else return { ambigu: true, motif: `suffixe de niveau non reconnu : "${suffixe}"` };
+    }
+    return { conditions };
+  }
+
+  if (/^bonheur$/i.test(texte)) return { conditions: [{ type: "bonheur", valeur: "" }] };
+  m = texte.match(/^bonheur\s*,\s*(jour|journée|nuit|nuitée)$/i);
+  if (m) return { conditions: [{ type: "bonheur", valeur: "" }, { type: "heure", valeur: SYNONYMES_HEURE[m[1].toLowerCase()] }] };
+
+  if (/^(pierre|objet|griffe)\b/i.test(texte)) return { conditions: [{ type: "objet", valeur: texte }] };
+
+  m = texte.match(/^échange(?:\s+avec\s+(.+))?$/i);
+  if (m) return { conditions: [{ type: "echange", valeur: m[1] ? m[1].trim() : "" }] };
+
+  return { ambigu: true, motif: "motif non reconnu" };
+}
+
+function extraireEvolutionsStructurees($, $gen, nomEspece, avertissements) {
+  const evolutions = [];
+  for (const { conditionTexte, cible } of extraireEvolutionsBrutes($, $gen)) {
+    const resultat = classifierConditionEvolution(conditionTexte, cible, nomEspece);
+    if (resultat.ignorer) continue;
+    if (resultat.ambigu) {
+      avertissements.push(
+        `${nomEspece} : évolution non structurée automatiquement (${resultat.motif}) — "${conditionTexte}" -> "${cible}", à compléter manuellement si besoin.`
+      );
+      continue;
+    }
+    evolutions.push({ cible, conditions: resultat.conditions });
+  }
+  return evolutions;
+}
+
 function extraireMoves($, $gen, avertissements, nomPokemon) {
   const table = $gen.find("section.contenu-energie2 table.dexcapa").first();
   const noms = [];
@@ -132,6 +217,26 @@ function extraireMoves($, $gen, avertissements, nomPokemon) {
   return [...new Set(noms)];
 }
 
+/**
+ * Movepool par niveau (même table que extraireMoves, colonne Niveau cette fois) : sert au palier
+ * automatique (module/helpers/niveau.mjs), séparé du movepool "de départ" ci-dessus qui reste le
+ * jeu complet embarqué sur le gabarit Pokédex (usage de référence, pas de plafond de niveau).
+ */
+function extraireMovepoolNiveau($, $gen) {
+  const table = $gen.find("section.contenu-energie2 table.dexcapa").first();
+  const entrees = [];
+  table.find("tbody tr.upper").each((_, tr) => {
+    const spans = $(tr).find("td .inner-container");
+    const niveauTexte = $(spans[0]).find("span").first().text().trim();
+    const nom = $(spans[1]).find("span").first().text().trim();
+    if (!nom || !attaquesConnues.has(nom)) return;
+    const niveau = /^départ$/i.test(niveauTexte) ? 1 : Number(niveauTexte);
+    if (!Number.isInteger(niveau) || niveau < 1) return;
+    entrees.push({ niveau, attaque: nom });
+  });
+  return entrees;
+}
+
 function traiterPage(fichier) {
   const slug = fichier.replace(/\.html$/, "");
   const html = fs.readFileSync(path.join(CACHE_DIR, fichier), "utf8");
@@ -146,7 +251,9 @@ function traiterPage(fichier) {
   const ratioTexte = extraireRatio($, $gen);
   const { taille, poids } = extraireTailleEtPoids($, $gen);
   const evolution = extraireEvolution($, $gen);
+  const evolutions = extraireEvolutionsStructurees($, $gen, name, avertissements);
   const items = extraireMoves($, $gen, avertissements, name);
+  const movepoolNiveau = extraireMovepoolNiveau($, $gen);
 
   const imgFile = path.join(ASSETS_DIR, `${safeFilename(slug)}.png`);
   const img = fs.existsSync(imgFile) ? `${safeFilename(slug)}.png` : null;
@@ -185,7 +292,9 @@ function traiterPage(fichier) {
         obeissance: { confiance: 4, dressage: 4 },
         xp: 0,
         niveau: 5,
-        historique
+        historique,
+        evolutions,
+        movepoolNiveau
       },
       items,
       talents

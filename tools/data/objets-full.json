@@ -1,0 +1,4298 @@
+[
+  {
+    "name": "Baie Ceriz",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne la paralysie</p>"
+    }
+  },
+  {
+    "name": "Baie Maron",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne le sommeil</p>"
+    }
+  },
+  {
+    "name": "Baie Pêcha",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne l'empoisonnement</p>"
+    }
+  },
+  {
+    "name": "Baie Drash",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne l'empoisonnement</p>"
+    }
+  },
+  {
+    "name": "Baie Fraive",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne la brûlure</p>"
+    }
+  },
+  {
+    "name": "Baie Kuo",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne la brûlure</p>"
+    }
+  },
+  {
+    "name": "Baie Willia",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne le gel</p>"
+    }
+  },
+  {
+    "name": "Baie Pumkin",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne le gel</p>"
+    }
+  },
+  {
+    "name": "Baie Kika",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne la confusion</p>"
+    }
+  },
+  {
+    "name": "Baie Touga",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne la confusion</p>"
+    }
+  },
+  {
+    "name": "Baie Eggant",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Soigne l'Attraction</p>"
+    }
+  },
+  {
+    "name": "Baie Prine",
+    "system": {
+      "categorie": "baie",
+      "prix": 150,
+      "quantite": 1,
+      "effet": "<p>Soigne tout changement de statut</p>"
+    }
+  },
+  {
+    "name": "Baie Mepo",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Restaure 10 PP</p>"
+    }
+  },
+  {
+    "name": "Baie Oran",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Restaure 10 PV</p>"
+    }
+  },
+  {
+    "name": "Baie Sitrus",
+    "system": {
+      "categorie": "baie",
+      "prix": 150,
+      "quantite": 1,
+      "effet": "<p>Restaure 20 PV max</p>"
+    }
+  },
+  {
+    "name": "Baie Figuy",
+    "system": {
+      "categorie": "baie",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Restaure 1/8è des PV max, rend confus un Pokémon n'appréciant pas les Baies épicées</p>"
+    }
+  },
+  {
+    "name": "Baie Wiki",
+    "system": {
+      "categorie": "baie",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Restaure 1/8è des PV max, rend confus un Pokémon n'appréciant pas les Baies sèches</p>"
+    }
+  },
+  {
+    "name": "Baie Mago",
+    "system": {
+      "categorie": "baie",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Restaure 1/8è des PV max, rend confus un Pokémon n'appréciant pas les Baies sucrées</p>"
+    }
+  },
+  {
+    "name": "Baie Gowav",
+    "system": {
+      "categorie": "baie",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Restaure 1/8è des PV max, rend confus un Pokémon n'appréciant pas les Baies amères</p>"
+    }
+  },
+  {
+    "name": "Baie Papaya",
+    "system": {
+      "categorie": "baie",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Restaure 1/8è des PV max, rend confus un Pokémon n'appréciant pas les Baies acides</p>"
+    }
+  },
+  {
+    "name": "Baie Pocpoc",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type eau super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Parma",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type électrique super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Ratam",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type plante super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Nanone",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type glace super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Pomroz",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type Combat super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Kébia",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type poison super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Jouca",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type sol super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Cobaba",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type vol super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Yapap",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type psy super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Panga",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type insecte super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Charti",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type roche super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Sédra",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type Spectre super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Fraigo",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type Dragon super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Lampou",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type Ténèbres super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Babiri",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type acier super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Zalis",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par la première attaque de type normal encaissée.</p>"
+    }
+  },
+  {
+    "name": "Baie Selro",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Divise par 2 les dégâts occasionnés par une attaque de type Fée super efficace</p>"
+    }
+  },
+  {
+    "name": "Baie Jaboca",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Inflige des dégâts de contrecoup à un adversaire utilisant une attaque physique</p>"
+    }
+  },
+  {
+    "name": "Baie Pommo",
+    "system": {
+      "categorie": "baie",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Inflige des dégâts de contrecoup à un adversaire utilisant une attaque spéciale</p>"
+    }
+  },
+  {
+    "name": "Baie Frista",
+    "system": {
+      "categorie": "baie",
+      "prix": 800,
+      "quantite": 1,
+      "effet": "<p>Augmente l'attaque de +5 lorsque les PV du Pokémon passent sous 1/3 de ses PV max</p>"
+    }
+  },
+  {
+    "name": "Baie Enigma",
+    "system": {
+      "categorie": "baie",
+      "prix": 800,
+      "quantite": 1,
+      "effet": "<p>Augmente la défense de +5 lorsque les PV du Pokémon passent sous 1/3 de ses PV max</p>"
+    }
+  },
+  {
+    "name": "Baie Micle",
+    "system": {
+      "categorie": "baie",
+      "prix": 800,
+      "quantite": 1,
+      "effet": "<p>Augmente la précision de 50% d'une attaque pour un tour</p>"
+    }
+  },
+  {
+    "name": "Baie Rangma",
+    "system": {
+      "categorie": "baie",
+      "prix": 800,
+      "quantite": 1,
+      "effet": "<p>Augmente la Défense Spéciale de +5 du Pokémon qui la tient s'il est touché par une attaque spéciale.</p>"
+    }
+  },
+  {
+    "name": "Baie Éka",
+    "system": {
+      "categorie": "baie",
+      "prix": 800,
+      "quantite": 1,
+      "effet": "<p>Augmente la Défense de +5 du Pokémon qui la tient s'il est touché par une attaque physique.</p>"
+    }
+  },
+  {
+    "name": "Baie Ginema",
+    "system": {
+      "categorie": "baie",
+      "prix": 800,
+      "quantite": 1,
+      "effet": "<p>Augmente d'un niveau une statistique qui devrait être baissée d'un</p>"
+    }
+  },
+  {
+    "name": "Baie Chérim",
+    "system": {
+      "categorie": "baie",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Le Pokémon attaquera en premier pour un tour</p>"
+    }
+  },
+  {
+    "name": "Baie Abriko",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Alga",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Chilan",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Durin",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Framby",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Grena",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Kiwan",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Lansat",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Lichii",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Lingan",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Lonme",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Mangou",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Myrte",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Nanab",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Nanana",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Niniku",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Nutpea",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Palma",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Pitaye",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Qualot",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Rabuta",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Remu",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Repoi",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Resin",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Sailak",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Siam",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Stekpa",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Strib",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Tamato",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Topo",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Tronci",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Baie Yago",
+    "system": {
+      "categorie": "baie",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Ingrédient de Pokéblocs et Poffins</p>"
+    }
+  },
+  {
+    "name": "Noigrume Blanc",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur blanche. Il ne dégage aucun arôme. Sert à fabriquer la Speed ball.</p>"
+    }
+  },
+  {
+    "name": "Noigrume Bleu",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur bleue. Il dégage un arôme un peu aigre. Sert à fabriquer la Appât ball.</p>"
+    }
+  },
+  {
+    "name": "Noigrume Jaune",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur jaune. Il dégage un arôme délicat. Sert à fabriquer la Lune ball.</p>"
+    }
+  },
+  {
+    "name": "Noigrume Noire",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur noire. Il dégage un arôme indéfinissable. Sert à fabriquer la Masse ball.</p>"
+    }
+  },
+  {
+    "name": "Noigrume Rouge",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur rouge. Il dégage un puissant arôme. Sert à fabriquer la Niveau ball.</p>"
+    }
+  },
+  {
+    "name": "Noigrume Rose",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur rose. Il dégage un arôme sucré. Sert à fabriquer la Love ball.</p>"
+    }
+  },
+  {
+    "name": "Noigrume Verte",
+    "system": {
+      "categorie": "noigrume",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un Noigrume de couleur verte. Il dégage un arôme étonnamment riche. Sert à fabriquer la Copain ball.</p>"
+    }
+  },
+  {
+    "name": "Pokédex",
+    "system": {
+      "categorie": "equipement",
+      "prix": 3000,
+      "quantite": 1,
+      "effet": "<p>Sorte d’encyclopédie Pokémon. Permet d’identifier l’espèce d’un Pokémon rencontré dans la nature. Des informations de base sont disponibles. Permet également d’énumérer les Pokémon capturés pour un collectionneur.</p>"
+    }
+  },
+  {
+    "name": "Pokénav",
+    "system": {
+      "categorie": "equipement",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>GPS et radio. Permet de se repérer sur un continent. Certains programmes radio peuvent diffuser de la musique attirant ou repoussant les Pokémon sauvages.</p>"
+    }
+  },
+  {
+    "name": "Pokématos",
+    "system": {
+      "categorie": "equipement",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Téléphone et radio. Chaque utilisateur possède un numéro unique. Certains programmes radio peuvent diffuser de la musique attirant ou repoussant les Pokémon sauvages.</p>"
+    }
+  },
+  {
+    "name": "Pokénurse",
+    "system": {
+      "categorie": "equipement",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Permet de donner des indications sur le soin à donner aux œufs de Pokémon et de donner une date probable de l’éclosion. Certains modèles peuvent contenir un œuf et servir de couveuse.</p>"
+    }
+  },
+  {
+    "name": "Pokéradar",
+    "system": {
+      "categorie": "equipement",
+      "prix": 20000,
+      "quantite": 1,
+      "effet": "<p>Permet de détecter les Pokémon à proximité.</p>"
+    }
+  },
+  {
+    "name": "Potion",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne 10 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Super Potion",
+    "system": {
+      "categorie": "medicament",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Soigne 25 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Hyper Potion",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1200,
+      "quantite": 1,
+      "effet": "<p>Soigne 50 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Potion Max",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>Soigne tous les PV d’un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Guérison",
+    "system": {
+      "categorie": "medicament",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Soigne tous les PV d’un Pokémon ainsi que ses problèmes de Statut.</p>"
+    }
+  },
+  {
+    "name": "Antidote",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne l’empoisonnement.</p>"
+    }
+  },
+  {
+    "name": "Anti-Para",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne la paralysie.</p>"
+    }
+  },
+  {
+    "name": "Anti-Brûle",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne la brûlure.</p>"
+    }
+  },
+  {
+    "name": "Antigel",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne le gel.</p>"
+    }
+  },
+  {
+    "name": "Réveil",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne l’endormissement.</p>"
+    }
+  },
+  {
+    "name": "Total Soin",
+    "system": {
+      "categorie": "medicament",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Soigne tous les problèmes de Statut.</p>"
+    }
+  },
+  {
+    "name": "Huile",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Restaure 10 point d’Énergie à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Huile Max",
+    "system": {
+      "categorie": "medicament",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Restaure 20 point d’Énergie d’un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Élixir",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1200,
+      "quantite": 1,
+      "effet": "<p>Restaure 25 point d’Énergie à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Max Élixir",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>Restaure tous les points d’Énergie d’un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Rappel",
+    "system": {
+      "categorie": "medicament",
+      "prix": 2500,
+      "quantite": 1,
+      "effet": "<p>En combat officiel, ramène un Pokémon KO à 1/2 PV max.</p>"
+    }
+  },
+  {
+    "name": "Rappel Max",
+    "system": {
+      "categorie": "medicament",
+      "prix": 5000,
+      "quantite": 1,
+      "effet": "<p>En combat officiel, ramène un Pokémon KO et restaure ses PV max.</p>"
+    }
+  },
+  {
+    "name": "Herbe Rappel",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Soigne un Pokémon KO et le ramène à 1 PV.</p>"
+    }
+  },
+  {
+    "name": "Racinénergie",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Soigne 5 PV et 50 d’énergie à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Poudre Soin",
+    "system": {
+      "categorie": "medicament",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>Soigne tous les problèmes de Statut.</p>"
+    }
+  },
+  {
+    "name": "Poudrénergie",
+    "system": {
+      "categorie": "medicament",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Soigne 1 PV et 10 d’énergie à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Cendresacrée",
+    "system": {
+      "categorie": "medicament",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Ranime tous les Pokémon K.O. et restaure tous leurs PV.</p>"
+    }
+  },
+  {
+    "name": "DEX+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 350,
+      "quantite": 1,
+      "effet": "<p>Augmente la DEX d’un Pokémon de 1d6 pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "FOR+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Augmente la FOR d’un Pokémon de 1d6 pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "CON+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 350,
+      "quantite": 1,
+      "effet": "<p>Augmente la CON d’un Pokémon de 1d6 pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "END+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 550,
+      "quantite": 1,
+      "effet": "<p>Augmente l’END d’un Pokémon de 1d6 pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "VOL+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 350,
+      "quantite": 1,
+      "effet": "<p>Augmente la VOL d’un Pokémon de 1d6 pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "Défense Spéciale",
+    "system": {
+      "categorie": "medicament",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Empêche la réduction des stats de tous les Pokémon de l'équipe pendant 5 tours.</p>"
+    }
+  },
+  {
+    "name": "Précision+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 950,
+      "quantite": 1,
+      "effet": "<p>Augmente la Précision d’un Pokémon de 1d3 pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "Muscle+",
+    "system": {
+      "categorie": "medicament",
+      "prix": 650,
+      "quantite": 1,
+      "effet": "<p>Augmente le taux de Coups Critiques (+1 au dé) d’un Pokémon pendant 1 minute après ingestion, effet immédiat. Interdit en match d’arène ou grande épreuve.</p>"
+    }
+  },
+  {
+    "name": "Vitamine",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à la VITalité.</p>"
+    }
+  },
+  {
+    "name": "Protéine",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à la FORce.</p>"
+    }
+  },
+  {
+    "name": "Fer",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à l’ENDurance.</p>"
+    }
+  },
+  {
+    "name": "Calcium",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à la CONcentration.</p>"
+    }
+  },
+  {
+    "name": "Carbone",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à la DEXtérité.</p>"
+    }
+  },
+  {
+    "name": "Zinc",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à la VOLonté.</p>"
+    }
+  },
+  {
+    "name": "Sodium",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Ajoute un EV à l’ÉNErgie.</p>"
+    }
+  },
+  {
+    "name": "Sodium Plus",
+    "system": {
+      "categorie": "medicament",
+      "prix": 90000,
+      "quantite": 1,
+      "effet": "<p>Ajoute 10 EV à l’ÉNErgie.</p>"
+    }
+  },
+  {
+    "name": "Super Bonbon",
+    "system": {
+      "categorie": "medicament",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>100 xp Pokemon ou 1 xp Dresseur</p>"
+    }
+  },
+  {
+    "name": "Pilule Talent",
+    "system": {
+      "categorie": "medicament",
+      "prix": 15000,
+      "quantite": 1,
+      "effet": "<p>Permet de changer le Talent.</p>"
+    }
+  },
+  {
+    "name": "Poké Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 200,
+      "quantite": 1,
+      "effet": "<p>+0</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Super Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 600,
+      "quantite": 1,
+      "effet": "<p>+1</p>",
+      "bonusCapture": 1,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Hyper Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1200,
+      "quantite": 1,
+      "effet": "<p>+2</p>",
+      "bonusCapture": 2,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Appât Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si le Pokémon a été pêché); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Bis Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si utilisé sur un Pokémon déjà capturé); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Chrono Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si le combat dure plus de 10 tours); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Copain Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 400,
+      "quantite": 1,
+      "effet": "<p>+0 (Ajoute +1 à la Confiance du Pokemon si capturé)</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Faiblo Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si le Pokemon a une faible puissance et n'a pas évolué); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Filet Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+2 (Si c'est un Pokémon Eau ou Insecte); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Honor Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>+0 (Une Ball assez rare qui fut créée pour un événement particulier)</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Love Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+4 (Si le Pokémon est de la même espèce que votre Pokemon combattant et du sexe opposé); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Lune Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si dans la famille du Pokémon, l'un d'entre eux évolue avec une Pierre Lune); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Luxe Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+0 (Ajoute +2 à la Confiance du Pokemon si capturé)</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Masse Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>- 2 (poids inférieur à 204.8 kg); +2 (poids entre 204.8 et 307.2 kg); +3 (poids entre 307.2 et 409.6 kg); +4 (poids plus de 409.6 kg)</p>",
+      "bonusCapture": -2,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Master Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Capture à tous les coups (sauf Légendaires majeurs qui ne sont pas capturables)</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": true
+    }
+  },
+  {
+    "name": "Mémoire Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>+0</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Niveau Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+0 (Si aucune différence [IV + EV] entre les Pokémon) +1 (Si une différence de niveau est présente) +3 (Si votre Pokémon a deux fois plus d'[IV + EV] que le Pokémon sauvage) +5 (Si votre Pokémon a quatre fois plus d'[IV + EV] ou plus que le Pokémon sauvage)</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Rapide Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+4 (Si utilisé le premier tour); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Safari Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>+0</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Scuba Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si utilisé sur un Pokémon aquatique); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Soin Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 300,
+      "quantite": 1,
+      "effet": "<p>+0 (Le Pokemon est soigné intégralement : VIT et ENE)</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Sombre Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+2 (Si utilisé dans un endroit sombre ou la nuit); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Speed Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>+3 (Si utilisé sur un Pokémon ayant une Base Stat DEX égale ou supérieure à 10); +0 sinon</p>",
+      "bonusCapture": 0,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Ultra Ball",
+    "system": {
+      "categorie": "ball",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>+3 (Si utilisé sur une Ultra-Chimère); -2 sinon</p>",
+      "bonusCapture": -2,
+      "captureAutomatique": false
+    }
+  },
+  {
+    "name": "Repousse",
+    "system": {
+      "categorie": "divers",
+      "prix": 150,
+      "quantite": 1,
+      "effet": "<p>Répulsif à Pokémon, efficace pendant 30 minutes.</p>"
+    }
+  },
+  {
+    "name": "Superepousse",
+    "system": {
+      "categorie": "divers",
+      "prix": 350,
+      "quantite": 1,
+      "effet": "<p>Répulsif à Pokémon, efficace pendant 60 minutes.</p>"
+    }
+  },
+  {
+    "name": "Max Repousse",
+    "system": {
+      "categorie": "divers",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Répulsif à Pokémon, efficace pendant 1h30 heures.</p>"
+    }
+  },
+  {
+    "name": "Corde de 15m",
+    "system": {
+      "categorie": "divers",
+      "prix": 200,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Machette",
+    "system": {
+      "categorie": "divers",
+      "prix": 250,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Couteau",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Couteau suisse",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Couteau de survie",
+    "system": {
+      "categorie": "divers",
+      "prix": 200,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Lampe torche",
+    "system": {
+      "categorie": "divers",
+      "prix": 75,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Piles",
+    "system": {
+      "categorie": "divers",
+      "prix": 5,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Tente à une personne",
+    "system": {
+      "categorie": "divers",
+      "prix": 350,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Sac de couchage",
+    "system": {
+      "categorie": "divers",
+      "prix": 150,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Nécessaire de camping",
+    "system": {
+      "categorie": "divers",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Contient une tente 1 personne, un sac de couchage, un oreiller, une couverture, un couteau suisse et une lampe de poche.</p>"
+    }
+  },
+  {
+    "name": "Nécessaire à cuisine",
+    "system": {
+      "categorie": "divers",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Contient un réchaud à gaz/alcool, un briquet, une marmite, une casserole et des ustensiles de cuisine.</p>"
+    }
+  },
+  {
+    "name": "Réchaud à gaz/alcool",
+    "system": {
+      "categorie": "divers",
+      "prix": 300,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Gourde 3L",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Trousse de premiers soins",
+    "system": {
+      "categorie": "divers",
+      "prix": 150,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Briquet",
+    "system": {
+      "categorie": "divers",
+      "prix": 15,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Boussole",
+    "system": {
+      "categorie": "divers",
+      "prix": 15,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Ration de nourriture",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Rations Humaine",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Nourriture pour un repas humain.</p>"
+    }
+  },
+  {
+    "name": "Rations Pokémon",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Nourriture pour un repas de Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Nourriture Pokémon",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Sac à dos",
+    "system": {
+      "categorie": "divers",
+      "prix": 350,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Licence dresseur",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Appel-Monture",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Album Photo",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un album décoré de photos souvenir prises pendant le voyage.</p>"
+    }
+  },
+  {
+    "name": "Bicyclette",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une Bicyclette pliable permettant de se déplacer plus rapidement qu'avec les Chaussures de Sport.</p>"
+    }
+  },
+  {
+    "name": "Boîte Jetons",
+    "system": {
+      "categorie": "tenu",
+      "prix": 15,
+      "quantite": 1,
+      "effet": "<p>Une boîte pour conserver les Jetons obtenus au Casino. Peut contenir jusqu'à 50 000 Jetons.</p>"
+    }
+  },
+  {
+    "name": "Boîte Lentilles",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Boîte Parure",
+    "system": {
+      "categorie": "divers",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>Boîte permettant de ranger les Parures pour habiller les Pokémon au Music-Hall.</p>"
+    }
+  },
+  {
+    "name": "Boîte Poffin",
+    "system": {
+      "categorie": "divers",
+      "prix": 15,
+      "quantite": 1,
+      "effet": "<p>Boîte pour ranger les Poffins faits à partir de Baies.</p>"
+    }
+  },
+  {
+    "name": "Boîte Sceaux",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": "<p>Boîte contenant les Sceaux pouvant être placés sur les capsules des Poké Balls.</p>"
+    }
+  },
+  {
+    "name": "Bonbon Rage",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un bonbon, spécialité d'Acajou. Il constitue un cadeau très réputé.</p>"
+    }
+  },
+  {
+    "name": "Boite Noigrume",
+    "system": {
+      "categorie": "tenu",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Une boîte bien pratique qui peut contenir jusqu'à 30 Noigrumes.</p>"
+    }
+  },
+  {
+    "name": "Canne",
+    "system": {
+      "categorie": "divers",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>Une vieille canne usée. Utilisez-la pour pêcher des Pokémon sauvages dans les points d'eau.</p>"
+    }
+  },
+  {
+    "name": "Carapuce à O",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Un arrosoir qui permet de faire croître rapidement les Baies plantées dans le Plante-Baies.</p>"
+    }
+  },
+  {
+    "name": "Carnet Zarbi",
+    "system": {
+      "categorie": "divers",
+      "prix": 15,
+      "quantite": 1,
+      "effet": "<p>Un carnet permettant de noter toutes les formes de Zarbi capturées.</p>"
+    }
+  },
+  {
+    "name": "Carte",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Une carte très pratique pouvant être consultée n'importe quand. Elle indique votre position actuelle.</p>"
+    }
+  },
+  {
+    "name": "Cherch'Objet",
+    "system": {
+      "categorie": "divers",
+      "prix": 20000,
+      "quantite": 1,
+      "effet": "<p>Un appareil high-tech qui indique l'emplacement des objets invisibles en émettant un son et en clignotant.</p>"
+    }
+  },
+  {
+    "name": "Cherche VS",
+    "system": {
+      "categorie": "divers",
+      "prix": 150,
+      "quantite": 1,
+      "effet": "<p>Un appareil indiquant les Dresseurs prêts à se battre. La batterie se recharge quand vous marchez.</p>"
+    }
+  },
+  {
+    "name": "Coffret Mode",
+    "system": {
+      "categorie": "divers",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>Boîte permettant de ranger les Parures pour habiller les Pokémon au Music-Hall.</p>"
+    }
+  },
+  {
+    "name": "Explorakit",
+    "system": {
+      "categorie": "divers",
+      "prix": 1500,
+      "quantite": 1,
+      "effet": "<p>Sac contenant des objets utiles à l'exploration. Permet d'entrer dans le Souterrain.</p>"
+    }
+  },
+  {
+    "name": "Journal",
+    "system": {
+      "categorie": "divers",
+      "prix": 15,
+      "quantite": 1,
+      "effet": "<p>Journal de bord qui garde en mémoire vos aventures quotidiennes.</p>"
+    }
+  },
+  {
+    "name": "Kwakarrosoir",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Arrosoir en forme de Psykokwak. Aide à la croissance des Baies plantées dans les sols meubles.</p>"
+    }
+  },
+  {
+    "name": "Lecteur musique",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Un lecteur de musique qui permet de se plonger dans une atmosphère rétro. Une pression suffit pour changer de mode.</p>"
+    }
+  },
+  {
+    "name": "Livre Règles",
+    "system": {
+      "categorie": "divers",
+      "prix": 15,
+      "quantite": 1,
+      "effet": "<p>La liste des règles de combat. Vous pouvez choisir les règles des combats en Link.</p>"
+    }
+  },
+  {
+    "name": "Magnéto VS",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Appareil utile permettant d'enregistrer les combats entre amis et ceux ayant lieu dans un bâtiment de combat.</p>"
+    }
+  },
+  {
+    "name": "Méga Canne",
+    "system": {
+      "categorie": "divers",
+      "prix": 6000,
+      "quantite": 1,
+      "effet": "<p>Une canne à pêche ultramoderne. Utilisez-la pour pêcher des Pokémon sauvages dans les points d'eau.</p>"
+    }
+  },
+  {
+    "name": "Poupée Mime Jr",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Poupée Mime Jr.</p>"
+    }
+  },
+  {
+    "name": "Boite à Baies",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Un accessoire portatif qui permet de cultiver des Baies en tout lieu et à tout moment.</p>"
+    }
+  },
+  {
+    "name": "Poké Écrin",
+    "system": {
+      "categorie": "divers",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Un écrin résistant qui ne s'ouvre qu'avec une clé spéciale.</p>"
+    }
+  },
+  {
+    "name": "Poké Radar",
+    "system": {
+      "categorie": "divers",
+      "prix": 150000,
+      "quantite": 1,
+      "effet": "<p>Objet permettant de trouver les Pokémon qui se cachent dans l'herbe. Se recharge quand vous marchez.</p>"
+    }
+  },
+  {
+    "name": "Sac Sceaux",
+    "system": {
+      "categorie": "tenu",
+      "prix": 15,
+      "quantite": 1,
+      "effet": "<p>Petit sac pouvant contenir dix Sceaux pour décorer les Poké Balls.</p>"
+    }
+  },
+  {
+    "name": "Super Bracelet Z",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Super Canne",
+    "system": {
+      "categorie": "divers",
+      "prix": 3000,
+      "quantite": 1,
+      "effet": "<p>Une canne neuve et de bonne qualité. Utilisez-la pour pêcher des Pokémon sauvages dans les points d'eau.</p>"
+    }
+  },
+  {
+    "name": "Vokit",
+    "system": {
+      "categorie": "divers",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Transmetteur high-tech permettant à 4 personnes de communiquer par le son et l'image.</p>"
+    }
+  },
+  {
+    "name": "Corde Sortie",
+    "system": {
+      "categorie": "divers",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Une corde longue et solide permettant de sortir rapidement d'une grotte ou d'un donjon.</p>"
+    }
+  },
+  {
+    "name": "Poké plumet",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Objet qui attire les Pokémon. Permet de s'enfuir d'un combat contre un Pokémon sauvage.</p>"
+    }
+  },
+  {
+    "name": "Poké poupée",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Poupée qui attire les Pokémon. Permet de s'enfuir d'un combat contre un Pokémon sauvage.</p>"
+    }
+  },
+  {
+    "name": "Trousse Beauté",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Chococœur",
+    "system": {
+      "categorie": "divers",
+      "prix": 20,
+      "quantite": 1,
+      "effet": "<p>Un chocolat extrêmement sucré. Restaure 2 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Eau Fraîche",
+    "system": {
+      "categorie": "divers",
+      "prix": 30,
+      "quantite": 1,
+      "effet": "<p>Une eau riche en minéraux. Restaure 5 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Galette illumis",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Glace Volute",
+    "system": {
+      "categorie": "divers",
+      "prix": 20,
+      "quantite": 1,
+      "effet": "<p>Spécialité de Volucité. Elle soigne tous les problèmes de statut d'un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Jus de Baie",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Une boisson 100% pur jus de Baies. Restaure 5 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Lait Meumeu",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Un lait très nourrissant. Restaure 10 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Lava Cookie",
+    "system": {
+      "categorie": "divers",
+      "prix": 20,
+      "quantite": 1,
+      "effet": "<p>La spécialité de la ville de Vermilava. Soigne tous les problèmes de statut d'un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Limonade",
+    "system": {
+      "categorie": "divers",
+      "prix": 40,
+      "quantite": 1,
+      "effet": "<p>Une boisson très sucrée. Restaure 8 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Malasada Maxi",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Miel",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Attractif à Pokemon, efficace pendant 60 minutes. Restaure 10 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Sablé Yantreizh",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Soda Cool",
+    "system": {
+      "categorie": "divers",
+      "prix": 30,
+      "quantite": 1,
+      "effet": "<p>Une boisson pétillante. Restaure 6 PV à un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Vieux Gâteau",
+    "system": {
+      "categorie": "divers",
+      "prix": 20,
+      "quantite": 1,
+      "effet": "<p>Spécialité du Vieux Château. Il soigne tous les problèmes de statut d'un Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Accro Griffe",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la durée des attaques à tours multiples telles que Ligotage et Étreinte.</p>"
+    }
+  },
+  {
+    "name": "Aimant",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Aimant puissant montant la puissance des capacités de type Électrik.</p>"
+    }
+  },
+  {
+    "name": "Améliorator",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Dispositif transparent rempli de données diverses et variées. Fabriqué par la Sylphe SARL.</p>"
+    }
+  },
+  {
+    "name": "Balle Fer",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir réduisant la Vitesse. Rend les porteurs de type Vol et lévitant sensibles aux capacités de type Sol.</p>"
+    }
+  },
+  {
+    "name": "Balle lumière",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir par Pikachu. Orbe énigmatique qui monte son Attaque et son Attaque Spéciale.</p>"
+    }
+  },
+  {
+    "name": "Ballon",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Tenu par un Pokémon, cet objet lui permet de flotter dans les airs. Il éclate en cas d'attaque.</p>"
+    }
+  },
+  {
+    "name": "Bande Étreinte",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la puissance des attaques immobilisantes telles que Ligotage ou Étreinte.</p>"
+    }
+  },
+  {
+    "name": "Bandeau",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir pouvant parfois empêcher d'être mis K.O., ne laissant qu'un PV.</p>"
+    }
+  },
+  {
+    "name": "Bandeau Choix",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Ce bandeau monte l'Attaque, mais ne permet d'utiliser qu'une seule capacité par combat.</p>"
+    }
+  },
+  {
+    "name": "Bandeau Muscle",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Bandeau augmentant légèrement la puissance des attaques physiques.</p>"
+    }
+  },
+  {
+    "name": "Bandeau Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la Défense Spéciale lors des montées de niveau mais réduisant la Vitesse pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Bec Pointu",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Bec long et pointu montant la puissance des capacités de type Vol.</p>"
+    }
+  },
+  {
+    "name": "Belle Écaille",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une écaille étrange qui fait évoluer certaines espèces de Pokémon. Elle a une couleur arc-en-ciel.</p>"
+    }
+  },
+  {
+    "name": "Bizarre Encens",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum exotique augmentant la puissance des capacités de type Psy.</p>"
+    }
+  },
+  {
+    "name": "Boue Noire",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir restaurant peu à peu les PV des Pokémon de type Poison. Inflige des dégâts à tous les autres types.</p>"
+    }
+  },
+  {
+    "name": "Boule de neige",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Boule Fumée",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Permet au porteur de s'enfuir à coup sûr face à un Pokémon sauvage.</p>"
+    }
+  },
+  {
+    "name": "Bouton Fuite",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Si le Pokémon qui le tient subit une attaque, il s'enfuit pour être remplacé par un autre membre de l'équipe.</p>"
+    }
+  },
+  {
+    "name": "Bracelet Macho",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. C'est un bracelet dur et lourd qui rend le porteur plus fort, mais baisse sa Vitesse.</p>"
+    }
+  },
+  {
+    "name": "Bulbe",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Bulbe jetable. Tenu, il augmente la Défense Spéciale lorsque le Pokémon subit une attaque de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Carapace Mue",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Carapace dure qui permet au porteur de se retirer même s'il est affecté par une attaque immobilisante.</p>"
+    }
+  },
+  {
+    "name": "Carton Rouge",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Carte au pouvoir mystérieux. Tenue, elle force un Pokémon touchant le porteur à se retirer du combat.</p>"
+    }
+  },
+  {
+    "name": "Casque Brut",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Tenu, cet objet inflige des dégâts à l'attaquant si ce dernier utilise une attaque physique qui atteint son but.</p>"
+    }
+  },
+  {
+    "name": "CD Douteux",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Appareil transparent rempli de données douteuses. Son fabricant n'est pas connu.</p>"
+    }
+  },
+  {
+    "name": "Ceint. Force",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir permettant au porteur, s'il a ses PV pleins, d'éviter un potentiel K.O. en conservant un PV.</p>"
+    }
+  },
+  {
+    "name": "Ceinture Noire",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Ceinture qui augmente la détermination et la puissance des capacités de type Combat.</p>"
+    }
+  },
+  {
+    "name": "Ceinture Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la Défense lors des montées de niveau, mais réduisant la Vitesse pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Ceinture Pro",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Ceinture usée augmentant légèrement la puissance des capacités super efficaces.</p>"
+    }
+  },
+  {
+    "name": "Chaîne Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Il augmente la Vitesse lors des montées de niveau mais réduit la Vitesse pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Chantibonbon",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Charbon",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Combustible montant la puissance des capacités de type Feu.</p>"
+    }
+  },
+  {
+    "name": "Clé de Voûte",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet très important qui empêche une tour en pierre de s'écrouler. Des bruits de voix en sortent parfois.</p>"
+    }
+  },
+  {
+    "name": "Croc Dragon",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Croc dur et pointu montant la puissance des capacités de type Dragon.</p>"
+    }
+  },
+  {
+    "name": "Croc Rasoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir pouvant apeurer l'ennemi quand le porteur lui inflige des dégâts.</p>"
+    }
+  },
+  {
+    "name": "Cuillère tordue",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Cuillère contenant un pouvoir télékinésique montant la puissance des capacités de type Psy.</p>"
+    }
+  },
+  {
+    "name": "Dent Océan",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Coquiperl. Dent de couleur argent montant son Attaque Spéciale.</p>"
+    }
+  },
+  {
+    "name": "Eau Mystique",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Gemme en forme de goutte d'eau montant la puissance des capacités de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Écaille cœur",
+    "system": {
+      "categorie": "divers",
+      "prix": 1000,
+      "quantite": 1,
+      "effet": "<p>Une jolie écaille en forme de cœur qui est très rare. Elle brille légèrement d'un éclat arc-en-ciel.</p>"
+    }
+  },
+  {
+    "name": "Écaille draco",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une écaille épaisse et dure tenue parfois par les Pokémon de type Dragon quand ils sont attrapés.</p>"
+    }
+  },
+  {
+    "name": "Écaille océan",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Coquiperl. Écaille de couleur rose montant sa Défense Spéciale.</p>"
+    }
+  },
+  {
+    "name": "Électriseur",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une boîte remplie d'une énorme quantité d'énergie électrique. Appréciée d'un certain Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Encens Bizarre",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum exotique augmentant la puissance des capacités de type Psy.</p>"
+    }
+  },
+  {
+    "name": "Encens Doux",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Le parfum trompeur de cet encens baisse la Précision de l'ennemi.</p>"
+    }
+  },
+  {
+    "name": "Encens Fleur",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum exotique augmentant la puissance des capacités de type Plante.</p>"
+    }
+  },
+  {
+    "name": "Encens Mer",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum curieux qui augmente la puissance des capacités de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Encens Plein",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum exotique gonflant son porteur et le faisant se déplacer lentement.</p>"
+    }
+  },
+  {
+    "name": "Encens Pur",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Aide à repousser les Pokémon sauvages si le porteur est le premier Pokémon de l'équipe.</p>"
+    }
+  },
+  {
+    "name": "Encens Roc",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum exotique augmentant la puissance des capacités de type Roche.</p>"
+    }
+  },
+  {
+    "name": "Encens Vague",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Encens au parfum exotique augmentant la puissance des capacités de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Encens Veine",
+    "system": {
+      "categorie": "tenu",
+      "prix": 2000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Double l'argent gagné si le porteur se joint au combat.</p>"
+    }
+  },
+  {
+    "name": "Évoluroc",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Un étrange concentré d'évolution qui augmente la Défense et la Déf. Spé. d'un Pokémon pouvant évoluer.</p>"
+    }
+  },
+  {
+    "name": "Fertiglu",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": "<p>Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Fertihumide",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": "<p>Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Fertipousse",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": "<p>Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Fertistable",
+    "system": {
+      "categorie": "divers",
+      "prix": 25,
+      "quantite": 1,
+      "effet": "<p>Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Flûte Blanche",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Jouet en forme de flûte en verre blanc. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Flûte Bleue",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Jouet en forme de flûte en verre bleu. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Flûte Jaune",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Jouet en forme de flûte en verre jaune. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Flûte Noire",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Jouet en forme de flûte en verre noir. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Flûte Rouge",
+    "system": {
+      "categorie": "divers",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Jouet en forme de flûte en verre rouge. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Fossile Armure",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un Pokémon préhistorique terrestre. On dirait une partie d'un collier.</p>"
+    }
+  },
+  {
+    "name": "Fossile Crâne",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un Pokémon préhistorique terrestre. On dirait une partie d'un crâne.</p>"
+    }
+  },
+  {
+    "name": "Fossile Dôme",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un ancien Pokémon aquatique. On dirait un morceau de carapace.</p>"
+    }
+  },
+  {
+    "name": "Fossile Griffe",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un ancien Pokémon aquatique. On dirait un morceau de griffe.</p>"
+    }
+  },
+  {
+    "name": "Fossile Mâchoire",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Fossible Nageoire",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Fossile Plaque",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un ancien Pokémon aquatique. Il semble que ce soit une partie de son dos.</p>"
+    }
+  },
+  {
+    "name": "Fossile Plume",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un ancien Pokémon volant. Il semble que ce soit un morceau d'aile.</p>"
+    }
+  },
+  {
+    "name": "Fossile Racine",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un ancien Pokémon aquatique. On dirait un morceau de racine de plante.</p>"
+    }
+  },
+  {
+    "name": "Foulard Bleu",
+    "system": {
+      "categorie": "tenu",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente la Beauté d'un Pokémon dans les Concours.</p>"
+    }
+  },
+  {
+    "name": "Foulard Rose",
+    "system": {
+      "categorie": "tenu",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente la Grâce d'un Pokémon dans les Concours.</p>"
+    }
+  },
+  {
+    "name": "Foulard Rouge",
+    "system": {
+      "categorie": "tenu",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente le Sang-froid d'un Pokémon dans les Concours.</p>"
+    }
+  },
+  {
+    "name": "Foulard Vert",
+    "system": {
+      "categorie": "tenu",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente l'Intelligence d'un Pokémon dans les Concours.</p>"
+    }
+  },
+  {
+    "name": "Foulard. Jaune",
+    "system": {
+      "categorie": "tenu",
+      "prix": 100,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente la Robustesse d'un Pokémon dans les Concours.</p>"
+    }
+  },
+  {
+    "name": "Glace éternelle",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Morceau de glace qui réfléchit la chaleur et monte la puissance des capacités de type Glace.</p>"
+    }
+  },
+  {
+    "name": "Graine Brune",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Graine Electrik",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Graine Herbe",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Graine Miracle",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Graine remplie de vie qui monte la puissance des capacités de type Plante.</p>"
+    }
+  },
+  {
+    "name": "Graine Psychique",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Grelot Coque",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Restaure un peu les PV du porteur à chaque fois qu'il inflige des dégâts.</p>"
+    }
+  },
+  {
+    "name": "Grelot Zen",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Grelot dont le carillon calme le porteur et favorise l'amitié.</p>"
+    }
+  },
+  {
+    "name": "Griffe Rasoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Griffe crochue et pointue augmentant le taux de critiques.</p>"
+    }
+  },
+  {
+    "name": "Grosse racine",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la puissance des attaques volant des PV.</p>"
+    }
+  },
+  {
+    "name": "Herbe blanche",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir qui restaure les stats baissées. Ne peut être utilisé qu'une fois.</p>"
+    }
+  },
+  {
+    "name": "Herbe Mental",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir qui annule l'attirance d'un Pokémon. Ne peut être utilisé qu'une fois.</p>"
+    }
+  },
+  {
+    "name": "Herbe Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir et à usage unique. Permet d'utiliser immédiatement une capacité qui devrait se charger au premier tour.</p>"
+    }
+  },
+  {
+    "name": "Jolie Aile",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Une plume très jolie, mais ordinaire et sans effet particulier.</p>"
+    }
+  },
+  {
+    "name": "Joyau Acier",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente une fois la puissance des capacités de type Acier.</p>"
+    }
+  },
+  {
+    "name": "Joyau Combat",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Combat.</p>"
+    }
+  },
+  {
+    "name": "Joyau Dragon",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Dragon.</p>"
+    }
+  },
+  {
+    "name": "Joyau Eau",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Joyau Électrique",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Électrik.</p>"
+    }
+  },
+  {
+    "name": "Joyau Feu",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Feu.</p>"
+    }
+  },
+  {
+    "name": "Joyau Glace",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Glace.</p>"
+    }
+  },
+  {
+    "name": "Joyau Insecte",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Insecte.</p>"
+    }
+  },
+  {
+    "name": "Joyau Normal",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Normal.</p>"
+    }
+  },
+  {
+    "name": "Joyau Plante",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Plante.</p>"
+    }
+  },
+  {
+    "name": "Joyau Poison",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Poison.</p>"
+    }
+  },
+  {
+    "name": "Joyau Psy",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Psy.</p>"
+    }
+  },
+  {
+    "name": "Joyau Roche",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Roche.</p>"
+    }
+  },
+  {
+    "name": "Joyau Sol",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Sol.</p>"
+    }
+  },
+  {
+    "name": "Joyau Spectre",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Spectre.</p>"
+    }
+  },
+  {
+    "name": "Joyau Ténèbres",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une 1 fois la puissance des capacités de type Ténèbres.</p>"
+    }
+  },
+  {
+    "name": "Joyau Vol",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Joyau augmentant une fois la puissance des capacités de type Vol.</p>"
+    }
+  },
+  {
+    "name": "Lentille Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant l'Attaque Spéciale lors des montées de niveau mais réduisant la Vitesse pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Lentilles Scope",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Lentille qui augmente le taux de critiques du porteur.</p>"
+    }
+  },
+  {
+    "name": "Lentilles Zoom",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Augmente la Précision du porteur s'il attaque après l'ennemi.</p>"
+    }
+  },
+  {
+    "name": "Lichen Lumineux",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Loupe",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Magnifique loupe augmentant un peu la Précision des capacités.</p>"
+    }
+  },
+  {
+    "name": "Lumargile",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la durée de capacités barrières telles que Mur Lumière et Protection.</p>"
+    }
+  },
+  {
+    "name": "Lunettes Choix",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant l'Attaque Spéciale, mais ne permettant d'utiliser qu'une seule capacité par combat.</p>"
+    }
+  },
+  {
+    "name": "Lunettes Filtre",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Lunettes Noires",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Paire de lunettes à l'aspect louche qui monte la puissance des capacités de type Ténèbres.</p>"
+    }
+  },
+  {
+    "name": "Lunettes Sages",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Paire de lunettes épaisses augmentant un peu la puissance des attaques spéciales.</p>"
+    }
+  },
+  {
+    "name": "Magmariseur",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une boîte remplie d'une énorme quantité d'énergie magmatique. Appréciée d'un certain Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Masse Os",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Osselait ou Ossatueur. Os dur qui monte leur Attaque.</p>"
+    }
+  },
+  {
+    "name": "Métronome",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir boostant une capacité utilisée à répétition. L'effet s'annule si une autre capacité est utilisée.</p>"
+    }
+  },
+  {
+    "name": "Mouchoir Choix",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la Vitesse, mais ne permettant d'utiliser qu'une seule capacité par combat.</p>"
+    }
+  },
+  {
+    "name": "Mouchoir Soie",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Mouchoir somptueux montant la puissance des capacités de type Normal.</p>"
+    }
+  },
+  {
+    "name": "Multi Expérience",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Le porteur reçoit une partie des points Exp. du combat sans avoir à combattre.</p>"
+    }
+  },
+  {
+    "name": "Nautile",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Fossile d'un ancien Pokémon aquatique. On dirait un morceau de coquillage.</p>"
+    }
+  },
+  {
+    "name": "Nectar Jaune",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Nectar Mauve",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Nectar Rose",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Nectar Rouge",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Nœud Destin",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Un long fil rouge vif à faire tenir à un Pokémon. Si le porteur succombe à l'attirance, l'ennemi aussi.</p>"
+    }
+  },
+  {
+    "name": "Œuf Chance",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Œuf rempli de joie qui augmente le nombre de points Exp. gagnés au combat.</p>"
+    }
+  },
+  {
+    "name": "Orbe Flamme",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Orbe bizarre brûlant son porteur durant le combat.</p>"
+    }
+  },
+  {
+    "name": "Orbe Frousse",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Orbe Toxique",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Orbe bizarre empoisonnant gravement son porteur durant le combat.</p>"
+    }
+  },
+  {
+    "name": "Orbe Vie",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la puissance des capacités, mais qui dépense des PV à chaque coup.</p>"
+    }
+  },
+  {
+    "name": "Pare-Effet",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Peau Métal",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Pellicule métallique spéciale qui monte la puissance des capacités de type Acier.</p>"
+    }
+  },
+  {
+    "name": "Pic Venin",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Petit pic empoisonné montant la puissance des capacités de type Poison.</p>"
+    }
+  },
+  {
+    "name": "Pièce Rune",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Double l'argent gagné si le porteur se joint au combat.</p>"
+    }
+  },
+  {
+    "name": "Pierre allégée",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre très légère. Elle réduit le poids du Pokémon qui la tient.</p>"
+    }
+  },
+  {
+    "name": "Pierre Aube",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle brille comme un œil.</p>"
+    }
+  },
+  {
+    "name": "Pierre Dure",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Pierre incassable qui monte la puissance des capacités de type Roche.</p>"
+    }
+  },
+  {
+    "name": "Pierre Eau",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est de couleur bleue.</p>"
+    }
+  },
+  {
+    "name": "Pierre Éclat",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle brille d'une lumière aveuglante.</p>"
+    }
+  },
+  {
+    "name": "Pierre Feu",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est jaune et orange.</p>"
+    }
+  },
+  {
+    "name": "Pierre foudre",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Un éclair est dessiné dessus.</p>"
+    }
+  },
+  {
+    "name": "Pierre Glace",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Pierre Lune",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit.</p>"
+    }
+  },
+  {
+    "name": "Pierre Nuit",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est sombre comme une nuit sans lune.</p>"
+    }
+  },
+  {
+    "name": "Pierre Ovale",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle a la forme d'un œuf.</p>"
+    }
+  },
+  {
+    "name": "Pierre Plante",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Une feuille est dessinée dessus.</p>"
+    }
+  },
+  {
+    "name": "Pierre Soleil",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est rouge comme le soleil.</p>"
+    }
+  },
+  {
+    "name": "Pierre Stase",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Pierre merveilleuse empêchant l'évolution.</p>"
+    }
+  },
+  {
+    "name": "Pile",
+    "system": {
+      "categorie": "tenu",
+      "prix": 500,
+      "quantite": 1,
+      "effet": "<p>Pile jetable. Tenue, elle augmente l'Attaque lorsque le Pokémon subit une attaque de type Électrik.</p>"
+    }
+  },
+  {
+    "name": "Piquants",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir blessant le porteur à chaque tour. Peut s'accrocher aux ennemis qui attaquent le porteur.</p>"
+    }
+  },
+  {
+    "name": "Poids Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant les PV lors des montées de niveau, mais réduisant la Vitesse pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Poignée Pouvoir",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant l'Attaque lors des montées de niveau, mais réduisant la Vitesse pendant le combat.</p>"
+    }
+  },
+  {
+    "name": "Poing Chance",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Leveinard. Paire de gants montant son taux de critiques.</p>"
+    }
+  },
+  {
+    "name": "Poireau",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Canarticho. Poireau très long et solide qui monte son taux de critiques.</p>"
+    }
+  },
+  {
+    "name": "Poudre Argentée",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Poudre d'argent brillante qui monte la puissance des capacités de type Insecte.</p>"
+    }
+  },
+  {
+    "name": "Poudre claire",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir qui intimide et baisse la Précision de l'ennemi.</p>"
+    }
+  },
+  {
+    "name": "Poudre Métal",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Métamorph. Cette poudre étrange, très fine mais résistante, booste sa Défense.</p>"
+    }
+  },
+  {
+    "name": "Poudre Vite",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à faire tenir à Métamorph. Cette poudre étrange, très fine mais résistante, augmente sa Vitesse.</p>"
+    }
+  },
+  {
+    "name": "Protecteur",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet protecteur très dur et très lourd, apprécié d'un certain Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Point de Mire",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Un Pokémon tenant cet objet devient sensible aux capacités autrement inefficaces en raison de son type.</p>"
+    }
+  },
+  {
+    "name": "Ralenti queue",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir extrêmement lourd qui ralentit le porteur.</p>"
+    }
+  },
+  {
+    "name": "Restes",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir permettant de restaurer les PV du porteur graduellement durant le combat.</p>"
+    }
+  },
+  {
+    "name": "Roche Chaude",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la durée de la capacité Zénith utilisée par le porteur.</p>"
+    }
+  },
+  {
+    "name": "Roche Glace",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la durée de la capacité Grêle utilisée par le porteur.</p>"
+    }
+  },
+  {
+    "name": "Roche Humide",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la durée de la capacité Danse Pluie utilisée par le porteur.</p>"
+    }
+  },
+  {
+    "name": "Roche Lisse",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir augmentant la durée de la capacité Tempêtesable utilisée par le porteur.</p>"
+    }
+  },
+  {
+    "name": "Roche Royale",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Peut apeurer l'ennemi lorsque le porteur lui inflige des dégâts.</p>"
+    }
+  },
+  {
+    "name": "Rune Purifiante",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Aide à repousser les Pokémon sauvages si le porteur est le premier Pokémon de l'équipe.</p>"
+    }
+  },
+  {
+    "name": "Rune Sort",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Plaque sinistre et étrange montant la puissance des capacités de type Spectre.</p>"
+    }
+  },
+  {
+    "name": "Sable Doux",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Sable fin et soyeux montant la puissance des capacités de type Sol.</p>"
+    }
+  },
+  {
+    "name": "Sachet senteur",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Sel Tréfonds",
+    "system": {
+      "categorie": "divers",
+      "prix": 50,
+      "quantite": 1,
+      "effet": "<p>Sel pur provenant des profondeurs de la Grotte Tréfonds. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Tissu Fauche",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Un tissu imprégné d'une énergie spirituelle horriblement puissante. Apprécié d'un certain Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Veste de combat",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Vieil Ambre",
+    "system": {
+      "categorie": "divers",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Un morceau d'ambre contenant l'ADN d'un ancien Pokémon. Il est de couleur jaune.</p>"
+    }
+  },
+  {
+    "name": "Vive Griffe",
+    "system": {
+      "categorie": "tenu",
+      "prix": 10000,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Griffe légère mais tranchante qui permet parfois de frapper le premier.</p>"
+    }
+  },
+  {
+    "name": "Vulné-assurance",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": ""
+    }
+  },
+  {
+    "name": "Arcenci'Aile",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une étrange plume qui brille d'un éclat arc-en-ciel.</p>"
+    }
+  },
+  {
+    "name": "Argent'Aile",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une étrange plume qui brille d'un éclat argenté.</p>"
+    }
+  },
+  {
+    "name": "Crâne Dragon",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Crâne d'un Pokémon qui aurait survolé librement la mer déchaînée.</p>"
+    }
+  },
+  {
+    "name": "Écaillerouge",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une écaille du Léviator apparu au Lac Colère. Elle rougeoie comme une flamme.</p>"
+    }
+  },
+  {
+    "name": "Flûte Azur",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Flûte produisant des sons qui semblent provenir d'un autre monde. On ne sait pas qui l'a fabriquée.</p>"
+    }
+  },
+  {
+    "name": "Galet Blanc",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Ce sont les derniers restes du corps de Reshiram. On dit qu'ils attendent l'apparition d'un héros.</p>"
+    }
+  },
+  {
+    "name": "Galet Noir",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Ce sont les derniers restes du corps de Zekrom. On dit qu'ils attendent l'apparition d'un héros.</p>"
+    }
+  },
+  {
+    "name": "Glas Tempête",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une cloche antique au tintement apaisant.</p>"
+    }
+  },
+  {
+    "name": "Glas Transp.",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une cloche antique au tintement apaisant.</p>"
+    }
+  },
+  {
+    "name": "Gracidée",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Fleur que l'on offre en gage de reconnaissance, notamment à l'occasion d'un anniversaire.</p>"
+    }
+  },
+  {
+    "name": "Lun'Aile",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Plume qui brille comme la lune. On dit qu'elle a le pouvoir de chasser les cauchemars.</p>"
+    }
+  },
+  {
+    "name": "Module Aqua",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Module Choc",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Électrik.</p>"
+    }
+  },
+  {
+    "name": "Module Cryo",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Glace.</p>"
+    }
+  },
+  {
+    "name": "Module Pyro",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Feu.</p>"
+    }
+  },
+  {
+    "name": "Mystécristal",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un orbe cristallin fraîchement déterré. Il est encore pris dans une gangue de terre et de roche.</p>"
+    }
+  },
+  {
+    "name": "Œuf Mystère",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un œuf étrange confié par M. Pokémon. Personne ne sait ce qu'il contient.</p>"
+    }
+  },
+  {
+    "name": "Orbe Adamant",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Orbe très brillant destiné à Dialga. Augmente la puissance des capacités de type Dragon et Acier.</p>"
+    }
+  },
+  {
+    "name": "Orbe Bleu",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un orbe céruléen dont on dit qu'il a un lien très étroit avec les légendes de Hoenn.</p>"
+    }
+  },
+  {
+    "name": "Orbe Perlé",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Bel orbe luisant destiné à Palkia. Augmente la puissance des capacités de type Dragon et Eau.</p>"
+    }
+  },
+  {
+    "name": "Orbe Platiné",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Mystérieux objet destiné à Giratina. Améliore les capacités de type Dragon et Spectre.</p>"
+    }
+  },
+  {
+    "name": "Orbe Rouge",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un orbe incarnat dont on dit qu'il a un lien très étroit avec les légendes de Hoenn.</p>"
+    }
+  },
+  {
+    "name": "Orbe Vert",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un orbe viride dont on dit qu'il a un lien très étroit avec les légendes de Hoenn.</p>"
+    }
+  },
+  {
+    "name": "Pierre Magma",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Pierre formée à partir de roche en fusion solidifiée. Elle contient du magma.</p>"
+    }
+  },
+  {
+    "name": "Plaque Ciel",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Vol.</p>"
+    }
+  },
+  {
+    "name": "Plaque Draco",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Dragon.</p>"
+    }
+  },
+  {
+    "name": "Plaque esprit",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Psy.</p>"
+    }
+  },
+  {
+    "name": "Plaque Fantôme",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Spectre.</p>"
+    }
+  },
+  {
+    "name": "Plaque Fer",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Acier.</p>"
+    }
+  },
+  {
+    "name": "Plaque Flamme",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Feu.</p>"
+    }
+  },
+  {
+    "name": "Plaque Glace",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Glace.</p>"
+    }
+  },
+  {
+    "name": "Plaque Herbe",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Plante.</p>"
+    }
+  },
+  {
+    "name": "Plaque Hydro",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Eau.</p>"
+    }
+  },
+  {
+    "name": "Plaque insecte",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Insecte.</p>"
+    }
+  },
+  {
+    "name": "Plaque Ombre",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Ténèbres.</p>"
+    }
+  },
+  {
+    "name": "Plaque Poing",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Combat.</p>"
+    }
+  },
+  {
+    "name": "Plaque Roc",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Roche.</p>"
+    }
+  },
+  {
+    "name": "Plaque Terre",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Sol.</p>"
+    }
+  },
+  {
+    "name": "Plaque Toxic",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Poison.</p>"
+    }
+  },
+  {
+    "name": "Plaque Volt",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Objet à tenir. Tablette en pierre augmentant la puissance des capacités de type Électrik.</p>"
+    }
+  },
+  {
+    "name": "Rosée Âme",
+    "system": {
+      "categorie": "tenu",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Orbe prodigieux à faire tenir à Latios ou Latias qui monte leur Attaque Spéciale et leur Défense Spéciale.</p>"
+    }
+  },
+  {
+    "name": "Champi Suave",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Champignon rare qui répand un agréable parfum autour de lui. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Coquillage des Tréfonds",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Joli coquillage provenant des profondeurs de la Grotte Tréfonds. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Grande Perle",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une grande perle qui brille d'une jolie couleur argent. Peut être vendue à bon prix aux magasins.</p>"
+    }
+  },
+  {
+    "name": "Gros Champi",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un grand champignon plutôt rare. Il est très populaire parmi certains fans dévoués.</p>"
+    }
+  },
+  {
+    "name": "Maxi Pépite",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Grosse pépite d'or pur qui brille magnifiquement. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Morceau Comète",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un fragment de comète, tombé au sol quand elle traversait l'atmosphère. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Morceau Étoile",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Fragment de gemme qui brille d'un éclat rouge. Peut se vendre à bon prix aux magasins.</p>"
+    }
+  },
+  {
+    "name": "Os Rare",
+    "system": {
+      "categorie": "divers",
+      "prix": 2500,
+      "quantite": 1,
+      "effet": "<p>Un os d'une grande valeur pour l'archéologie Pokémon. Peut être vendu à bon prix aux magasins.</p>"
+    }
+  },
+  {
+    "name": "Pépite",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Pépite d'or pur qui brille magnifiquement. Peut être vendue à bon prix aux magasins.</p>"
+    }
+  },
+  {
+    "name": "Perle",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une petite perle qui brille d'une jolie couleur argent. Peut être vendue à bas prix aux magasins.</p>"
+    }
+  },
+  {
+    "name": "Perle Triple",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une très grosse perle qui brille d'une jolie couleur argent. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Petit Champi",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un petit champignon plutôt rare. Il est plutôt populaire parmi certains fans dévoués.</p>"
+    }
+  },
+  {
+    "name": "Poussière Etoile",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Sable rouge ravissant, aux grains très fins. Peut être vendu à bon prix aux magasins.</p>"
+    }
+  },
+  {
+    "name": "Tesson Bleu",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Petit tesson bleu. Il semble provenir d'un outil très ancien.</p>"
+    }
+  },
+  {
+    "name": "Tesson Jaune",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Petit tesson jaune. Il semble provenir d'un outil très ancien.</p>"
+    }
+  },
+  {
+    "name": "Tesson Rouge",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Petit tesson rouge. Il semble provenir d'un outil très ancien.</p>"
+    }
+  },
+  {
+    "name": "Tesson Vert",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Petit tesson vert. Il semble provenir d'un outil très ancien.</p>"
+    }
+  },
+  {
+    "name": "Vieil Écu",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une pièce d'argent d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Vieux Bijou",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un bijou d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Vieux Ducat",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une pièce d'or d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Vieux Santon",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une statuette d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Vieux Sou",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une pièce de cuivre d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Vieux Tortil",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Une couronne d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  },
+  {
+    "name": "Vieux Vase",
+    "system": {
+      "categorie": "divers",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Un vase d'une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix.</p>"
+    }
+  }
+]

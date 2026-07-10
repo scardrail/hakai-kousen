@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Art",
+    "system": {
+      "score": 0,
+      "description": "<p>Ou la capacité de faire parler les émotions autour de soi, que ce soit par la musique, le théâtre, le dessin, etc. Vous pouvez ainsi apaiser les tensions via une mélodie ou bien revêtir l'identité ou la personnalité la plus adéquate suivant la situation.</p>"
+    }
+  },
+  {
+    "name": "Bricolage",
+    "system": {
+      "score": 0,
+      "description": "<p>Dans certains cas, il faut savoir réparer un objet cassé ou démonter pour créer quelque chose de mieux encore.</p>"
+    }
+  },
+  {
+    "name": "Charisme",
+    "system": {
+      "score": 0,
+      "description": "<p>Avoir une classe naturelle peut parfois être primordial, pour se faire entendre ou pour mieux manipuler et impressionner les gens sans forcément leur parler.</p>"
+    }
+  },
+  {
+    "name": "Combat",
+    "system": {
+      "score": 0,
+      "description": "<p>Lorsqu'il est confronté à une situation où il faut se battre, un personnage doit savoir se défendre au corps-à-corps. Il est également possible, pour justifier cette compétence, de dire quel sport de combat le personnage pratique (judo, karaté, boxe, etc.) ou quelles armes il utilise (kendo, escrime, armes à feu, par exemple).</p>"
+    }
+  },
+  {
+    "name": "Conduite",
+    "system": {
+      "score": 0,
+      "description": "<p>Il est courant qu'un personnage soit capable d'utiliser des véhicules comme des vélos ou des voitures. Notons qu'un personnage est en général plus habitué à un type de véhicule (voitures ou vélos par exemple).</p>"
+    }
+  },
+  {
+    "name": "Cuisine",
+    "system": {
+      "score": 0,
+      "description": "<p>Après les combats, rien ne vaut un bon repas. Un plat bien cuisiné peut vous apporter, ainsi qu'à vos Pokémons, certains bonus, en plus de rendre ces derniers heureux.</p>"
+    }
+  },
+  {
+    "name": "Détection",
+    "system": {
+      "score": 0,
+      "description": "<p>Pour être au courant de son environnement, par l'ouïe, la vue ou les autres sens, il faut être capable de recevoir et d'interpréter les informations de cet environnement.</p>"
+    }
+  },
+  {
+    "name": "Discrétion",
+    "system": {
+      "score": 0,
+      "description": "<p>Un personnage doit passer inaperçu dans certaines situations, en bougeant ou en restant immobile.</p>"
+    }
+  },
+  {
+    "name": "Minage",
+    "system": {
+      "score": 0,
+      "description": "<p>La pierre renferme de nombreux trésors : des pierres infusées par les éléments (tel que les pierres feu), des fossiles de Pokémons disparus, ou des pierres précieuses rutilantes. Cette compétence est là pour vous permettre de les trouver.</p>"
+    }
+  },
+  {
+    "name": "Pêche",
+    "system": {
+      "score": 0,
+      "description": "<p>Plutôt que de plonger et combattre en terrain défavorable, il est plus simple d'amener le Pokémon marin à vous. La maîtrise de la pêche vous permettra de remonter des Pokémons plus puissants.</p>"
+    }
+  },
+  {
+    "name": "Psychologie",
+    "system": {
+      "score": 0,
+      "description": "<p>Afin de pouvoir comprendre les humains et les Pokémon, il faut faire preuve de psychologie, c'est-à-dire interpréter les gestes et les paroles de son interlocuteur pour déceler et analyser ses émotions.</p>"
+    }
+  },
+  {
+    "name": "Sports",
+    "system": {
+      "score": 0,
+      "description": "<p>Vivre dans la nature ou simplement savoir utiliser son corps demande d'avoir des compétences sportives, un personnage peut donc être habitué aux activités sportives. Il serait logique de dire dans quel type de sport le personnage a le plus d'expérience (natation, course, équilibre, escalade, …) pour justifier cette compétence.</p>"
+    }
+  },
+  {
+    "name": "Survie",
+    "system": {
+      "score": 0,
+      "description": "<p>Afin de s'orienter correctement, se débrouiller en pleine nature et survivre dans un milieu hostile, il est préférable de connaître les différents environnements dans lesquels on peut évoluer.</p>"
+    }
+  }
+]

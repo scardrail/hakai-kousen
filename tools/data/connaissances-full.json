@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Etiquette",
+    "system": {
+      "score": 0,
+      "description": "<p>Connaître les codes de politesse, le savoir-vivre et le protocole permet de se comporter correctement en toute situation, des salons de thé aux réceptions officielles.</p>"
+    }
+  },
+  {
+    "name": "Géographie",
+    "system": {
+      "score": 0,
+      "description": "<p>Il faut souvent savoir où nos pas nous mènent, ainsi il faut connaître la géographie du monde pour s'y promener.</p>"
+    }
+  },
+  {
+    "name": "Légendes",
+    "system": {
+      "score": 0,
+      "description": "<p>Les mythes abondent dans l'univers de Pokémon, savoir trier le vrai du faux et tirer des conclusions est parfois nécessaire. On peut se spécialiser dans les mythes d'une région particulière.</p>"
+    }
+  },
+  {
+    "name": "Histoire",
+    "system": {
+      "score": 0,
+      "description": "<p>Connaître les grands événements et les figures marquantes du passé permet de comprendre les enjeux du présent et d'éclairer bien des situations.</p>"
+    }
+  },
+  {
+    "name": "Médecine H.",
+    "system": {
+      "score": 0,
+      "description": "<p>Lorsqu'on est dans une situation où il n'y a personne d'autre pour soigner une blessure, il faut savoir se débrouiller pour la guérir.</p>"
+    }
+  },
+  {
+    "name": "Médecine P.",
+    "system": {
+      "score": 0,
+      "description": "<p>De même, il est très utile de pouvoir soigner efficacement les Pokémon (savoir quels soins utiliser ou faire les premiers secours).</p>"
+    }
+  },
+  {
+    "name": "Nature",
+    "system": {
+      "score": 0,
+      "description": "<p>La flore dans laquelle évolue un personnage est dangereuse, inoffensive ou fragile, il doit donc la connaître.</p>"
+    }
+  },
+  {
+    "name": "Psychisme",
+    "system": {
+      "score": 0,
+      "description": "<p>Parfois, certaines personnes possèdent des pouvoirs étranges, que l'on peut apprendre à interpréter (comme pour la vocation de Kinésiste).</p>"
+    }
+  },
+  {
+    "name": "Informatique",
+    "system": {
+      "score": 0,
+      "description": "<p>Afin de pouvoir utiliser les nouvelles technologies plus subtilement que passer un simple coup de fil ou consulter ses messages électroniques, il faut s'approprier les nouvelles technologies.</p>"
+    }
+  },
+  {
+    "name": "Sciences",
+    "system": {
+      "score": 0,
+      "description": "<p>Connaître les sciences exactes est souvent utile pour interpréter des phénomènes étranges. Dans certains cas, il est également nécessaire de préciser la science de prédilection du personnage : physique, mathématiques, chimie, archéologie ou géologie par exemple.</p>"
+    }
+  },
+  {
+    "name": "Zoologie",
+    "system": {
+      "score": 0,
+      "description": "<p>Pour bien comprendre la façon dont interagissent les Pokémon, il est nécessaire de posséder des connaissances sur leurs environnements et leurs mœurs.</p>"
+    }
+  }
+]

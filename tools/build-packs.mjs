@@ -21,7 +21,7 @@ const ROOT = path.resolve(__dirname, "..");
 const CHARSET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 const PLACEHOLDER_IMG = "icons/svg/mystery-man.svg";
 
-function chargerDonnees(nomFichier, echantillon) {
+function chargerDonnees(nomFichier, echantillon = []) {
   const fichier = path.join(__dirname, "data", `${nomFichier}-full.json`);
   if (fs.existsSync(fichier)) return JSON.parse(fs.readFileSync(fichier, "utf8"));
   console.warn(`tools/data/${nomFichier}-full.json introuvable, utilisation de l'échantillon Phase 1.`);
@@ -129,13 +129,28 @@ async function buildPack(name, docs) {
 const attaquesData = chargerDonnees("attaques", ATTAQUES_SAMPLE);
 const talentsData = chargerDonnees("talents", TALENTS_SAMPLE);
 const pokedexData = chargerDonnees("pokedex", POKEDEX_SAMPLE);
+const objetsData = chargerDonnees("objets");
+const ctData = chargerDonnees("ct");
+const armesData = chargerDonnees("armes");
+const competencesData = chargerDonnees("competences");
+const connaissancesData = chargerDonnees("connaissances");
 
 const attaquesParNom = new Map(attaquesData.map((def) => [def.name, def]));
 
 const attaquesDocs = attaquesData.map((entry) => buildStandaloneItemDoc("attaque", entry));
 const talentsDocs = talentsData.map((entry) => buildStandaloneItemDoc("talent", entry));
 const pokedexDocs = pokedexData.map((entry) => buildActorDoc(entry, attaquesParNom));
+const objetsDocs = objetsData.map((entry) => buildStandaloneItemDoc("objet", entry));
+const ctDocs = ctData.map((entry) => buildStandaloneItemDoc("ct", entry));
+const armesDocs = armesData.map((entry) => buildStandaloneItemDoc("arme", entry));
+const competencesDocs = competencesData.map((entry) => buildStandaloneItemDoc("competence", entry));
+const connaissancesDocs = connaissancesData.map((entry) => buildStandaloneItemDoc("connaissance", entry));
 
 await buildPack("attaques", attaquesDocs);
 await buildPack("talents", talentsDocs);
 await buildPack("pokedex", pokedexDocs);
+await buildPack("objets", objetsDocs);
+await buildPack("ct", ctDocs);
+await buildPack("armes", armesDocs);
+await buildPack("competences", competencesDocs);
+await buildPack("connaissances", connaissancesDocs);
