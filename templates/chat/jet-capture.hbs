@@ -1,0 +1,20 @@
+<div class="hk-chat-card hk-jet-capture">
+  <header class="hk-chat-header">
+    {{dresseur.name}} → {{cible.name}}
+  </header>
+  <p class="hk-attaque-nom"><strong>{{ball.name}}</strong></p>
+
+  {{#if automatique}}
+    <p>{{localize "HK.Capture.CaptureAutomatique"}}</p>
+  {{else if impossible}}
+    <p>{{localize "HK.Capture.Impossible"}}</p>
+  {{else}}
+    <p>{{localize "HK.Capture.JetDetail"}} : {{jet}} / 1D10 ({{localize "HK.Capture.Seuil"}} {{seuil}})</p>
+  {{/if}}
+
+  {{#if reussite}}
+    <p class="hk-resultat hk-reussite">{{localize "HK.Capture.Reussie"}}</p>
+  {{else}}
+    <p class="hk-resultat hk-echec">{{localize "HK.Capture.Echouee"}}</p>
+  {{/if}}
+</div>
