@@ -281,6 +281,16 @@
         "Label": "Stade d'évolution",
         "Option": "Stade {stade}"
       },
+      "Detail": {
+        "Base": "Base",
+        "Vit": "État (VIT)",
+        "Rarete": "Rareté",
+        "Stade": "Stade d'évolution",
+        "Bebe": "Bébé Pokémon",
+        "Statut": "Statut",
+        "Ball": "Ball",
+        "Ajustement": "Ajustement"
+      },
       "Approche": {
         "Label": "Approche",
         "Neutre": "Neutre",

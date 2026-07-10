@@ -6,10 +6,15 @@
 
   {{#if automatique}}
     <p>{{localize "HK.Capture.CaptureAutomatique"}}</p>
-  {{else if impossible}}
-    <p>{{localize "HK.Capture.Impossible"}}</p>
   {{else}}
-    <p>{{localize "HK.Capture.JetDetail"}} : {{jet}} / 1D10 ({{localize "HK.Capture.Seuil"}} {{seuil}})</p>
+    <ul class="hk-capture-detail">
+      {{#each details}}<li>{{this}}</li>{{/each}}
+    </ul>
+    {{#if impossible}}
+      <p>{{localize "HK.Capture.Impossible"}}</p>
+    {{else}}
+      <p>{{localize "HK.Capture.JetDetail"}} : {{jet}} / 1D10 ({{localize "HK.Capture.Seuil"}} {{seuil}})</p>
+    {{/if}}
   {{/if}}
 
   {{#if reussite}}

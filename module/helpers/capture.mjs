@@ -92,6 +92,16 @@ export async function tenterCapture(dresseur, ball, cible) {
   const impossible = legendaireMajeur && !automatique;
   const seuil = impossible ? 0 : SEUIL_BASE + modVit + modRarete + modStade + modBebe + modStatut + bonusBall + ajustement;
 
+  const ligne = (libelle, valeur) => `${game.i18n.localize(libelle)} ${valeur > 0 ? "+" : ""}${valeur}`;
+  const details = [ligne("HK.Capture.Detail.Base", SEUIL_BASE)];
+  if (modVit) details.push(ligne("HK.Capture.Detail.Vit", modVit));
+  if (modRarete) details.push(ligne("HK.Capture.Detail.Rarete", modRarete));
+  if (modStade) details.push(ligne("HK.Capture.Detail.Stade", modStade));
+  if (modBebe) details.push(ligne("HK.Capture.Detail.Bebe", modBebe));
+  if (modStatut) details.push(ligne("HK.Capture.Detail.Statut", modStatut));
+  if (bonusBall) details.push(ligne("HK.Capture.Detail.Ball", bonusBall));
+  if (ajustement) details.push(ligne("HK.Capture.Detail.Ajustement", ajustement));
+
   const roll = automatique || seuil <= 0 ? null : await new Roll("1d10").evaluate();
   const jet = roll?.total ?? null;
   const reussite = automatique || (seuil > 0 && jet <= seuil);
@@ -117,6 +127,7 @@ export async function tenterCapture(dresseur, ball, cible) {
     impossible: seuil <= 0 && !automatique,
     jet,
     seuil,
+    details,
     reussite
   });
   await ChatMessage.create({
