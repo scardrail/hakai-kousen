@@ -1,6 +1,19 @@
 import { resolveAttaque } from "../dice/attack-roll.mjs";
 import { getMeteoActuelle } from "../combat/meteo.mjs";
 import { HK } from "../helpers/config.mjs";
+import { enseignerCt } from "../helpers/ct.mjs";
+import { tenterCapture } from "../helpers/capture.mjs";
+import { verifierObeissance } from "../helpers/obeissance.mjs";
+import { estObjetDeSoin, utiliserObjetDeSoin } from "../helpers/soins.mjs";
+
+/**
+ * Les combats.md : un Dresseur ayant un Pokémon engagé dans le combat ne peut pas être visé par
+ * une attaque, sauf exception du MJ (qui peut donc cibler librement).
+ */
+function estDresseurProtege(cible) {
+  if (cible.type !== "dresseur" || game.user.isGM) return false;
+  return !!game.combat?.combatants.some((c) => c.actor?.type === "pokemon" && c.actor.system.dresseur === cible.uuid && !c.isDefeated);
+}
 
 /**
  * Détermine les cibles d'une attaque selon sa portée (Les combats.md, "La portée") : Personnel ne
@@ -11,7 +24,7 @@ import { HK } from "../helpers/config.mjs";
 function resoudreCibles(attaquant, attaqueItem) {
   if (attaqueItem.system.portee === "personnel") return [attaquant];
 
-  const cibles = [...game.user.targets].map((token) => token.actor).filter(Boolean);
+  const cibles = [...game.user.targets].map((token) => token.actor).filter((cible) => cible && !estDresseurProtege(cible));
   if (!cibles.length) return [];
 
   if (attaqueItem.system.portee !== "zoneAmie" && attaqueItem.system.portee !== "zoneEnnemie") return cibles;
@@ -41,18 +54,60 @@ export default class HKItem extends Item {
     if (!this.actor) return null;
 
     if (this.type === "attaque") {
-      const cibles = resoudreCibles(this.actor, this);
-      if (!cibles.length) {
-        const cle = this.system.portee === "zoneAmie" || this.system.portee === "zoneEnnemie" ? "HK.Jet.CibleAucuneValide" : "HK.Jet.CibleManquante";
-        ui.notifications.warn(game.i18n.format(cle, { portee: game.i18n.localize(HK.portees[this.system.portee]) }));
+      let attaqueItem = this;
+
+      if (this.actor.type === "pokemon") {
+        const { obeit, jet, seuil } = await verifierObeissance(this.actor);
+        if (jet) {
+          await ChatMessage.create({
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+            rolls: [jet],
+            sound: CONFIG.sounds.dice,
+            content: `<p>${game.i18n.format(obeit ? "HK.Obeissance.Reussie" : "HK.Obeissance.Echouee", { pokemon: this.actor.name, jet: jet.total, seuil })}</p>`
+          });
+        }
+        if (!obeit) {
+          const attaquesConnues = this.actor.items.filter((i) => i.type === "attaque");
+          if (!attaquesConnues.length) return null;
+          attaqueItem = attaquesConnues[Math.floor(Math.random() * attaquesConnues.length)];
+        }
+      }
+
+      const meteo = options.meteo ?? getMeteoActuelle(game.combat);
+      const meteoDef = HK.meteos[meteo];
+      if ((meteoDef?.eauInterdite && attaqueItem.system.type === "eau") || (meteoDef?.feuInterdite && attaqueItem.system.type === "feu")) {
+        ui.notifications.warn(game.i18n.format("HK.Combat.AttaqueInterditeMeteo", { attaque: attaqueItem.name, meteo: game.i18n.localize(meteoDef.label) }));
         return null;
       }
-      const meteo = options.meteo ?? getMeteoActuelle(game.combat);
-      return resolveAttaque({ attaquant: this.actor, cibles, attaqueItem: this, ...options, meteo });
+
+      const cibles = resoudreCibles(this.actor, attaqueItem);
+      if (!cibles.length) {
+        const cle = attaqueItem.system.portee === "zoneAmie" || attaqueItem.system.portee === "zoneEnnemie" ? "HK.Jet.CibleAucuneValide" : "HK.Jet.CibleManquante";
+        ui.notifications.warn(game.i18n.format(cle, { portee: game.i18n.localize(HK.portees[attaqueItem.system.portee]) }));
+        return null;
+      }
+      return resolveAttaque({ attaquant: this.actor, cibles, attaqueItem, ...options, meteo });
     }
 
     if (this.type === "competence" || this.type === "connaissance") {
       return this.actor.rollCompetence(this.id, options);
+    }
+
+    if (this.type === "ct") {
+      return enseignerCt(this);
+    }
+
+    if (this.type === "objet" && this.system.categorie === "ball") {
+      const cibles = [...game.user.targets].map((token) => token.actor).filter(Boolean);
+      if (cibles.length !== 1) {
+        ui.notifications.warn(game.i18n.localize("HK.Capture.CibleRequise"));
+        return null;
+      }
+      return tenterCapture(this.actor, this, cibles[0]);
+    }
+
+    if (this.type === "objet" && estObjetDeSoin(this.name)) {
+      return utiliserObjetDeSoin(this);
     }
 
     return ChatMessage.create({
