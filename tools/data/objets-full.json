@@ -1722,6 +1722,51 @@
     }
   },
   {
+    "name": "Poffin Épicé",
+    "system": {
+      "categorie": "poffin",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Les Super Concours.md : nourrit la Condition Sang-froid (+2 si Goût Préféré, +0 si Goût Détesté, +1 sinon). Un seul Poffin par jour et par Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Poffin Sec",
+    "system": {
+      "categorie": "poffin",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Les Super Concours.md : nourrit la Condition Intelligence (+2 si Goût Préféré, +0 si Goût Détesté, +1 sinon). Un seul Poffin par jour et par Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Poffin Sucré",
+    "system": {
+      "categorie": "poffin",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Les Super Concours.md : nourrit la Condition Grâce (+2 si Goût Préféré, +0 si Goût Détesté, +1 sinon). Un seul Poffin par jour et par Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Poffin Amer",
+    "system": {
+      "categorie": "poffin",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Les Super Concours.md : nourrit la Condition Robustesse (+2 si Goût Préféré, +0 si Goût Détesté, +1 sinon). Un seul Poffin par jour et par Pokémon.</p>"
+    }
+  },
+  {
+    "name": "Poffin Acide",
+    "system": {
+      "categorie": "poffin",
+      "prix": 0,
+      "quantite": 1,
+      "effet": "<p>Les Super Concours.md : nourrit la Condition Beauté (+2 si Goût Préféré, +0 si Goût Détesté, +1 sinon). Un seul Poffin par jour et par Pokémon.</p>"
+    }
+  },
+  {
     "name": "Boîte Sceaux",
     "system": {
       "categorie": "divers",
