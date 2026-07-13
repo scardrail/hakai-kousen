@@ -1,0 +1,31 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Le zip ne contient que ce qui est nécessaire à Foundry pour charger le système : pas de
+      # node_modules/tools (outillage de dev), pas de packs-source/Docs_source (gitignorés, donc
+      # de toute façon absents d'un checkout propre).
+      - name: Créer le zip du système
+        run: zip -r system.zip system.json module templates css lang assets packs
+
+      - name: Publier la Release GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            system.json
+            system.zip
+          generate_release_notes: true
