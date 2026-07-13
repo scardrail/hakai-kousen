@@ -2,7 +2,7 @@
   "id": "hakai-kousen",
   "title": "Hakaï Kōsen",
   "description": "Système de jeu de rôle Hakaï Kōsen (Pokémon réaliste) pour Foundry VTT : dresseurs, Pokémon, combats via la Table Unique, écoles de dressage.",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13",
