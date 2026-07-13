@@ -26,12 +26,55 @@
 
   <nav class="hk-onglets">
     <button type="button" class="hk-onglet{{#if (eq ongletActif "principal")}} actif{{/if}}" data-action="changerOnglet" data-onglet="principal">{{localize "HK.Onglet.Principal"}}</button>
+    <button type="button" class="hk-onglet{{#if (eq ongletActif "concours")}} actif{{/if}}" data-action="changerOnglet" data-onglet="concours">{{localize "HK.Sheet.Pokemon.Onglet.Concours"}}</button>
     <button type="button" class="hk-onglet{{#if (eq ongletActif "historique")}} actif{{/if}}" data-action="changerOnglet" data-onglet="historique">{{localize "HK.Onglet.Historique"}}</button>
   </nav>
 
   {{#if (eq ongletActif "historique")}}
   <section class="hk-historique">
     <prose-mirror name="system.historique" value="{{system.historique}}"></prose-mirror>
+  </section>
+  {{else if (eq ongletActif "concours")}}
+  <section class="hk-details">
+    <div class="hk-caracteristiques">
+      {{#each conditionList as |cond|}}
+        <div class="hk-car">
+          <span class="hk-car-label">{{localize cond.label}}</span>
+          <input class="hk-car-total-input" type="number" name="system.concours.condition.{{cond.key}}" value="{{cond.valeur}}" min="0" max="5">
+        </div>
+      {{/each}}
+    </div>
+
+    <div class="hk-onglet-actions">
+      <button type="button" class="hk-pill-btn" data-action="nourrirPoffin">{{localize "HK.Concours.Poffin.Bouton"}}</button>
+      <button type="button" class="hk-pill-btn" data-action="testAppel">{{localize "HK.Concours.Appel.Bouton"}}</button>
+    </div>
+
+    {{#if system.concours.festivalEligible}}
+      <p class="hk-badge hk-badge-festival">{{localize "HK.Concours.Festival.Eligible"}}</p>
+    {{/if}}
+
+    <fieldset class="hk-encart">
+      <legend>{{localize "HK.Concours.Rubans"}}</legend>
+      <ul class="hk-item-liste">
+        {{#each system.concours.rubans as |ruban index|}}
+          <li data-index="{{index}}">
+            <select name="system.concours.rubans.{{index}}.categorie">
+              {{#each ../config.categoriesConcours as |label cle|}}
+                <option value="{{cle}}" {{#if (eq ruban.categorie cle)}}selected{{/if}}>{{localize label}}</option>
+              {{/each}}
+            </select>
+            <select name="system.concours.rubans.{{index}}.rang">
+              {{#each ../config.rangsConcours as |rangDef cle|}}
+                <option value="{{cle}}" {{#if (eq ruban.rang cle)}}selected{{/if}}>{{rangDef.nom}}</option>
+              {{/each}}
+            </select>
+            <a data-action="rubanSupprimer"><i class="fa-solid fa-trash"></i></a>
+          </li>
+        {{/each}}
+      </ul>
+      <button type="button" class="hk-bouton-ajout" data-action="rubanAjouter">+ {{localize "HK.Concours.RubanAjouter"}}</button>
+    </fieldset>
   </section>
   {{else}}
   <section class="hk-details">

@@ -3,6 +3,8 @@ import HKActorSheet from "./base-actor-sheet.mjs";
 import { evaluerEvolutions, evoluer } from "../helpers/evolution.mjs";
 import { megaEvoluer, annulerMegaEvolution } from "../helpers/mega-evolution.mjs";
 import { dynamaxer, annulerDynamax } from "../combat/dynamax.mjs";
+import { nourrirPoffin } from "../helpers/concours.mjs";
+import { rollTestAppel } from "../dice/appel-concours.mjs";
 
 export default class PokemonSheet extends HKActorSheet {
   static DEFAULT_OPTIONS = {
@@ -16,7 +18,11 @@ export default class PokemonSheet extends HKActorSheet {
       megaEvoluer: PokemonSheet.#onMegaEvoluer,
       annulerMega: PokemonSheet.#onAnnulerMega,
       dynamaxer: PokemonSheet.#onDynamaxer,
-      annulerDynamax: PokemonSheet.#onAnnulerDynamax
+      annulerDynamax: PokemonSheet.#onAnnulerDynamax,
+      nourrirPoffin: PokemonSheet.#onNourrirPoffin,
+      testAppel: PokemonSheet.#onTestAppel,
+      rubanAjouter: PokemonSheet.#onRubanAjouter,
+      rubanSupprimer: PokemonSheet.#onRubanSupprimer
     }
   };
 
@@ -48,6 +54,14 @@ export default class PokemonSheet extends HKActorSheet {
       niveau: multiplicateur === 0 ? "immune" : multiplicateur < 1 ? "resistant" : multiplicateur > 1 ? "faible" : "neutre"
     }));
 
+    // Les Super Concours.md : les 5 catégories de Condition, affichées comme la grille de
+    // Caractéristiques ci-dessus (caracteristiquesList).
+    const conditionList = Object.entries(HK.categoriesConcours).map(([key, label]) => ({
+      key,
+      label,
+      valeur: this.actor.system.concours.condition[key]
+    }));
+
     return {
       actor: this.actor,
       system: this.actor.system,
@@ -55,6 +69,7 @@ export default class PokemonSheet extends HKActorSheet {
       caracteristiquesList,
       natureGouts,
       sensibilitesList,
+      conditionList,
       attaques: items.filter((i) => i.type === "attaque"),
       talents: items.filter((i) => i.type === "talent"),
       competences: items.filter((i) => i.type === "competence"),
@@ -124,5 +139,84 @@ export default class PokemonSheet extends HKActorSheet {
 
   static async #onAnnulerDynamax() {
     await annulerDynamax(this.actor);
+  }
+
+  async #resoudreDresseur() {
+    return this.actor.system.dresseur ? await fromUuid(this.actor.system.dresseur) : null;
+  }
+
+  static async #onNourrirPoffin() {
+    const dresseur = await this.#resoudreDresseur();
+    if (!dresseur) {
+      ui.notifications.warn(game.i18n.localize("HK.Concours.Poffin.DresseurIntrouvable"));
+      return;
+    }
+
+    const resultat = await foundry.applications.api.DialogV2.input({
+      window: { title: game.i18n.localize("HK.Concours.Poffin.Titre") },
+      content: `
+        <div class="form-group">
+          <label>${game.i18n.localize("HK.Concours.Poffin.Saveur")}</label>
+          <select name="saveur">
+            ${Object.entries(HK.gouts)
+              .map(([cle, label]) => `<option value="${cle}">${game.i18n.localize(label)}</option>`)
+              .join("")}
+          </select>
+        </div>
+      `
+    });
+    if (!resultat) return;
+
+    const { ok, motif } = await nourrirPoffin(dresseur, this.actor, resultat.saveur);
+    if (!ok) ui.notifications.warn(game.i18n.localize(motif));
+  }
+
+  static async #onTestAppel() {
+    const dresseur = await this.#resoudreDresseur();
+
+    const resultat = await foundry.applications.api.DialogV2.input({
+      window: { title: game.i18n.localize("HK.Concours.Appel.Titre") },
+      content: `
+        <div class="form-group">
+          <label>${game.i18n.localize("HK.Concours.Appel.Categorie")}</label>
+          <select name="categorie">
+            ${Object.entries(HK.categoriesConcours)
+              .map(([cle, label]) => `<option value="${cle}">${game.i18n.localize(label)}</option>`)
+              .join("")}
+          </select>
+        </div>
+        <div class="form-group">
+          <label>${game.i18n.localize("HK.Jet.Difficulte")}</label>
+          <input type="number" name="difficulte" value="5" min="1" max="10">
+        </div>
+        <div class="form-group">
+          <label>${game.i18n.localize("HK.Concours.Appel.BonusDes")}</label>
+          <input type="number" name="bonusDes" value="0">
+        </div>
+        <label class="hk-checkbox">${game.i18n.localize("HK.Concours.Appel.HorsCategorie")}
+          <input type="checkbox" name="horsCategorie">
+        </label>
+      `
+    });
+    if (!resultat) return;
+
+    await rollTestAppel(this.actor, dresseur, {
+      categorie: resultat.categorie,
+      difficulte: Number(resultat.difficulte) || 5,
+      bonusDes: Number(resultat.bonusDes) || 0,
+      horsCategorie: !!resultat.horsCategorie
+    });
+  }
+
+  static async #onRubanAjouter() {
+    await this.actor.update({
+      "system.concours.rubans": [...this.actor.system.concours.rubans, { categorie: "beaute", rang: "normal" }]
+    });
+  }
+
+  static async #onRubanSupprimer(event, target) {
+    const index = Number(target.closest("[data-index]").dataset.index);
+    const rubans = this.actor.system.concours.rubans.filter((_, i) => i !== index);
+    await this.actor.update({ "system.concours.rubans": rubans });
   }
 }

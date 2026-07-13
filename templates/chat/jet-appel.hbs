@@ -1,0 +1,20 @@
+<div class="hk-chat-card hk-jet-competence">
+  <header class="hk-chat-header">
+    <strong>{{pokemon.name}}</strong> — {{categorie}}
+  </header>
+  <div class="hk-des">
+    {{#each resultats as |valeur|}}
+      <span class="hk-de {{#if (eq valeur 1)}}hk-de-echec{{else if (gte valeur ../difficulte)}}hk-de-succes{{/if}}">{{valeur}}</span>
+    {{/each}}
+  </div>
+  <p class="hk-difficulte">{{localize "HK.Jet.Seuil"}} : {{difficulte}}+ ({{meilleur}} + {{bonusCharisme}} = {{total}})</p>
+  {{#if echecCritique}}
+    <p class="hk-resultat hk-echec-critique">{{localize "HK.Concours.Appel.EchecCritique"}}</p>
+  {{else if exceptionnel}}
+    <p class="hk-resultat hk-reussite">{{localize "HK.Concours.Appel.Exceptionnel"}} ({{points}} pts)</p>
+  {{else if reussite}}
+    <p class="hk-resultat hk-reussite">{{localize "HK.Jet.Succes"}} ({{points}} pts)</p>
+  {{else}}
+    <p class="hk-resultat hk-echec">{{localize "HK.Jet.Echec"}}</p>
+  {{/if}}
+</div>

@@ -103,6 +103,7 @@
       "Equipement": "Équipement",
       "CristalZ": "Cristal Z",
       "MegaPierre": "Méga-Pierre",
+      "Poffin": "Poffin",
       "Divers": "Divers"
     },
     "Statut": {
@@ -163,6 +164,7 @@
           "Talents": "Talents",
           "Competences": "Compétences",
           "Obeissance": "Obéissance",
+          "Concours": "Concours",
           "Historique": "Historique"
         },
         "Espece": "Espèce",
@@ -421,6 +423,40 @@
     "Arme": {
       "Melee": "Mêlée",
       "Distance": "Distance"
+    },
+    "Concours": {
+      "Categorie": {
+        "Beaute": "Beauté",
+        "Grace": "Grâce",
+        "Sangfroid": "Sang-froid",
+        "Intelligence": "Intelligence",
+        "Robustesse": "Robustesse"
+      },
+      "Rubans": "Rubans",
+      "RubanAjouter": "Ruban",
+      "Poffin": {
+        "Bouton": "Nourrir un Poffin",
+        "Titre": "Nourrir un Poffin",
+        "Saveur": "Saveur",
+        "DresseurIntrouvable": "Ce Pokémon n'a pas de Dresseur assigné.",
+        "CuisineIntrouvable": "Le Dresseur n'a pas la Compétence Cuisine.",
+        "DejaMangeAujourdhui": "Ce Pokémon a déjà mangé un Poffin aujourd'hui.",
+        "Rate": "Le Poffin est raté (échec du Test de Cuisine).",
+        "Resultat": "{dresseur} nourrit {pokemon} d'un Poffin : {categorie} +{gain}."
+      },
+      "Appel": {
+        "Bouton": "Test d'Appel",
+        "Titre": "Test d'Appel",
+        "Categorie": "Catégorie du Concours",
+        "BonusDes": "Bonus de dés (Thème, Combo...)",
+        "HorsCategorie": "Capacité hors catégorie (-2 dés)",
+        "Flavor": "Test d'Appel de {pokemon}",
+        "Exceptionnel": "Appel exceptionnel !",
+        "EchecCritique": "Échec critique — Jauge d'Enthousiasme à zéro !"
+      },
+      "Festival": {
+        "Eligible": "Éligible au Festival des Champions"
+      }
     }
   }
 }

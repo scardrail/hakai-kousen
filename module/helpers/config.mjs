@@ -1,6 +1,7 @@
 /**
  * Constantes de règles Hakaï Kōsen, exposées sous CONFIG.HK.
- * Source: Docs_source (Créer un personnage.md, Créer un Pokémon.md, Système de jeu.md, Les combats.md).
+ * Source: Docs_source (Créer un personnage.md, Créer un Pokémon.md, Système de jeu.md, Les combats.md,
+ * Les Super Concours.md).
  */
 export const HK = {};
 
@@ -100,6 +101,7 @@ HK.categoriesObjet = {
   equipement: "HK.CategorieObjet.Equipement",
   cristalZ: "HK.CategorieObjet.CristalZ",
   megaPierre: "HK.CategorieObjet.MegaPierre",
+  poffin: "HK.CategorieObjet.Poffin",
   divers: "HK.CategorieObjet.Divers"
 };
 
@@ -178,4 +180,68 @@ HK.meteos = {
   courantAerien: { label: "HK.Meteo.CourantAerien", verrouille: true },
   nuageux: { label: "HK.Meteo.Nuageux", multiplicateurs: { normal: 0.75 } },
   neige: { label: "HK.Meteo.Neige", degatsResiduelsSauf: ["glace"], fraction: 1 / 16 }
+};
+
+/**
+ * Les Super Concours.md, "Les 5 catégories et la Condition d'un Pokémon" : les 5 catégories de
+ * Condition d'un Pokémon (comme une Compétence, 0 à 5), stockées sur system.concours.condition
+ * (actor-pokemon.mjs).
+ */
+HK.categoriesConcours = {
+  beaute: "HK.Concours.Categorie.Beaute",
+  grace: "HK.Concours.Categorie.Grace",
+  sangfroid: "HK.Concours.Categorie.Sangfroid",
+  intelligence: "HK.Concours.Categorie.Intelligence",
+  robustesse: "HK.Concours.Categorie.Robustesse"
+};
+
+/**
+ * Les Super Concours.md, "Associer une capacité à une catégorie" : table maison (n'a pas la
+ * prétention de reproduire la répartition officielle des jeux) associant chaque Type de capacité à
+ * l'une des 5 catégories de Concours.
+ */
+HK.typeCategorieConcours = {
+  feu: "sangfroid",
+  combat: "sangfroid",
+  dragon: "sangfroid",
+  tenebres: "sangfroid",
+  eau: "beaute",
+  glace: "beaute",
+  poison: "beaute",
+  roche: "beaute",
+  normal: "grace",
+  fee: "grace",
+  vol: "grace",
+  insecte: "grace",
+  psy: "intelligence",
+  spectre: "intelligence",
+  acier: "intelligence",
+  sol: "robustesse",
+  plante: "robustesse",
+  electrik: "robustesse"
+};
+
+/**
+ * Les Super Concours.md, "Les Poffins et l'entraînement de la Condition" : chaque Saveur de Poffin
+ * (HK.gouts, déjà utilisé pour les goûts aimés/détestés des Natures) nourrit une catégorie de
+ * Concours précise (module/helpers/concours.mjs).
+ */
+HK.goutCategorieConcours = {
+  epice: "sangfroid",
+  sec: "intelligence",
+  sucre: "grace",
+  amer: "robustesse",
+  acide: "beaute"
+};
+
+/**
+ * Les Super Concours.md, "Organisation d'un Concours" : 4 rangs, Difficulté du Juge croissante,
+ * chacun demandant le Ruban du rang précédent dans la même catégorie (module/helpers/concours.mjs,
+ * rangConcoursDisponible).
+ */
+HK.rangsConcours = {
+  normal: { nom: "Normal", difficulte: 5, precedent: null },
+  super: { nom: "Super", difficulte: 6, precedent: "normal" },
+  hyper: { nom: "Hyper", difficulte: 8, precedent: "super" },
+  master: { nom: "Master", difficulte: 10, precedent: "hyper" }
 };

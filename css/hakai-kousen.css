@@ -1142,3 +1142,16 @@
   font-size: 0.68rem;
   color: var(--hk-ink-soft, #6b5d4c);
 }
+
+/* ---------------------------------------------------------------- Concours (Condition, Poffins, Rubans) */
+.hk-onglet-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 1rem 0.65rem;
+}
+
+.hk-badge-festival {
+  margin: 0 1rem 0.65rem;
+  background: #d4af37;
+  color: #2a2000;
+}

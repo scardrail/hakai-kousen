@@ -139,6 +139,28 @@ export default class PokemonDataModel extends foundry.abstract.TypeDataModel {
       dernierJourDressage: new fields.NumberField({ required: true, integer: true, initial: -1 })
     });
 
+    // Les Super Concours.md, "Les 5 catégories et la Condition d'un Pokémon" : Condition 0-5 par
+    // catégorie (comme une Compétence), montée par les Poffins (module/helpers/concours.mjs)
+    // plutôt que par XP. dernierJourPoffin limite à un Poffin par jour et par Pokémon, même
+    // mécanique que dernierJourConfiance/dernierJourDressage ci-dessus. Les rubans obtenus
+    // (catégorie + rang) conditionnent l'inscription au rang supérieur et, avec un ruban dans
+    // chacune des 5 catégories, l'accès au Festival des Champions.
+    schema.concours = new fields.SchemaField({
+      condition: new fields.SchemaField(
+        Object.fromEntries(
+          Object.keys(HK.categoriesConcours).map((cle) => [cle, new fields.NumberField({ required: true, integer: true, min: 0, max: 5, initial: 0 })])
+        )
+      ),
+      dernierJourPoffin: new fields.NumberField({ required: true, integer: true, initial: -1 }),
+      rubans: new fields.ArrayField(
+        new fields.SchemaField({
+          categorie: new fields.StringField({ required: true, choices: HK.categoriesConcours, initial: "beaute" }),
+          rang: new fields.StringField({ required: true, choices: Object.keys(HK.rangsConcours), initial: "normal" })
+        }),
+        { required: true, initial: [] }
+      )
+    });
+
     return schema;
   }
 
@@ -184,5 +206,10 @@ export default class PokemonDataModel extends foundry.abstract.TypeDataModel {
         this.caracteristiques[key].total = Math.max(1, Math.floor(this.caracteristiques[key].total / 2));
       }
     }
+
+    // Les Super Concours.md, "Le Festival des Champions" : un Ruban dans chacune des 5 catégories
+    // (n'importe quel rang) suffit à ouvrir l'inscription, indépendamment du rang de chaque Ruban.
+    const categoriesAvecRuban = new Set(this.concours.rubans.map((r) => r.categorie));
+    this.concours.festivalEligible = Object.keys(HK.categoriesConcours).every((cle) => categoriesAvecRuban.has(cle));
   }
 }
