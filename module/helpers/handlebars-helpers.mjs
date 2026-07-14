@@ -1,10 +1,20 @@
 import { HK } from "./config.mjs";
 import { TYPE_ICON_SPRITE } from "./type-icons.mjs";
+import { RUBAN_ICON_SPRITE } from "./ruban-icons.mjs";
 
 export function registerHandlebarsHelpers() {
   Handlebars.registerHelper("includes", (array, valeur) => Array.isArray(array) && array.includes(valeur));
 
   Handlebars.registerHelper("typeIconSprite", () => new Handlebars.SafeString(TYPE_ICON_SPRITE));
+  Handlebars.registerHelper("rubanIconSprite", () => new Handlebars.SafeString(RUBAN_ICON_SPRITE));
+
+  /** Pastille ronde colorée avec le pictogramme de Ruban, dans la couleur de la catégorie de Concours. */
+  Handlebars.registerHelper("rubanBadge", (categorie) => {
+    if (!categorie || !HK.categoriesConcours[categorie]) return "";
+    return new Handlebars.SafeString(
+      `<span class="hk-ruban-badge" style="background:var(--hk-c-${categorie})"><svg><use href="#i-ruban"></use></svg></span>`
+    );
+  });
 
   /** Pastille ronde colorée avec le pictogramme du type, sans texte (listes d'items). */
   Handlebars.registerHelper("typeBadge", (cle) => {

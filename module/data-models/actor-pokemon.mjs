@@ -211,5 +211,12 @@ export default class PokemonDataModel extends foundry.abstract.TypeDataModel {
     // (n'importe quel rang) suffit à ouvrir l'inscription, indépendamment du rang de chaque Ruban.
     const categoriesAvecRuban = new Set(this.concours.rubans.map((r) => r.categorie));
     this.concours.festivalEligible = Object.keys(HK.categoriesConcours).every((cle) => categoriesAvecRuban.has(cle));
+
+    // Les Super Concours.md, "Star des Concours" : un cran au-dessus du Festival, il faut le Ruban
+    // Master (ou Maître) dans les 5 catégories, pas juste "au moins un ruban".
+    const categoriesAvecMaster = new Set(
+      this.concours.rubans.filter((r) => r.rang === "master" || r.rang === "maitre").map((r) => r.categorie)
+    );
+    this.concours.starDesConcours = Object.keys(HK.categoriesConcours).every((cle) => categoriesAvecMaster.has(cle));
   }
 }

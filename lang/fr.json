@@ -434,6 +434,7 @@
       },
       "Rubans": "Rubans",
       "RubanAjouter": "Ruban",
+      "AucunRuban": "Aucun Ruban pour l'instant.",
       "Poffin": {
         "Bouton": "Nourrir un Poffin",
         "Titre": "Nourrir un Poffin",
@@ -456,7 +457,8 @@
       },
       "Festival": {
         "Eligible": "Éligible au Festival des Champions"
-      }
+      },
+      "StarDesConcours": "Star des Concours — Master dans les 5 catégories"
     }
   }
 }

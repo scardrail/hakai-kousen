@@ -235,13 +235,17 @@ HK.goutCategorieConcours = {
 };
 
 /**
- * Les Super Concours.md, "Organisation d'un Concours" : 4 rangs, Difficulté du Juge croissante,
- * chacun demandant le Ruban du rang précédent dans la même catégorie (module/helpers/concours.mjs,
- * rangConcoursDisponible).
+ * Les Super Concours.md, "Organisation d'un Concours" : rangs officiels des Rubans de Concours
+ * Super Contest (DPPt) — Normal/Méga/Ultra/Master — plus un 5e palier maison "Maître" (trophée de
+ * fin de progression par catégorie, jamais un pré-requis de jeu). Difficulté du Juge croissante,
+ * chaque rang demandant le Ruban du rang précédent dans la même catégorie
+ * (module/helpers/concours.mjs, rangConcoursDisponible). Attention à la table : "Rang Méga" est un
+ * palier de Concours, sans rapport avec la Méga-évolution (Les combats.md) — à distinguer à l'oral.
  */
 HK.rangsConcours = {
   normal: { nom: "Normal", difficulte: 5, precedent: null },
-  super: { nom: "Super", difficulte: 6, precedent: "normal" },
-  hyper: { nom: "Hyper", difficulte: 8, precedent: "super" },
-  master: { nom: "Master", difficulte: 10, precedent: "hyper" }
+  mega: { nom: "Méga", difficulte: 6, precedent: "normal" },
+  ultra: { nom: "Ultra", difficulte: 8, precedent: "mega" },
+  master: { nom: "Master", difficulte: 10, precedent: "ultra" },
+  maitre: { nom: "Maître", difficulte: 10, precedent: "master" }
 };

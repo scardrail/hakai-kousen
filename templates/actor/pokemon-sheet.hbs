@@ -1,5 +1,6 @@
 <div class="hk-sheet hk-pokemon">
   {{{typeIconSprite}}}
+  {{{rubanIconSprite}}}
   <header class="hk-band">
     <div class="hk-band-top">
       <img class="hk-portrait" src="{{actor.img}}" data-action="editImage" data-edit="img" alt="{{actor.name}}">
@@ -35,7 +36,7 @@
     <prose-mirror name="system.historique" value="{{system.historique}}"></prose-mirror>
   </section>
   {{else if (eq ongletActif "concours")}}
-  <section class="hk-details">
+  <section class="hk-screen">
     <div class="hk-caracteristiques">
       {{#each conditionList as |cond|}}
         <div class="hk-car">
@@ -45,20 +46,25 @@
       {{/each}}
     </div>
 
-    <div class="hk-onglet-actions">
+    <div class="hk-obeissance">
       <button type="button" class="hk-pill-btn" data-action="nourrirPoffin">{{localize "HK.Concours.Poffin.Bouton"}}</button>
       <button type="button" class="hk-pill-btn" data-action="testAppel">{{localize "HK.Concours.Appel.Bouton"}}</button>
+      {{#if system.concours.festivalEligible}}
+        <span class="hk-badge hk-badge-festival">{{localize "HK.Concours.Festival.Eligible"}}</span>
+      {{/if}}
+      {{#if system.concours.starDesConcours}}
+        <span class="hk-badge hk-badge-star">{{localize "HK.Concours.StarDesConcours"}}</span>
+      {{/if}}
     </div>
+  </section>
 
-    {{#if system.concours.festivalEligible}}
-      <p class="hk-badge hk-badge-festival">{{localize "HK.Concours.Festival.Eligible"}}</p>
-    {{/if}}
-
-    <fieldset class="hk-encart">
-      <legend>{{localize "HK.Concours.Rubans"}}</legend>
-      <ul class="hk-item-liste">
+  <fieldset class="hk-encart hk-sensibilites-bloc hk-rubans-bloc">
+    <legend>{{localize "HK.Concours.Rubans"}}</legend>
+    {{#if system.concours.rubans.length}}
+      <div class="hk-rubans-grille">
         {{#each system.concours.rubans as |ruban index|}}
-          <li data-index="{{index}}">
+          <div class="hk-ruban-carte" data-index="{{index}}">
+            {{rubanBadge ruban.categorie}}
             <select name="system.concours.rubans.{{index}}.categorie">
               {{#each ../config.categoriesConcours as |label cle|}}
                 <option value="{{cle}}" {{#if (eq ruban.categorie cle)}}selected{{/if}}>{{localize label}}</option>
@@ -70,12 +76,14 @@
               {{/each}}
             </select>
             <a data-action="rubanSupprimer"><i class="fa-solid fa-trash"></i></a>
-          </li>
+          </div>
         {{/each}}
-      </ul>
-      <button type="button" class="hk-bouton-ajout" data-action="rubanAjouter">+ {{localize "HK.Concours.RubanAjouter"}}</button>
-    </fieldset>
-  </section>
+      </div>
+    {{else}}
+      <p class="hk-rubans-vide">{{localize "HK.Concours.AucunRuban"}}</p>
+    {{/if}}
+    <button type="button" class="hk-bouton-ajout" data-action="rubanAjouter">+ {{localize "HK.Concours.RubanAjouter"}}</button>
+  </fieldset>
   {{else}}
   <section class="hk-details">
     <label>{{localize "HK.Sheet.Pokemon.Espece"}}
